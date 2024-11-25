@@ -81,3 +81,14 @@ button:hover {
 .bold-text {
   font-weight: bold; /* Makes GYT bold */
 }
+
+/* Ensure the link matches the text properties */
+.top-bar-created a {
+  color: inherit; /* Inherit color from the parent text */
+  text-decoration: none; /* Remove underline */
+  font-weight: inherit; /* Inherit font weight from parent */
+}
+
+.top-bar-created a:hover {
+  text-decoration: underline; /* Optional: underline on hover for interactivity */
+}
