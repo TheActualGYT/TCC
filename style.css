@@ -124,5 +124,12 @@ button:hover {
   padding: 20px;
   height: 100%;
   flex: 0 0 15%;
-  border-left: 3px solid #fff;
+  border-left: 3px solid #fff; /* White border at the left side */
+  box-sizing: border-box; /* Ensures border doesn't affect width */
+}
+
+/* Box sizing fixes */
+.content-container > .sidebar,
+.content-container > .main-content {
+  box-sizing: border-box; /* Prevents padding and borders from affecting the layout */
 }
