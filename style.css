@@ -39,3 +39,22 @@ button {
 button:hover {
   background-color: #3700b3;
 }
+
+/* Style for the top bar */
+.top-bar {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* White text color */
+  width: 100%; /* Make it span the full width of the page */
+  height: 50px; /* Adjust height for your preference */
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center the text vertically */
+  padding: 0 20px; /* Add horizontal padding */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for a subtle effect */
+}
+
+/* Style for the text inside the top bar */
+.top-bar-text {
+  font-size: 20px; /* Adjust size for readability */
+  font-weight: 300; /* Use the Light Lexend font */
+  font-family: 'Lexend', sans-serif; /* Ensure it matches your overall font */
+}
