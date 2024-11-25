@@ -50,7 +50,7 @@ button:hover {
   align-items: center; /* Center the text vertically */
   padding: 0 10px; /* Add horizontal padding */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for a subtle effect */
-  border-bottom: 2px solid #fff; /* White border at the bottom */
+  border-bottom: 3px solid #fff; /* White border at the bottom */
 }
 
 /* Style for the text inside the top bar */
