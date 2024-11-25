@@ -125,4 +125,5 @@ button:hover {
   height: 100%;
   flex: 0 0 15%;
   border-left: 3px solid #fff;
+  box-sizing: border-box; /* Ensures the border doesn't affect the element's width */
 }
