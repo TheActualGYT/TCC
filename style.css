@@ -106,7 +106,7 @@ button:hover {
   padding: 20px;
   height: 100%;
   flex: 0 0 15%;
-  border-right: 3px solid #fff; /* White border at the bottom */
+  border-right: 3px solid #fff; /* White border on the right side of the left sidebar */
 }
 
 /* Main Content */
@@ -124,7 +124,8 @@ button:hover {
   padding: 20px;
   height: 100%;
   flex: 0 0 15%;
-  border-left: 3px solid #fff; /* White border at the left side */
+  border-left: 3px solid #fff; /* White border on the left side of the right sidebar */
+  /* Remove any right border here */
   box-sizing: border-box; /* Ensures border doesn't affect width */
 }
 
