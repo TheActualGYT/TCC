@@ -9,6 +9,14 @@ body {
   text-align: center;
 }
 
+h1 {
+  font-weight: 700; /* Bold */
+}
+
+p {
+  font-weight: 300; /* Keep paragraphs light */
+}
+
 header {
   background-color: #6200ea;
   color: white;
