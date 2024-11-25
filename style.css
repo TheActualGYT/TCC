@@ -55,6 +55,6 @@ button:hover {
 /* Style for the text inside the top bar */
 .top-bar-text {
   font-size: 20px; /* Adjust size for readability */
-  font-weight: 300; /* Use the Light Lexend font */
+  font-weight: 700;
   font-family: 'Lexend', sans-serif; /* Ensure it matches your overall font */
 }
