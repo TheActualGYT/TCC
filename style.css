@@ -67,3 +67,12 @@ button:hover {
   display: inline-block; /* Ensure it aligns correctly with the text */
   box-shadow: 0 0 0 1px #fff; /* Thin white outline */
 }
+
+/* Style for the "Created by GYT" text */
+.top-bar-created {
+  margin-left: auto; /* Pushes the text to the right */
+  font-size: 14px; /* Adjust font size if needed */
+  font-weight: 300;
+  color: #fff; /* White text color */
+  padding-right: 10px; /* Some spacing from the edge */
+}
