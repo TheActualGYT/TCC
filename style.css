@@ -48,7 +48,7 @@ button:hover {
   height: 50px; /* Adjust height for your preference */
   display: flex; /* Use flexbox for alignment */
   align-items: center; /* Center the text vertically */
-  padding: 0 20px; /* Add horizontal padding */
+  padding: 0 10px; /* Add horizontal padding */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for a subtle effect */
 }
 
