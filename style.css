@@ -58,3 +58,10 @@ button:hover {
   font-weight: 700;
   font-family: 'Lexend', sans-serif; /* Ensure it matches your overall font */
 }
+
+/* Style for the logo image in the top bar */
+.top-bar-logo {
+  height: 30px; /* Adjust the height of the image to fit the bar */
+  margin-right: 10px; /* Add spacing between the logo and the text */
+  display: inline-block; /* Ensure it aligns correctly with the text */
+}
