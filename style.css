@@ -64,4 +64,5 @@ button:hover {
   height: 30px; /* Adjust the height of the image to fit the bar */
   margin-right: 10px; /* Add spacing between the logo and the text */
   display: inline-block; /* Ensure it aligns correctly with the text */
+  outline: 1px solid #fff; /* Thin white outline */
 }
