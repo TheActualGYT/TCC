@@ -123,6 +123,6 @@ button:hover {
   color: white;
   padding: 20px;
   height: 100%;
-  flex: 0 0 16%;
+  flex: 0 0 15%;
   border-left: 3px solid #fff;
 }
