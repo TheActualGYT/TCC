@@ -106,11 +106,12 @@ button:hover {
   padding: 20px;
   height: 100%;
   flex: 0 0 15%;
+  border-right: 3px solid #fff; /* White border at the bottom */
 }
 
 /* Main Content */
 .main-content {
-  background-color: #f4f4f4;
+  background-color: #e0e0e0;
   color: #333;
   padding: 20px;
   flex: 1;
@@ -123,4 +124,5 @@ button:hover {
   padding: 20px;
   height: 100%;
   flex: 0 0 15%;
+  border-left: 3px solid #fff;
 }
