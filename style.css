@@ -180,3 +180,13 @@ button:hover {
     width: 100%; /* Main content takes full width */
   }
 }
+
+/* Hide the scrollbar but still allow scrolling */
+.left-sidebar::-webkit-scrollbar {
+  width: 0px; /* No width for the scrollbar */
+  background: transparent; /* Make the background transparent */
+}
+
+.left-sidebar::-webkit-scrollbar-thumb {
+  background: transparent; /* No thumb (the draggable part) */
+}
