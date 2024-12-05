@@ -193,6 +193,6 @@ button:hover {
 
 body {
   overflow-x: hidden; /* Remove horizontal scrollbar */
-  overflow-y: auto; /* Allow vertical scrollbar if needed */
+  overflow-y: hidden; /* Allow vertical scrollbar if needed */
   margin: 0;
 }
