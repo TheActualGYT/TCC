@@ -192,3 +192,53 @@ body {
   align-self: center; /* Center the line */
   padding: 2px 0;
 }
+
+/* Right Sidebar */
+.right-sidebar {
+  width: 20%; /* Adjust width as needed */
+  background-color: #f4f4f4; /* Light gray background */
+  color: #333; /* Dark text for readability */
+  padding: 20px; /* Space inside the sidebar */
+  border-left: 3px solid #fff; /* White border separating it from main content */
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: left; /* Align text to the left */
+  overflow-y: auto; /* Enable scrolling for long content */
+}
+
+/* Right Sidebar Heading */
+.right-sidebar h2 {
+  font-size: 18px; /* Adjust heading size */
+  font-weight: 700; /* Make headings bold */
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+/* Right Sidebar Paragraphs */
+.right-sidebar p {
+  margin-bottom: 15px; /* Add spacing between paragraphs */
+  line-height: 1.6; /* Improve text readability */
+}
+
+/* Adjust Main Content Area to Account for Right Sidebar */
+.main-content {
+  width: 65%; /* Adjust width to balance between sidebars */
+  padding: 20px;
+  background-color: #f0f0f0;
+  overflow-y: auto;
+}
+
+/* Ensure Responsiveness for Smaller Screens */
+@media screen and (max-width: 768px) {
+  .main-container {
+    flex-direction: column; /* Stack sections vertically on small screens */
+  }
+  
+  .left-sidebar,
+  .right-sidebar {
+    width: 100%; /* Make sidebars full width */
+    border: none; /* Remove borders */
+  }
+  
+  .main-content {
+    width: 100%; /* Main content takes full width */
+  }
+}
