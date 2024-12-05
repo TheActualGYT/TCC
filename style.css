@@ -101,7 +101,7 @@ button:hover {
   width: 15%; /* Set width to 15% */
   background-color: #999999;
   color: white;
-  padding: 10px;
+  padding: 20px;
   border-right: 3px solid #fff;
   display: flex;
   flex-direction: column;
