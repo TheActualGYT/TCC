@@ -1,34 +1,25 @@
-<script>
-  function showMainPage() {
-    document.getElementById('main-page').style.display = 'block';
-    document.getElementById('leaderboard').style.display = 'none';
-  }
-
-  function showLeaderboard() {
-    document.getElementById('main-page').style.display = 'none';
-    document.getElementById('leaderboard').style.display = 'block';
-  }
-</script>
-
+// Function to switch between content and update active tabs
 document.getElementById("main-page-btn").addEventListener("click", function() {
+  // Show main page and hide leaderboard
   document.getElementById("content").innerHTML = `
     <h1>Welcome to The TCC List</h1>
     <p>This is the main content of your site.</p>
   `;
-  // Update active tab styling
+  // Set the active tab
   setActiveTab("main-page-btn");
 });
 
 document.getElementById("leaderboard-btn").addEventListener("click", function() {
+  // Show leaderboard content
   document.getElementById("content").innerHTML = `
     <h1>Leaderboard</h1>
     <p>The leaderboard content will go here.</p>
   `;
-  // Update active tab styling
+  // Set the active tab
   setActiveTab("leaderboard-btn");
 });
 
-// Function to set active tab
+// Function to set the active tab style
 function setActiveTab(tabId) {
   // Remove 'active' class from both tabs
   document.getElementById("main-page-btn").classList.remove("active");
