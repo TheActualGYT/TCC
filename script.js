@@ -4,6 +4,7 @@ document.getElementById("main-page-btn").addEventListener("click", function() {
   document.getElementById("main-page-content").classList.add("active");
   document.getElementById("leaderboard-content").classList.remove("active");
   document.getElementById("sink-content").classList.remove("active");
+  document.getElementById("nightshade-content").classList.remove("active");
 
   // Set the active tab
   setActiveTab("main-page-btn");
@@ -14,6 +15,7 @@ document.getElementById("leaderboard-btn").addEventListener("click", function() 
   document.getElementById("leaderboard-content").classList.add("active");
   document.getElementById("main-page-content").classList.remove("active");
   document.getElementById("sink-content").classList.remove("active");
+  document.getElementById("nightshade-content").classList.remove("active");
 
   // Set the active tab
   setActiveTab("leaderboard-btn");
@@ -36,6 +38,7 @@ function setActiveTab(tabId) {
   document.getElementById("main-page-btn").classList.remove("active");
   document.getElementById("leaderboard-btn").classList.remove("active");
   document.getElementById("sink-btn").classList.remove("active");
+  document.getElementById("nightshade-btn").classList.remove("active");
 
   // Add 'active' class to the clicked tab
   document.getElementById(tabId).classList.add("active");
