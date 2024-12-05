@@ -184,3 +184,9 @@ body {
   overflow-y: hidden; /* Allow vertical scrollbar if needed */
   margin: 0;
 }
+
+.divider-line {
+  width: 100%;
+  border-top: 2px solid #333; /* Dark border color */
+  margin: 10px 0; /* Spacing above and below the line */
+}
