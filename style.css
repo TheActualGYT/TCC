@@ -122,6 +122,8 @@ button:hover {
   width: 100%; /* Full width of the sidebar */
   background-color: #6b6b6b; /* Dark gray button */
   color: white; /* White text */
+  font-family: 'Lexend', sans-serif; /* Ensure Lexend font */
+  font-weight: bold; /* Bold the text */
   border: none; /* No border */
   padding: 10px 0; /* Vertical padding */
   padding-left: 15px; /* Add left padding to create a gap */
