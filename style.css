@@ -92,3 +92,21 @@ button:hover {
 .top-bar-created a:hover {
   text-decoration: underline; /* Optional: underline on hover for interactivity */
 }
+
+.main-container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-sidebar {
+  width: 15%;
+  background-color: gray;
+  color: white;
+  padding: 10px;
+}
+
+.main-content {
+  width: 85%;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
