@@ -111,7 +111,7 @@ button:hover {
 }
 
 .main-content {
-  width: 70%;
+  width: 60%;
   padding: 20px;
   background-color: #f0f0f0;
   overflow-y: auto; /* Ensure scrollable content if it overflows */
