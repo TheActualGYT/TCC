@@ -5,6 +5,7 @@ document.getElementById("main-page-btn").addEventListener("click", function() {
   document.getElementById("leaderboard-content").classList.remove("active");
   document.getElementById("sink-content").classList.remove("active");
   document.getElementById("nightshade-content").classList.remove("active");
+  document.getElementById("timor-content").classList.remove("active");
 
   // Set the active tab
   setActiveTab("main-page-btn");
@@ -16,6 +17,7 @@ document.getElementById("leaderboard-btn").addEventListener("click", function() 
   document.getElementById("leaderboard-content").classList.add("active");
   document.getElementById("sink-content").classList.remove("active");
   document.getElementById("nightshade-content").classList.remove("active");
+  document.getElementById("timor-content").classList.remove("active");
 
   // Set the active tab
   setActiveTab("leaderboard-btn");
@@ -28,6 +30,7 @@ document.getElementById("sink-btn").addEventListener("click", function() {
   document.getElementById("leaderboard-content").classList.remove("active");
   document.getElementById("sink-content").classList.add("active");
   document.getElementById("nightshade-content").classList.remove("active");
+  document.getElementById("timor-content").classList.remove("active");
 
   // Set the active tab
   setActiveTab("sink-btn");
@@ -40,9 +43,23 @@ document.getElementById("nightshade-btn").addEventListener("click", function() {
   document.getElementById("leaderboard-content").classList.remove("active");
   document.getElementById("sink-content").classList.remove("active");
   document.getElementById("nightshade-content").classList.add("active");
+  document.getElementById("timor-content").classList.remove("active");
 
   // Set the active tab
   setActiveTab("nightshade-btn");
+});
+
+// **CORRECTED EVENT LISTENER** for the "#2 - Nightshade" tab
+document.getElementById("timor-btn").addEventListener("click", function() {
+  // Show nightshade content and hide other content
+  document.getElementById("main-page-content").classList.remove("active");
+  document.getElementById("leaderboard-content").classList.remove("active");
+  document.getElementById("sink-content").classList.remove("active");
+  document.getElementById("nightshade-content").classList.remove("active");
+  document.getElementById("timor-content").classList.add("active");
+
+  // Set the active tab
+  setActiveTab("timor-btn");
 });
 
 // Function to set the active tab style
@@ -52,6 +69,7 @@ function setActiveTab(tabId) {
   document.getElementById("leaderboard-btn").classList.remove("active");
   document.getElementById("sink-btn").classList.remove("active");
   document.getElementById("nightshade-btn").classList.remove("active");
+  document.getElementById("timor-btn").classList.remove("active");
 
   // Add 'active' class to the clicked tab
   document.getElementById(tabId).classList.add("active");
