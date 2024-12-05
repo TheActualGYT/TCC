@@ -96,7 +96,6 @@ button:hover {
 /* Main container layout */
 .main-container {
   display: flex;
-  justify-content: space-between; /* Create space between left and right */
   height: 100vh;
 }
 
@@ -111,18 +110,8 @@ button:hover {
   justify-content: flex-start; /* Align the buttons to the top */
 }
 
-.right-sidebar {
-  width: 15%; /* Right sidebar also takes up 15% of the width */
-  background-color: #999999; /* Lighter color for the right sidebar */
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  border-left: 3px solid #ccc; /* Optional: border between main content and sidebar */
-}
-
 .main-content {
-  flex-grow: 1; /* This will take up the remaining space */
+  width: 85%;
   padding: 20px;
   background-color: #f0f0f0;
   overflow-y: auto; /* Ensure scrollable content if it overflows */
