@@ -222,7 +222,7 @@ body {
 .main-content {
   width: 65%; /* Adjust width to balance between sidebars */
   padding: 20px;
-  background-color: #999999;
+  background-color: #f0f0f0;
   overflow-y: auto;
 }
 
