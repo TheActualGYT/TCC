@@ -178,3 +178,9 @@ button:hover {
     width: 100%; /* Main content takes full width */
   }
 }
+
+body {
+  overflow-x: hidden; /* Remove horizontal scrollbar */
+  overflow-y: hidden; /* Allow vertical scrollbar if needed */
+  margin: 0;
+}
