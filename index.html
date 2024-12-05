@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
+  <title>The TCC List</title>
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -17,23 +17,18 @@
   <div class="main-container">
     <!-- Left Sidebar -->
     <div class="left-sidebar">
-      <button class="tab-button" onclick="showMainPage()">Main Page</button>
-      <button class="tab-button" onclick="showLeaderboard()">Leaderboard</button>
-    </div>
-    <div class="main-content" id="main-page">
-      <h1>Welcome to The TCC List</h1>
-      <p>This is the main content of your site.</p>
-    </div>
-    <div class="main-content" id="leaderboard" style="display: none;">
-      <h1>Leaderboard</h1>
-      <p>The leaderboard content will go here.</p>
+      <button class="tab-button active" id="main-page-btn">Main Page</button>
+      <button class="tab-button" id="leaderboard-btn">Leaderboard</button>
     </div>
 
-    <!-- Main Content -->
-    <div class="main-content">
+    <!-- Main Content Area -->
+    <div class="main-content" id="content">
       <h1>Welcome to The TCC List</h1>
       <p>This is the main content of your site.</p>
     </div>
   </div>
+
+  <!-- Link to the external JavaScript file -->
+  <script src="script.js"></script>
 </body>
 </html>
