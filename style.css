@@ -139,6 +139,15 @@ button:hover {
   background-color: #6200ea; /* Highlight the active tab */
 }
 
+/* Tab content styling */
+.tab-content {
+  display: none; /* Hide all content sections by default */
+}
+
+.tab-content.active {
+  display: block; /* Show the active tab content */
+}
+
 /* Content area styling */
 #content {
   padding: 20px;
