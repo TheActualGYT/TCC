@@ -122,6 +122,15 @@ button:hover {
   height: 100vh; /* Ensure full height */
 }
 
+/* Adjust padding and margin to move the heading upward */
+.right-sidebar {
+  padding-top: 10px; /* Adjust this value to control the position */
+}
+
+.right-sidebar h2 {
+  margin-top: -20px; /* Negative value to move the heading up */
+}
+
 /* Main Content Area */
 .main-content {
   width: 70%; /* Set width to 70% */
