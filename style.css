@@ -97,7 +97,6 @@ button:hover {
 .main-container {
   display: flex;
   height: 100vh;
-  flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
 .left-sidebar {
@@ -116,12 +115,9 @@ button:hover {
   padding: 20px;
   background-color: #f0f0f0;
   overflow-y: auto; /* Ensure scrollable content if it overflows */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center content horizontally */
-  justify-content: flex-start; /* Start at the top */
 }
 
+/* Sidebar tabs styling */
 .tab-button {
   width: 100%; /* Full width of the sidebar */
   background-color: #6b6b6b; /* Dark gray button */
@@ -149,9 +145,6 @@ button:hover {
 /* Tab content styling */
 .tab-content {
   display: none; /* Hide all content sections by default */
-  width: 100%;
-  max-width: 900px; /* Max width for centering */
-  text-align: center; /* Center text in each tab */
 }
 
 .tab-content.active {
