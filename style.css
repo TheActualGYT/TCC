@@ -176,6 +176,7 @@ button:hover {
   border-top: 3px solid #fff;
   margin: 15px 0;
   align-self: center;
+  padding: 2px 0;
 }
 
 /* Responsive Design */
