@@ -175,3 +175,9 @@ button:hover {
     width: 100%; /* Main content takes full width */
   }
 }
+
+/* New class to change button color */
+.change-color {
+  background-color: #6b6b6b;
+  color: white; /* Text color */
+}
