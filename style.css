@@ -104,8 +104,6 @@ button:hover {
   background-color: #999999;
   color: white;
   padding: 10px;
-  overflow-y: auto; /* Enable vertical scrolling */
-  height: calc(100vh - 20px); /* Set height relative to the viewport */
   border-right: 3px solid #fff;
   display: flex;
   flex-direction: column; /* Ensure the buttons are stacked vertically */
@@ -179,20 +177,4 @@ button:hover {
   .main-content {
     width: 100%; /* Main content takes full width */
   }
-}
-
-/* Hide the scrollbar but still allow scrolling */
-.left-sidebar::-webkit-scrollbar {
-  width: 0px; /* No width for the scrollbar */
-  background: transparent; /* Make the background transparent */
-}
-
-.left-sidebar::-webkit-scrollbar-thumb {
-  background: transparent; /* No thumb (the draggable part) */
-}
-
-body {
-  overflow-x: hidden; /* Remove horizontal scrollbar */
-  overflow-y: hidden; /* Allow vertical scrollbar if needed */
-  margin: 0;
 }
