@@ -31,7 +31,6 @@ document.getElementById("sink-btn").addEventListener("click", function() {
 
   // Set the active tab
   setActiveTab("sink-btn");
-  setActiveTab("nightshade-btn");
 });
 
 // Function to set the active tab style
