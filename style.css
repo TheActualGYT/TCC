@@ -104,6 +104,8 @@ button:hover {
   background-color: #999999;
   color: white;
   padding: 10px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  height: calc(100vh - 20px); /* Set height relative to the viewport */
   border-right: 3px solid #fff;
   display: flex;
   flex-direction: column; /* Ensure the buttons are stacked vertically */
