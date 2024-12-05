@@ -126,7 +126,7 @@ button:hover {
   font-weight: bold; /* Bold the text */
   border: none; /* No border */
   padding: 10px 0; /* Vertical padding */
-  padding-left: 15px; /* Add left padding to create a gap */
+  padding-left: 10px; /* Add left padding to create a gap */
   text-align: left; /* Align text to the left */
   font-size: 16px; /* Font size */
   cursor: pointer; /* Pointer cursor on hover */
