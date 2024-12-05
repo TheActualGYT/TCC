@@ -24,13 +24,25 @@ document.getElementById("leaderboard-btn").addEventListener("click", function() 
 // Add event listener for the new "#1 - Sink" tab
 document.getElementById("sink-btn").addEventListener("click", function() {
   // Show sink content and hide other content
-  document.getElementById("nightshade-content").classList.add("active");
-  document.getElementById("sink-content").classList.add("active");
   document.getElementById("main-page-content").classList.remove("active");
   document.getElementById("leaderboard-content").classList.remove("active");
-
+  document.getElementById("sink-content").classList.add("active");
+  document.getElementById("nightshade-content").classList.remove("active");
+  
   // Set the active tab
   setActiveTab("sink-btn");
+});
+
+// Add event listener for the new "#1 - Sink" tab
+document.getElementById("sink-btn").addEventListener("click", function() {
+  // Show sink content and hide other content
+  document.getElementById("main-page-content").classList.remove("active");
+  document.getElementById("leaderboard-content").classList.remove("active");
+  document.getElementById("sink-content").classList.remove("active");
+  document.getElementById("nightshade-content").classList.add("active");
+  
+  // Set the active tab
+  setActiveTab("nightshade-btn");
 });
 
 // Function to set the active tab style
