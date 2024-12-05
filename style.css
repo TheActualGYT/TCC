@@ -104,6 +104,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  height: 100%; /* Ensure full height */
 }
 
 /* Right Sidebar */
@@ -116,17 +117,7 @@ button:hover {
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
   text-align: left;
   overflow-y: auto;
-}
-
-.right-sidebar h2 {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.right-sidebar p {
-  margin-bottom: 15px;
-  line-height: 1.6;
+  height: 100%; /* Ensure full height */
 }
 
 /* Main Content Area */
@@ -135,6 +126,7 @@ button:hover {
   padding: 20px;
   background-color: #f0f0f0;
   overflow-y: auto;
+  height: 100%; /* Ensure content area aligns with sidebars */
 }
 
 /* Sidebar Tabs */
