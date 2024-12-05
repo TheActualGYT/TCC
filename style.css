@@ -140,7 +140,7 @@ button:hover {
   top: 60px; /* Keep it below the top bar */
   bottom: 0;
   right: 0; /* Position it on the right side */
-  border-left: 3px solid #ccc;
+  border-left: 3px solid #ffffff;
   height: 100vh;
   overflow-y: auto; /* Scrollable if content is long */
 
