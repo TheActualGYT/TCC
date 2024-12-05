@@ -123,7 +123,7 @@ button:hover {
 }
 
 .right-sidebar h2 {
-  margin-top: 10px; /* Negative value to move the heading up */
+  margin-top: 0px; /* Negative value to move the heading up */
 }
 
 /* Main Content Area */
