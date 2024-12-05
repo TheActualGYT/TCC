@@ -1,4 +1,4 @@
-/* General styling */
+/* General Styling */
 body {
   font-family: 'Lexend', sans-serif;
   font-weight: 300;
@@ -7,26 +7,31 @@ body {
   background-color: #e0e0e0;
   color: #333;
   text-align: center;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-y: hidden; /* Allow vertical scroll */
 }
 
 h1 {
-  font-weight: 700; /* Bold */
+  font-weight: 700; /* Bold headings */
 }
 
 p {
-  font-weight: 300; /* Keep paragraphs light */
+  font-weight: 300; /* Lightweight paragraphs */
 }
 
+/* Header */
 header {
   background-color: #6200ea;
   color: white;
   padding: 20px 0;
 }
 
+/* Main Content */
 main {
   padding: 20px;
 }
 
+/* Buttons */
 button {
   padding: 10px 20px;
   background-color: #6b6b6b;
@@ -40,65 +45,56 @@ button:hover {
   background-color: #3700b3;
 }
 
-/* Style for the top bar */
+/* Top Bar */
 .top-bar {
-  background-color: #333; /* Dark background color */
-  color: #fff; /* White text color */
-  width: 100%; /* Make it span the full width of the page */
-  height: 50px; /* Adjust height for your preference */
-  display: flex; /* Use flexbox for alignment */
-  align-items: center; /* Center the text vertically */
-  padding: 0 10px; /* Add horizontal padding */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for a subtle effect */
-  border-bottom: 3px solid #fff; /* White border at the bottom */
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-bottom: 3px solid #fff;
 }
 
-/* Style for the text inside the top bar */
 .top-bar-text {
-  font-size: 20px; /* Adjust size for readability */
+  font-size: 20px;
   font-weight: 700;
-  font-family: 'Lexend', sans-serif; /* Ensure it matches your overall font */
 }
 
-/* Style for the logo image in the top bar */
 .top-bar-logo {
-  height: 30px; /* Adjust the height of the image to fit the bar */
-  margin-right: 10px; /* Add spacing between the logo and the text */
-  display: inline-block; /* Ensure it aligns correctly with the text */
-  box-shadow: 0 0 0 1px #fff; /* Thin white outline */
+  height: 30px;
+  margin-right: 10px;
+  display: inline-block;
+  box-shadow: 0 0 0 1px #fff;
 }
 
-/* Style for the "Created by GYT" text */
 .top-bar-created {
-  margin-left: auto; /* Pushes the text to the right */
-  font-size: 12px; /* Adjust font size if needed */
+  margin-left: auto;
+  font-size: 12px;
   font-weight: 300;
-  color: #fff; /* White text color */
-  padding-right: 30px; /* Some spacing from the edge */
+  color: #fff;
+  padding-right: 30px;
 }
 
-/* Bold style for "GYT" */
-.bold-text {
-  font-weight: bold; /* Makes GYT bold */
-}
-
-/* Ensure the link matches the text properties, but keep the bold */
 .top-bar-created a {
-  color: inherit; /* Inherit color from the parent text */
-  text-decoration: none; /* Remove underline */
-  font-weight: bold; /* Make sure GYT remains bold */
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .top-bar-created a:hover {
-  text-decoration: underline; /* Optional: underline on hover for interactivity */
+  text-decoration: underline;
 }
 
-/* Main container layout */
+/* Layout */
 .main-container {
   display: flex;
   height: 100vh;
 }
 
+/* Left Sidebar */
 .left-sidebar {
   width: 15%;
   background-color: #999999;
@@ -106,139 +102,95 @@ button:hover {
   padding: 10px;
   border-right: 3px solid #fff;
   display: flex;
-  flex-direction: column; /* Ensure the buttons are stacked vertically */
-  justify-content: flex-start; /* Align the buttons to the top */
-}
-
-.main-content {
-  width: 85%;
-  padding: 20px;
-  background-color: #f0f0f0;
-  overflow-y: auto; /* Ensure scrollable content if it overflows */
-}
-
-/* Sidebar tabs styling */
-.tab-button {
-  width: 100%; /* Full width of the sidebar */
-  background-color: #6b6b6b; /* Dark gray button */
-  color: white; /* White text */
-  font-family: 'Lexend', sans-serif; /* Ensure Lexend font */
-  font-weight: bold; /* Bold the text */
-  border: 1px solid #fff;
-  padding: 10px 0; /* Vertical padding */
-  padding-left: 10px; /* Add left padding to create a gap */
-  text-align: left; /* Align text to the left */
-  font-size: 16px; /* Font size */
-  cursor: pointer; /* Pointer cursor on hover */
-  margin-bottom: 5px; /* Space between buttons */
-  outline: none; /* No outline */
-}
-
-.tab-button:hover {
-  background-color: #555; /* Slightly lighter gray on hover */
-}
-
-.tab-button.active {
-  background-color: #c93030; /* Highlight the active tab */
-}
-
-/* Tab content styling */
-.tab-content {
-  display: none; /* Hide all content sections by default */
-}
-
-.tab-content.active {
-  display: block; /* Show the active tab content */
-}
-
-/* Content area styling */
-#content {
-  padding: 20px;
-  background-color: #f9f9f9;
-  display: none; /* Hide until triggered by tab change */
-}
-
-#content h1 {
-  font-weight: 700; /* Make the heading bold */
-}
-
-/* Responsive layout adjustments */
-@media screen and (max-width: 768px) {
-  .main-container {
-    flex-direction: column; /* Stack sidebar and content vertically */
-  }
-  
-  .left-sidebar {
-    width: 100%; /* Sidebar takes full width */
-    border-right: none; /* Remove right border */
-    border-bottom: 3px solid #fff; /* Add bottom border */
-  }
-  
-  .main-content {
-    width: 100%; /* Main content takes full width */
-  }
-}
-
-body {
-  overflow-x: hidden; /* Remove horizontal scrollbar */
-  overflow-y: hidden; /* Allow vertical scrollbar if needed */
-  margin: 0;
-}
-
-.divider-line {
-  width: 100%;
-  border-top: 3px solid #fff; /* Dark border color */
-  margin: 15px 0; /* Spacing above and below the line */
-  align-self: center; /* Center the line */
-  padding: 2px 0;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 /* Right Sidebar */
 .right-sidebar {
-  width: 20%; /* Adjust width as needed */
-  background-color: #999999; /* Light gray background */
-  color: #ff0000; /* Dark text for readability */
-  padding: 20px; /* Space inside the sidebar */
-  border-left: 3px solid #fff; /* White border separating it from main content */
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  text-align: left; /* Align text to the left */
-  overflow-y: auto; /* Enable scrolling for long content */
+  width: 20%;
+  background-color: #999999;
+  color: #ff0000;
+  padding: 20px;
+  border-left: 3px solid #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  overflow-y: auto;
 }
 
-/* Right Sidebar Heading */
 .right-sidebar h2 {
-  font-size: 18px; /* Adjust heading size */
-  font-weight: 700; /* Make headings bold */
-  margin-bottom: 10px; /* Space below the heading */
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
-/* Right Sidebar Paragraphs */
 .right-sidebar p {
-  margin-bottom: 15px; /* Add spacing between paragraphs */
-  line-height: 1.6; /* Improve text readability */
+  margin-bottom: 15px;
+  line-height: 1.6;
 }
 
-/* Adjust Main Content Area to Account for Right Sidebar */
+/* Main Content Area */
 .main-content {
-  width: 65%; /* Adjust width to balance between sidebars */
+  width: 65%; /* Adjusted for sidebars */
   padding: 20px;
   background-color: #f0f0f0;
   overflow-y: auto;
 }
 
-/* Ensure Responsiveness for Smaller Screens */
+/* Sidebar Tabs */
+.tab-button {
+  width: 100%;
+  background-color: #6b6b6b;
+  color: white;
+  font-family: 'Lexend', sans-serif;
+  font-weight: bold;
+  border: 1px solid #fff;
+  padding: 10px 0;
+  padding-left: 10px;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.tab-button:hover {
+  background-color: #555;
+}
+
+.tab-button.active {
+  background-color: #c93030;
+}
+
+/* Tab Content */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Divider Line */
+.divider-line {
+  width: 100%;
+  border-top: 3px solid #fff;
+  margin: 15px 0;
+  align-self: center;
+}
+
+/* Responsive Design */
 @media screen and (max-width: 768px) {
   .main-container {
-    flex-direction: column; /* Stack sections vertically on small screens */
+    flex-direction: column;
   }
-  
+
   .left-sidebar,
   .right-sidebar {
-    width: 100%; /* Make sidebars full width */
-    border: none; /* Remove borders */
+    width: 100%;
+    border: none;
   }
-  
+
   .main-content {
-    width: 100%; /* Main content takes full width */
+    width: 100%;
   }
 }
