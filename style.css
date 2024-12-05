@@ -29,7 +29,7 @@ main {
 
 button {
   padding: 10px 20px;
-  background-color: #6200ea;
+  background-color: #6b6b6b;
   color: white;
   border: none;
   border-radius: 5px;
@@ -48,7 +48,7 @@ button:hover {
   height: 50px; /* Adjust height for your preference */
   display: flex; /* Use flexbox for alignment */
   align-items: center; /* Center the text vertically */
-  padding: 0 30px; /* Add horizontal padding */
+  padding: 0 10px; /* Add horizontal padding */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for a subtle effect */
   border-bottom: 3px solid #fff; /* White border at the bottom */
 }
@@ -74,7 +74,7 @@ button:hover {
   font-size: 12px; /* Adjust font size if needed */
   font-weight: 300;
   color: #fff; /* White text color */
-  padding-right: 20px; /* Some spacing from the edge */
+  padding-right: 30px; /* Some spacing from the edge */
 }
 
 /* Bold style for "GYT" */
@@ -91,4 +91,96 @@ button:hover {
 
 .top-bar-created a:hover {
   text-decoration: underline; /* Optional: underline on hover for interactivity */
+}
+
+/* Main container layout */
+.main-container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-sidebar {
+  width: 15%;
+  background-color: #999999;
+  color: white;
+  padding: 10px;
+  border-right: 3px solid #fff;
+  display: flex;
+  flex-direction: column; /* Ensure the buttons are stacked vertically */
+  justify-content: flex-start; /* Align the buttons to the top */
+}
+
+.main-content {
+  width: 85%;
+  padding: 20px;
+  background-color: #f0f0f0;
+  overflow-y: auto; /* Ensure scrollable content if it overflows */
+}
+
+/* Sidebar tabs styling */
+.tab-button {
+  width: 100%; /* Full width of the sidebar */
+  background-color: #6b6b6b; /* Dark gray button */
+  color: white; /* White text */
+  font-family: 'Lexend', sans-serif; /* Ensure Lexend font */
+  font-weight: bold; /* Bold the text */
+  border: none; /* No border */
+  padding: 10px 0; /* Vertical padding */
+  padding-left: 10px; /* Add left padding to create a gap */
+  text-align: left; /* Align text to the left */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-bottom: 5px; /* Space between buttons */
+  outline: none; /* No outline */
+}
+
+.tab-button:hover {
+  background-color: #555; /* Slightly lighter gray on hover */
+}
+
+.tab-button.active {
+  background-color: #c93030; /* Highlight the active tab */
+}
+
+/* Tab content styling */
+.tab-content {
+  display: none; /* Hide all content sections by default */
+}
+
+.tab-content.active {
+  display: block; /* Show the active tab content */
+}
+
+/* Content area styling */
+#content {
+  padding: 20px;
+  background-color: #f9f9f9;
+  display: none; /* Hide until triggered by tab change */
+}
+
+#content h1 {
+  font-weight: 700; /* Make the heading bold */
+}
+
+/* Responsive layout adjustments */
+@media screen and (max-width: 768px) {
+  .main-container {
+    flex-direction: column; /* Stack sidebar and content vertically */
+  }
+  
+  .left-sidebar {
+    width: 100%; /* Sidebar takes full width */
+    border-right: none; /* Remove right border */
+    border-bottom: 3px solid #fff; /* Add bottom border */
+  }
+  
+  .main-content {
+    width: 100%; /* Main content takes full width */
+  }
+}
+
+body {
+  overflow-x: hidden; /* Remove horizontal scrollbar */
+  overflow-y: hidden; /* Allow vertical scrollbar if needed */
+  margin: 0;
 }
