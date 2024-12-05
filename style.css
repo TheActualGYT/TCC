@@ -115,7 +115,7 @@ button:hover {
   background-color: #999999;
   color: #ffffff;
   padding-top: 10px; /* Reduce this value to move the heading upward */
-  padding: 20px;
+  padding: 10px;
   border-left: 3px solid #fff;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
   text-align: left;
