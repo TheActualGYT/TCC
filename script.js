@@ -28,19 +28,19 @@ document.getElementById("sink-btn").addEventListener("click", function() {
   document.getElementById("leaderboard-content").classList.remove("active");
   document.getElementById("sink-content").classList.add("active");
   document.getElementById("nightshade-content").classList.remove("active");
-  
+
   // Set the active tab
   setActiveTab("sink-btn");
 });
 
-// Add event listener for the new "#2 - Nightshade" tab
-document.getElementById("sink-btn").addEventListener("click", function() {
+// **CORRECTED EVENT LISTENER** for the "#2 - Nightshade" tab
+document.getElementById("nightshade-btn").addEventListener("click", function() {
   // Show nightshade content and hide other content
   document.getElementById("main-page-content").classList.remove("active");
   document.getElementById("leaderboard-content").classList.remove("active");
   document.getElementById("sink-content").classList.remove("active");
   document.getElementById("nightshade-content").classList.add("active");
-  
+
   // Set the active tab
   setActiveTab("nightshade-btn");
 });
