@@ -1,20 +1,18 @@
 // Function to switch between content and update active tabs
 document.getElementById("main-page-btn").addEventListener("click", function() {
-  // Show main page and hide leaderboard
-  document.getElementById("content").innerHTML = `
-    <h1>Welcome to The TCC List</h1>
-    <p>This is the main content of your site.</p>
-  `;
+  // Show main page content and hide leaderboard content
+  document.getElementById("main-page-content").classList.add("active");
+  document.getElementById("leaderboard-content").classList.remove("active");
+
   // Set the active tab
   setActiveTab("main-page-btn");
 });
 
 document.getElementById("leaderboard-btn").addEventListener("click", function() {
-  // Show leaderboard content
-  document.getElementById("content").innerHTML = `
-    <h1>Leaderboard</h1>
-    <p>The leaderboard content will go here.</p>
-  `;
+  // Show leaderboard content and hide main page content
+  document.getElementById("leaderboard-content").classList.add("active");
+  document.getElementById("main-page-content").classList.remove("active");
+
   // Set the active tab
   setActiveTab("leaderboard-btn");
 });
