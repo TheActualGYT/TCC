@@ -101,7 +101,7 @@ button:hover {
 
 .left-sidebar {
   width: 15%;
-  background-color: gray;
+  background-color: #999999;
   color: white;
   padding: 10px;
   border-right: 3px solid #fff;
