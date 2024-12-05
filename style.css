@@ -91,7 +91,10 @@ button:hover {
 /* Layout */
 .main-container {
   display: flex;
-  height: 100vh;
+  flex-grow: 1; /* Ensure the container grows */
+  min-height: 100vh; /* Take full viewport height */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  height: 100%; /* Ensure it takes the full height */
 }
 
 /* Left Sidebar */
@@ -104,7 +107,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: 100%; /* Ensure full height */
+  height: 100vh; /* Ensure full height */
 }
 
 /* Right Sidebar */
@@ -117,7 +120,7 @@ button:hover {
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
   text-align: left;
   overflow-y: auto;
-  height: 100%; /* Ensure full height */
+  height: 100vh; /* Ensure full height */
 }
 
 /* Main Content Area */
@@ -126,7 +129,7 @@ button:hover {
   padding: 20px;
   background-color: #f0f0f0;
   overflow-y: auto;
-  height: 100%; /* Ensure content area aligns with sidebars */
+  height: 100vh; /* Ensure the content area grows and matches sidebars */
 }
 
 /* Sidebar Tabs */
