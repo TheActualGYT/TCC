@@ -12,8 +12,8 @@ document.getElementById("main-page-btn").addEventListener("click", function() {
 
 document.getElementById("leaderboard-btn").addEventListener("click", function() {
   // Show leaderboard content and hide other content
-  document.getElementById("leaderboard-content").classList.add("active");
   document.getElementById("main-page-content").classList.remove("active");
+  document.getElementById("leaderboard-content").classList.add("active");
   document.getElementById("sink-content").classList.remove("active");
   document.getElementById("nightshade-content").classList.remove("active");
 
