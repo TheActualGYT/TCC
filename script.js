@@ -26,5 +26,3 @@ function setActiveTab(tabId) {
   // Add 'active' class to the clicked tab
   document.getElementById(tabId).classList.add("active");
 }
-
-document.getElementById("leaderboard-btn").classList.add("change-color");  // Add class to change color
