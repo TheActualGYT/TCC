@@ -190,3 +190,9 @@ button:hover {
 .left-sidebar::-webkit-scrollbar-thumb {
   background: transparent; /* No thumb (the draggable part) */
 }
+
+body {
+  overflow-x: hidden; /* Remove horizontal scrollbar */
+  overflow-y: auto; /* Allow vertical scrollbar if needed */
+  margin: 0;
+}
