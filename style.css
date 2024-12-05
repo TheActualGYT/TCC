@@ -188,5 +188,5 @@ body {
 .divider-line {
   width: 100%;
   border-top: 2px solid #fff; /* Dark border color */
-  margin: 8px 0; /* Spacing above and below the line */
+  margin: 14px 0; /* Spacing above and below the line */
 }
