@@ -197,7 +197,7 @@ body {
 .right-sidebar {
   width: 20%; /* Adjust width as needed */
   background-color: #f4f4f4; /* Light gray background */
-  color: #333; /* Dark text for readability */
+  color: #999999; /* Dark text for readability */
   padding: 20px; /* Space inside the sidebar */
   border-left: 3px solid #fff; /* White border separating it from main content */
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
