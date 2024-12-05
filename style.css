@@ -124,7 +124,7 @@ button:hover {
   color: white; /* White text */
   font-family: 'Lexend', sans-serif; /* Ensure Lexend font */
   font-weight: bold; /* Bold the text */
-  border: none; /* No border */
+  border: 1px solid #fff;
   padding: 10px 0; /* Vertical padding */
   padding-left: 10px; /* Add left padding to create a gap */
   text-align: left; /* Align text to the left */
