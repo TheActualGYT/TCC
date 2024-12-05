@@ -43,6 +43,7 @@ button:hover {
 /* Style for the top bar */
 .top-bar {
   background-color: #333; /* Dark background color */
+  justify-content: space-between;
   color: #fff; /* White text color */
   width: 100%; /* Make it span the full width of the page */
   height: 50px; /* Adjust height for your preference */
@@ -51,6 +52,9 @@ button:hover {
   padding: 0 10px; /* Add horizontal padding */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for a subtle effect */
   border-bottom: 3px solid #fff; /* White border at the bottom */
+  z-index: 1000; /* Make sure it stays on top */
+  position: fixed; /* Fixes the top bar in place */
+  width: 100%; /* Ensure it spans the entire width */
 }
 
 /* Style for the text inside the top bar */
@@ -98,6 +102,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   height: 100vh;
+  margin-top: 60px; /* Add space so the main content doesn't overlap the top bar */
 }
 
 .left-sidebar {
@@ -110,7 +115,7 @@ button:hover {
   flex-direction: column; /* Ensure the buttons are stacked vertically */
   justify-content: flex-start; /* Align the buttons to the top */
   position: fixed; /* Keeps the sidebar fixed */
-  top: 0;
+  top: 60px; /* Keep it below the top bar */
   bottom: 0;
   left: 0;
 }
@@ -121,6 +126,7 @@ button:hover {
   background-color: #f0f0f0;
   margin-left: 15%; /* Ensure space for the left sidebar */
   overflow-y: auto; /* Ensure scrollable content if it overflows */
+  margin-top: 60px; /* Add margin to prevent overlapping with the fixed top bar */
 }
 
 .right-sidebar {
@@ -131,7 +137,7 @@ button:hover {
   flex-direction: column;
   justify-content: flex-start;
   position: fixed; /* Fixed position */
-  top: 0;
+  top: 60px; /* Keep it below the top bar */
   bottom: 0;
   right: 0; /* Position it on the right side */
   border-left: 3px solid #ccc;
