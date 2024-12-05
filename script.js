@@ -24,6 +24,7 @@ document.getElementById("leaderboard-btn").addEventListener("click", function() 
 // Add event listener for the new "#1 - Sink" tab
 document.getElementById("sink-btn").addEventListener("click", function() {
   // Show sink content and hide other content
+  document.getElementById("nightshade-content").classList.add("active");
   document.getElementById("sink-content").classList.add("active");
   document.getElementById("main-page-content").classList.remove("active");
   document.getElementById("leaderboard-content").classList.remove("active");
