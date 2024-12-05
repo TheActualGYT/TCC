@@ -114,8 +114,7 @@ button:hover {
   width: 15%; /* Set width to 15% */
   background-color: #999999;
   color: #ffffff;
-  padding-top: 10px; /* Reduce this value to move the heading upward */
-  padding: 10px;
+  padding: 20px;
   border-left: 3px solid #fff;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
   text-align: left;
