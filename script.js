@@ -1,4 +1,4 @@
-// Function to switch between content and update active tabs
+// Function to switch between content and update active tabs for the first two buttons
 document.getElementById("main-page-btn").addEventListener("click", function () {
   document.getElementById("content").innerHTML = `
     <h1>Welcome to The TCC List</h1>
@@ -35,11 +35,13 @@ for (let i = 1; i <= 75; i++) {
 
   // Add click functionality to dynamically show content
   newButton.addEventListener("click", function () {
+    // Display content for the clicked button
+    const buttonNumber = i + 2; // The button number
     document.getElementById("content").innerHTML = `
-      <h1>Content for Button ${i + 2}</h1>
-      <p>This is the content for Button ${i + 2}.</p>
+      <h1>This is button #${buttonNumber}</h1>
+      <p>This is the content for button #${buttonNumber}.</p>
     `;
-    setActiveTab(newButton.id);
+    setActiveTab(newButton.id); // Set the active tab to the clicked button
   });
 
   // Append the button to the sidebar
