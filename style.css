@@ -184,9 +184,3 @@ body {
   overflow-y: hidden; /* Allow vertical scrollbar if needed */
   margin: 0;
 }
-
-/* Add a small line below the Leaderboard tab button for separation */
-#leaderboard-btn {
-  border-bottom: 2px solid #000; /* Black line, adjust color/thickness as needed */
-  padding-bottom: 5px; /* Optional: Adds space below the text */
-}
