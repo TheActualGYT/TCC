@@ -19,21 +19,29 @@
     <div class="left-sidebar">
       <button id="main-page-btn" class="tab-button active">Main Page</button>
       <button id="leaderboard-btn" class="tab-button">Leaderboard</button>
-      <!-- Dynamically added buttons for 75 additional tabs can go here -->
     </div>
 
     <!-- Main Content Area -->
     <div class="main-content">
-      <div id="content">
-        <!-- Main content will go here (depending on active tab) -->
+      <!-- Main Page Content -->
+      <div id="main-page-content" class="tab-content active">
+        <h1>Welcome to The TCC List</h1>
+        <p>This is the main content of your site.</p>
+      </div>
+
+      <div class="right-sidebar">
+        <!-- Right sidebar content -->
+        <h2>Right Sidebar</h2>
+        <p>Additional content can go here.</p>
       </div>
     </div>
-  </div>
-
-  <!-- Right Sidebar (Fixed) -->
-  <div class="right-sidebar">
-    <h2>Right Sidebar</h2>
-    <p>This is the content of the right sidebar.</p>
+      
+      <!-- Leaderboard Content -->
+      <div id="leaderboard-content" class="tab-content">
+        <h1>Leaderboard</h1>
+        <p>The leaderboard content will go here.</p>
+      </div>
+    </div>
   </div>
 
   <!-- Link to the external JavaScript file -->
