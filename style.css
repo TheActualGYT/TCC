@@ -124,6 +124,7 @@ button:hover {
 
 .right-sidebar h2 {
   margin-top: 10px; /* Negative value to move the heading up */
+  text-decoration: underline;
 }
 
 /* Main Content Area */
