@@ -1,95 +1,20 @@
-// Function to switch between content and update active tabs
-document.getElementById("main-page-btn").addEventListener("click", function() {
-  // Show main page content and hide other content
-  document.getElementById("main-page-content").classList.add("active");
-  document.getElementById("leaderboard-content").classList.remove("active");
-  document.getElementById("changelog-content").classList.remove("active");
-  document.getElementById("sink-content").classList.remove("active");
-  document.getElementById("nightshade-content").classList.remove("active");
-  document.getElementById("timor-content").classList.remove("active");
+function switchTab(buttonId, contentId) {
+  const contentIds = ["main-page-content", "leaderboard-content", "changelog-content", "sink-content", "nightshade-content", "timor-content"];
+  const buttonIds = ["main-page-btn", "leaderboard-btn", "changelog-btn", "sink-btn", "nightshade-btn", "timor-btn"];
 
-  // Set the active tab
-  setActiveTab("main-page-btn");
-});
+  // Update content visibility
+  contentIds.forEach(id => document.getElementById(id).classList.remove("active"));
+  document.getElementById(contentId).classList.add("active");
 
-document.getElementById("leaderboard-btn").addEventListener("click", function() {
-  // Show leaderboard content and hide other content
-  document.getElementById("main-page-content").classList.remove("active");
-  document.getElementById("leaderboard-content").classList.add("active");
-  document.getElementById("changelog-content").classList.remove("active");
-  document.getElementById("sink-content").classList.remove("active");
-  document.getElementById("nightshade-content").classList.remove("active");
-  document.getElementById("timor-content").classList.remove("active");
-
-  // Set the active tab
-  setActiveTab("leaderboard-btn");
-});
-
-document.getElementById("leaderboard-btn").addEventListener("click", function() {
-  // Show changelog content and hide other content
-  document.getElementById("main-page-content").classList.remove("active");
-  document.getElementById("leaderboard-content").classList.remove("active");
-  document.getElementById("changelog-content").classList.add("active");
-  document.getElementById("sink-content").classList.remove("active");
-  document.getElementById("nightshade-content").classList.remove("active");
-  document.getElementById("timor-content").classList.remove("active");
-
-  // Set the active tab
-  setActiveTab("changelog-btn");
-});
-
-// Add event listener for the new "#1 - Sink" tab
-document.getElementById("sink-btn").addEventListener("click", function() {
-  // Show sink content and hide other content
-  document.getElementById("main-page-content").classList.remove("active");
-  document.getElementById("leaderboard-content").classList.remove("active");
-  document.getElementById("changelog-content").classList.remove("active");
-  document.getElementById("sink-content").classList.add("active");
-  document.getElementById("nightshade-content").classList.remove("active");
-  document.getElementById("timor-content").classList.remove("active");
-
-  // Set the active tab
-  setActiveTab("sink-btn");
-});
-
-// **CORRECTED EVENT LISTENER** for the "#2 - Nightshade" tab
-document.getElementById("nightshade-btn").addEventListener("click", function() {
-  // Show nightshade content and hide other content
-  document.getElementById("main-page-content").classList.remove("active");
-  document.getElementById("leaderboard-content").classList.remove("active");
-  document.getElementById("changelog-content").classList.remove("active");
-  document.getElementById("sink-content").classList.remove("active");
-  document.getElementById("nightshade-content").classList.add("active");
-  document.getElementById("timor-content").classList.remove("active");
-
-  // Set the active tab
-  setActiveTab("nightshade-btn");
-});
-
-// **CORRECTED EVENT LISTENER** for the "#2 - Nightshade" tab
-document.getElementById("timor-btn").addEventListener("click", function() {
-  // Show nightshade content and hide other content
-  document.getElementById("main-page-content").classList.remove("active");
-  document.getElementById("leaderboard-content").classList.remove("active");
-  document.getElementById("changelog-content").classList.remove("active");
-  document.getElementById("sink-content").classList.remove("active");
-  document.getElementById("nightshade-content").classList.remove("active");
-  document.getElementById("timor-content").classList.add("active");
-
-  // Set the active tab
-  setActiveTab("timor-btn");
-});
-
-// Function to set the active tab style
-function setActiveTab(tabId) {
-  // Remove 'active' class from all tabs
-  document.getElementById("main-page-btn").classList.remove("active");
-  document.getElementById("leaderboard-btn").classList.remove("active");
-  document.getElementById("changelog-content").classList.remove("active");
-  document.getElementById("sink-btn").classList.remove("active");
-  document.getElementById("nightshade-btn").classList.remove("active");
-  document.getElementById("timor-btn").classList.remove("active");
-
-  // Add 'active' class to the clicked tab
-  document.getElementById(tabId).classList.add("active");
+  // Update active tab styles
+  buttonIds.forEach(id => document.getElementById(id).classList.remove("active"));
+  document.getElementById(buttonId).classList.add("active");
 }
+
+// Add event listeners
+document.getElementById("main-page-btn").addEventListener("click", () => switchTab("main-page-btn", "main-page-content"));
+document.getElementById("leaderboard-btn").addEventListener("click", () => switchTab("leaderboard-btn", "leaderboard-content"));
+document.getElementById("changelog-btn").addEventListener("click", () => switchTab("changelog-btn", "changelog-content"));
+document.getElementById("sink-btn").addEventListener("click", () => switchTab("sink-btn", "sink-content"));
+document.getElementById("nightshade-btn").addEventListener("click", () => switchTab("nightshade-btn", "nightshade-content"));
+document.getElementById("timor-btn").addEventListener("click", () => switchTab("timor-btn", "timor-content"));
