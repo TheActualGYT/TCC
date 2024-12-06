@@ -130,7 +130,7 @@ button:hover {
 .main-content {
   width: 70%; /* Set width to 70% */
   padding: 20px;
-  background-color: #f0f0f0;
+  background-color: #CCCCCC;
   overflow-y: auto;
   height: 100vh; /* Ensure the content area grows and matches sidebars */
 }
