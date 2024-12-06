@@ -193,3 +193,15 @@ button:hover {
     width: 100%;
   }
 }
+
+/* Ensure hyperlink does not change color and is not underlined */
+a.bold-text {
+  color: inherit; /* Inherit the color from the surrounding text */
+  text-decoration: none; /* Remove the underline */
+}
+
+/* On hover, show underline without changing the color */
+a.bold-text:hover {
+  text-decoration: underline; /* Add the underline */
+  color: inherit; /* Ensure the color doesn't change */
+}
