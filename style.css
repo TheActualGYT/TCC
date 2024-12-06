@@ -162,8 +162,8 @@ button:hover {
 }
 
 .button-icon {
-  width: 40px; /* Adjust icon size */
-  height: 20px;
+  width: 30px; /* Adjust icon size */
+  height: 30px;
   margin-right: 5px; /* Add space between icon and text */
 }
 
