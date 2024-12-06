@@ -198,6 +198,7 @@ button:hover {
 a.bold-text {
   color: inherit; /* Inherit the color from the surrounding text */
   text-decoration: none; /* Remove the underline */
+  font-weight: bold; /* Make the text bold */
 }
 
 /* On hover, show underline without changing the color */
