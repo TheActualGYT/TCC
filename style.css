@@ -114,7 +114,6 @@ button:hover {
   width: 15%; /* Set width to 15% */
   background-color: #999999;
   color: #ffffff;
-  font-weight: bold;
   padding: 10px;
   border-left: 3px solid #fff;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
