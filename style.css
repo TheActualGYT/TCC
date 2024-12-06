@@ -147,7 +147,7 @@ button:hover {
   border: 1px solid #fff;
   display: flex; /* Enable Flexbox for alignment */
   align-items: center; /* Center items vertically */
-  padding: 0 10px; /* Adjust horizontal padding */
+  padding: 0 5px; /* Adjust horizontal padding */
   text-align: left; /* Align text to the left */
   font-size: 16px;
   cursor: pointer;
