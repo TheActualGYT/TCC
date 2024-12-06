@@ -147,7 +147,7 @@ button:hover {
   border: 1px solid #fff;
   display: flex; /* Enable Flexbox for alignment */
   align-items: center; /* Center items vertically */
-  padding: 0 5px; /* Adjust horizontal padding */
+  padding: 0 10px; /* Adjust horizontal padding */
   text-align: left; /* Align text to the left */
   font-size: 16px;
   cursor: pointer;
@@ -161,6 +161,17 @@ button:hover {
 
 .tab-button.active {
   background-color: #c93030;
+}
+
+/* Buttons with Images */
+.tab-button.has-image {
+  padding: 0 5px; /* Adjust padding for buttons with images */
+}
+
+.tab-button.has-image .button-icon {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0; /* Prevent the image from shrinking */
 }
 
 .button-icon {
