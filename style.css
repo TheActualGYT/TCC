@@ -117,7 +117,7 @@ button:hover {
   padding: 10px;
   border-left: 3px solid #fff;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-  text-align: left;
+  text-align: center;
   overflow-y: auto;
   height: 100vh; /* Ensure full height */
 }
