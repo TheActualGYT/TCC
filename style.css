@@ -164,8 +164,8 @@ button:hover {
 }
 
 .button-icon {
-  width: 35px; /* Adjust icon size */
-  height: 35px;
+  width: 30px; /* Adjust icon size */
+  height: 30px;
   flex-shrink: 0; /* Prevent icon from shrinking */
 }
 
