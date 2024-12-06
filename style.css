@@ -127,20 +127,6 @@ button:hover {
   text-decoration: underline;
 }
 
-.right-sidebar {
-  position: relative; /* Enable positioning for child elements */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Push the content to the top and bottom */
-  height: 100%; /* Ensure the sidebar spans full height */
-}
-
-.bottom-right {
-  margin-top: auto; /* Push the container to the bottom */
-  text-align: right; /* Align text to the right */
-  padding: 10px; /* Add some spacing */
-}
-
 /* Main Content Area */
 .main-content {
   width: 70%; /* Set width to 70% */
