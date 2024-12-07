@@ -129,15 +129,15 @@ button:hover {
 
 /* Main Content Area */
 .main-content {
-  width: 70%; /* Set width to 70% */
+  position: relative; /* Makes it a reference point for absolute positioning */
+  overflow-y: auto; /* Allow vertical scrolling if content exceeds the height */
+  height: 100vh;
   padding: 20px;
   background-color: #E0E0E0;
-  overflow-y: auto;
-  height: 100vh; /* Ensure the content area grows and matches sidebars */
-  background-image: url('mcbackground.png'); /* Path to your image */
-  background-size: cover; /* Ensures the image covers the entire area */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-image: url('mcbackground.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Sidebar Tabs */
@@ -243,18 +243,20 @@ a.bold-text:hover {
 
 .level-info {
   position: absolute;
-  top: 20px; /* Distance from the top of the content area */
-  left: 20px; /* Distance from the left of the content area */
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  top: 20px;
+  left: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque for readability */
   padding: 10px;
-  border-radius: 5px; /* Rounded corners */
-  font-family: 'Lexend', sans-serif; /* Match the site's font */
-  color: #000; /* Text color */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  z-index: 10; /* Keep above other elements */
+  border-radius: 5px;
+  font-family: 'Lexend', sans-serif;
+  color: #333; /* More legible on a light background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 50; /* Higher to avoid being covered */
+  max-width: calc(100% - 40px); /* Prevents it from overflowing on smaller screens */
 }
 
 .level-info p {
-  margin: 5px 0; /* Spacing between lines */
-  font-size: 14px; /* Font size */
+  margin: 5px 0;
+  font-size: 14px;
+  line-height: 1.4; /* Improves readability */
 }
