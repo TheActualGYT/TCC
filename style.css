@@ -139,6 +139,7 @@ button:hover {
   margin-left: 15%; /* Leave space for the left sidebar */
   padding: 20px;
   height: 100vh;
+  width: 70%;
   background-color: #E0E0E0;
   background-image: url('mcbackground.png'); /* Ensure your image displays correctly */
   background-size: cover;
