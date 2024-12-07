@@ -272,11 +272,11 @@ a.bold-text:hover {
 }
 
 .level-info h1 {
-  font-size: 40px;
+  font-size: 60px;
   margin-top: 0; /* Remove top margin from h1 */
-  margin-bottom: 10px; /* Adjust space below the title */
+  margin-bottom: 5px; /* Adjust space below the title */
 }
 
 .level-info strong {
-  font-weight: 900; /* Makes the bold text much thicker */
+  font-weight: 1100; /* Makes the bold text much thicker */
 }
