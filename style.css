@@ -240,3 +240,21 @@ a.bold-text:hover {
   text-decoration: underline; /* Add the underline */
   color: inherit; /* Ensure the color doesn't change */
 }
+
+.level-info {
+  position: absolute;
+  top: 20px; /* Distance from the top of the content area */
+  left: 20px; /* Distance from the left of the content area */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  padding: 10px;
+  border-radius: 5px; /* Rounded corners */
+  font-family: 'Lexend', sans-serif; /* Match the site's font */
+  color: #000; /* Text color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  z-index: 10; /* Keep above other elements */
+}
+
+.level-info p {
+  margin: 5px 0; /* Spacing between lines */
+  font-size: 14px; /* Font size */
+}
