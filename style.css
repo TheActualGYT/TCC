@@ -254,7 +254,7 @@ a.bold-text:hover {
   left: 20px;
   width: 300px; /* Set a fixed width */
   height: auto; /* Let the height adjust to content */
-  background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque for readability */
+  background-color: rgba(255, 255, 255, 0.75); /* Slightly opaque for readability */
   padding: 10px;
   border-radius: 5px;
   font-family: 'Lexend', sans-serif;
