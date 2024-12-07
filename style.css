@@ -252,8 +252,8 @@ a.bold-text:hover {
   position: absolute;
   top: 20px;
   left: 20px;
-  width: auto; /* Let the height adjust to content */
-  height: 700px; /* Let the height adjust to content */
+  width: 700px; /* Let the height adjust to content */
+  height: auto; /* Let the height adjust to content */
   background-color: rgba(255, 255, 255, 0.75); /* Slightly opaque for readability */
   padding: 8px 15px 8px 15px; /* Expands top and left padding */
   border-radius: 5px;
