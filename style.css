@@ -277,6 +277,6 @@ a.bold-text:hover {
   margin-bottom: 10px; /* Adjust space below the title */
 }
 
-.level-info .bold-text {
-  font-weight: 1300; /* Makes the bold text much thicker */
+.level-info strong {
+  font-weight: 900; /* Makes the bold text much thicker */
 }
