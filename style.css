@@ -252,18 +252,17 @@ a.bold-text:hover {
   position: absolute;
   top: 20px;
   left: 20px;
-  background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque for readability */
-  padding: 10px;
-  border-radius: 5px;
+  background-color: transparent; /* Remove background */
+  padding: 0; /* Remove padding to eliminate the bubble effect */
   font-family: 'Lexend', sans-serif;
-  color: #333; /* More legible on a light background */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  z-index: 50; /* Higher to avoid being covered */
-  max-width: calc(100% - 40px); /* Prevents it from overflowing on smaller screens */
+  color: #fff; /* Change text color to contrast with the background */
+  box-shadow: none; /* Remove any shadow to keep it clean */
+  z-index: 50; /* Keep it on top */
+  max-width: calc(100% - 40px); /* Ensure it doesn't overflow */
 }
 
 .level-info p {
   margin: 5px 0;
   font-size: 14px;
-  line-height: 1.4; /* Improves readability */
+  line-height: 1.4;
 }
