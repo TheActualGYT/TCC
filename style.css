@@ -121,6 +121,7 @@ button:hover {
   color: white;
   padding: 15px;
   border-left: 3px solid #fff;
+  border-top: 3px solid #fff;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   overflow-y: auto; /* Scroll if content overflows */
