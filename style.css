@@ -265,9 +265,14 @@ a.bold-text:hover {
   text-align: left; /* Left-aligned text */
 }
 
-
 .level-info p {
   margin: 5px 0;
   font-size: 14px;
   line-height: 1.4;
+}
+
+
+.level-info h1 {
+  margin-top: 0; /* Remove top margin from h1 */
+  margin-bottom: 10px; /* Adjust space below the title */
 }
