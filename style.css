@@ -267,12 +267,12 @@ a.bold-text:hover {
 
 .level-info p {
   margin: 5px 0;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1.4;
 }
 
-
 .level-info h1 {
+  font-size: 40px;
   margin-top: 0; /* Remove top margin from h1 */
   margin-bottom: 10px; /* Adjust space below the title */
 }
