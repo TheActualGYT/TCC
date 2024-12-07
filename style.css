@@ -92,9 +92,9 @@ button:hover {
 /* Layout */
 .main-container {
   display: flex;
-  min-height: 100vh; /* Take full viewport height */
-  height: 100%; /* Ensure it takes the full height */
-  flex-wrap: nowrap; /* Prevent wrapping */
+  flex-direction: row;
+  margin-top: 50px; /* Matches the height of the top bar */
+  height: calc(100vh - 50px); /* Full height minus top bar height */
 }
 
 /* Left Sidebar */
@@ -125,6 +125,8 @@ button:hover {
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   overflow-y: auto; /* Scroll if content overflows */
+  position: relative; /* For proper stacking */
+  z-index: 10;
 }
 
 .right-sidebar h2 {
@@ -134,17 +136,16 @@ button:hover {
 
 /* Main Content Area */
 .main-content {
-  position: relative; /* Set as the reference for `.level-info` */
-  margin-right: 15%; /* Leave space for the fixed right sidebar */
-  margin-left: 15%; /* Leave space for the left sidebar */
+  width: 70%;
   padding: 20px;
-  height: 100vh;
   background-color: #E0E0E0;
-  background-image: url('mcbackground.png'); /* Ensure your image displays correctly */
-  background-size: cover;
-  background-position: center;
+  overflow-y: auto;
+  height: 100%; /* Ensure it takes up the full height */
+  background-image: url('mcbackground.png');
+  background-size: cover; /* Ensures the image covers the area */
+  background-position: center; /* Centers the background image */
   background-repeat: no-repeat;
-  overflow-y: auto; /* Allow vertical scrolling */
+
 }
 
 /* Sidebar Tabs */
