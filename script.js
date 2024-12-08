@@ -1,6 +1,6 @@
 function switchTab(buttonId, contentId) {
-  const contentIds = ["main-page-content", "leaderboard-content", "changelog-content", "sink-content", "nightshade-content", "timor-content"];
-  const buttonIds = ["main-page-btn", "leaderboard-btn", "changelog-btn", "sink-btn", "nightshade-btn", "timor-btn"];
+  const contentIds = ["main-page-content", "leaderboard-content", "changelog-content", "sink-content", "nightshade-content", "timor-content", "the-moon-below-content"];
+  const buttonIds = ["main-page-btn", "leaderboard-btn", "changelog-btn", "sink-btn", "nightshade-btn", "timor-btn", "the-moon-below-btn"];
 
   // Update content visibility
   contentIds.forEach(id => document.getElementById(id).classList.remove("active"));
@@ -18,3 +18,4 @@ document.getElementById("changelog-btn").addEventListener("click", () => switchT
 document.getElementById("sink-btn").addEventListener("click", () => switchTab("sink-btn", "sink-content"));
 document.getElementById("nightshade-btn").addEventListener("click", () => switchTab("nightshade-btn", "nightshade-content"));
 document.getElementById("timor-btn").addEventListener("click", () => switchTab("timor-btn", "timor-content"));
+document.getElementById("the-moon-below-btn").addEventListener("click", () => switchTab("the-moon-below-btn", "the-moon-below-content"));
