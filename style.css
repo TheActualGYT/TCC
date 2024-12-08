@@ -107,6 +107,8 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  overflow-y: auto; /* Enable vertical scrolling */
+  scrollbar-width: thin; /* For modern browsers, make the scrollbar thinner */
   height: 100vh; /* Ensure full height */
 }
 
