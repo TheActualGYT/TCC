@@ -314,13 +314,14 @@ a.bold-text:hover {
 
 /* Style for the Victor's List Bubble */
 .victors-list {
-  width: 700px;
+  width: 700px; /* Fixed width */
   background-color: rgba(255, 255, 255, 0.75); /* Slightly opaque for readability */
   border-radius: 5px; /* Rounded corners to give the bubble effect */
   padding: 5px 15px 15px 15px; /* Set top padding to 0 to remove the gap */
   text-align: left;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
   margin-top: 315px; /* Space between the level info and victor's list */
+  overflow: hidden; /* Prevents content from overflowing */
 }
 
 /* Increase the size of the Victor's List title */
@@ -334,10 +335,12 @@ a.bold-text:hover {
 
 /* Table styling inside the bubble */
 .victors-table {
-  width: 100%; /* Ensure the table fills the width of the container */
+  width: 100%; /* Ensure the table fills the width of the container but doesn't go beyond */
   table-layout: fixed; /* Enforce fixed column width layout */
   text-align: left;
   border-collapse: collapse;
+  max-width: 100%; /* Allow the table to resize within its container */
+  box-sizing: border-box; /* Ensure padding is included in the width calculation */
 }
 
 /* Adjust padding to diminish the gap between title and table */
@@ -351,14 +354,12 @@ a.bold-text:hover {
 /* Header styling */
 .victors-table th {
   background-color: #c93030;
-  text-align: left;
   color: white;
 }
 
 /* Link styling */
 .victors-table td a {
   color: #c93030;
-  text-align: left;
   font-weight: bold;
   text-decoration: none;
 }
