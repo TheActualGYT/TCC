@@ -316,50 +316,60 @@ a.bold-text:hover {
 .victors-list {
   width: 1150px;
   background-color: rgba(255, 255, 255, 0.75); /* Slightly opaque for readability */
-  border-radius: 5px; /* Rounded corners to give the bubble effect */
-  padding: 5px 15px 8px 15px; /* Set top padding to 0 to remove the gap */
+  border-radius: 15px; /* Rounded corners to give the bubble effect */
+  padding: 10px 20px 15px 20px; /* Adjust padding for balance */
   text-align: left;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
-  margin-top: 315px; /* Space between the level info and victor's list */
+  margin-top: 40px; /* Adjusted margin for better spacing */
+  margin-bottom: 20px; /* Add space after the victor's list */
+  overflow: hidden; /* Ensures no content overflows */
 }
 
 /* Increase the size of the Victor's List title */
 .victors-list h2 {
-  font-size: 45px; /* Adjust the size to make the title larger */
+  font-size: 40px; /* Adjusted size for better fit */
   font-weight: bold; /* Make it bold for emphasis */
   color: #333; /* Darker color for better readability */
   margin-top: 0; /* Remove the default margin at the top of the h2 */
-  margin-bottom: 5px; /* Decrease the space below the title */
+  margin-bottom: 15px; /* Increased space below the title */
 }
 
 /* Table styling inside the bubble */
 .victors-table {
-  width: 1150px;
+  width: 100%; /* Ensure the table stretches across the container */
   text-align: left;
   border-collapse: collapse;
+  margin-top: 10px; /* Space above the table */
 }
 
 /* Adjust padding to diminish the gap between title and table */
 .victors-table th, .victors-table td {
-  padding: 8px 10px; /* Reduce padding between the rows and columns */
+  padding: 12px 15px; /* Adjust padding for more spacing */
   text-align: left;
   border: 1px solid #ddd;
+  font-size: 16px; /* Slightly larger font size */
 }
 
 /* Header styling */
 .victors-table th {
-  background-color: #4CAF50;
-  text-align: left;
-  color: white;
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  font-size: 18px; /* Larger header text */
+  text-align: center; /* Center align header text */
 }
 
 /* Link styling */
 .victors-table td a {
-  color: #4CAF50;
-  text-align: left;
+  color: #4CAF50; /* Green links */
   text-decoration: none;
 }
 
 .victors-table td a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Add a slight hover effect for table rows for better UX */
+.victors-table tr:hover {
+  background-color: #f1f1f1; /* Slight highlight on hover */
+  cursor: pointer; /* Pointer cursor on hover */
 }
