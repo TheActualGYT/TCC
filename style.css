@@ -317,7 +317,7 @@ a.bold-text:hover {
   width: 1150px;
   background-color: #f5f5f5; /* Light background color similar to the level-info */
   border-radius: 5px; /* Rounded corners to give the bubble effect */
-  padding: 0px 0px 0px 15px;
+  padding: 5px 15px 8px 15px; /* Expands top and left padding */
   text-align: left;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
   margin-top: 315px; /* Space between the level info and victor's list */
