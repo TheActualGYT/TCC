@@ -350,14 +350,14 @@ a.bold-text:hover {
 
 /* Header styling */
 .victors-table th {
-  background-color: #4CAF50;
+  background-color: #c93030;
   text-align: left;
   color: white;
 }
 
 /* Link styling */
 .victors-table td a {
-  color: #4CAF50;
+  color: #c93030;
   text-align: left;
   text-decoration: none;
 }
