@@ -379,3 +379,7 @@ a.bold-text:hover {
 .victors-table th:nth-child(3), .victors-table td:nth-child(3) {
   width: 100px; /* Adjust the width of the third column */
 }
+
+.victors-table th:nth-child(4), .victors-table td:nth-child(4) {
+  width: 100px; /* Adjust the width of the third column */
+}
