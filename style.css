@@ -252,7 +252,7 @@ a.bold-text:hover {
   position: absolute;
   top: 20px;
   left: 20px;
-  width: 50%;
+  width: 52%;
   height: auto; /* Let the height adjust to content */
   background-color: rgba(255, 255, 255, 0.75); /* Slightly opaque for readability */
   padding: 5px 15px 8px 15px; /* Expands top and left padding */
@@ -314,7 +314,7 @@ a.bold-text:hover {
 
 /* Style for the Victor's List Bubble */
 .victors-list {
-  width: 50%;
+  width: 52%;
   background-color: rgba(255, 255, 255, 0.75); /* Slightly opaque for readability */
   border-radius: 5px; /* Rounded corners to give the bubble effect */
   padding: 5px 15px 15px 15px; /* Set top padding to 0 to remove the gap */
