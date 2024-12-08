@@ -284,7 +284,7 @@ a.bold-text:hover {
 .level-image {
   position: absolute; /* Position it relative to the nearest positioned ancestor */
   top: 20px; /* Adjust the distance from the top */
-  right: 100px; /* Move it to the right side of the page */
+  right: 80px; /* Move it to the right side of the page */
   z-index: 50; /* Ensure it stays above background elements */
 }
 
