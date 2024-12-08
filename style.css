@@ -289,8 +289,8 @@ a.bold-text:hover {
 }
 
 .level-image img {
-  width: 400px; /* Set the width of the image (increase size) */
+  width: 600px; /* Set the width of the image (increase size) */
   height: auto; /* Maintain the aspect ratio */
-  border-radius: 10px; /* Optional: Add rounded corners */
+  border-radius: 5px; /* Optional: Add rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for better visibility */
 }
