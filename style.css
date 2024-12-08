@@ -355,3 +355,13 @@ a.bold-text:hover {
   word-wrap: break-word;
   min-width: 100px; /* Ensure that columns have a minimum width */
 }
+
+.victors-table th:nth-child(1) {
+  width: 100px; /* First column takes up 40% of the table width */
+}
+.victors-table th:nth-child(2) {
+  width: 100px; /* Second column takes up 30% */
+}
+.victors-table th:nth-child(3) {
+  width: 100px; /* Third column takes up 30% */
+}
