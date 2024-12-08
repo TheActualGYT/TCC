@@ -292,5 +292,6 @@ a.bold-text:hover {
   width: 520px; /* Set the width of the image (increase size) */
   height: auto; /* Maintain the aspect ratio */
   border-radius: 5px; /* Optional: Add rounded corners */
+  border: 3px solid white; /* Add a white border with a thickness of 5px */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for better visibility */
 }
