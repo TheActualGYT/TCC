@@ -378,3 +378,9 @@ a.bold-text:hover {
 .victors-table th:nth-child(3), .victors-table td:nth-child(3) {
   width: 100px !important; /* Adjust the width of the third column */
 }
+
+/* Make sure all columns respect the width */
+.victors-table td {
+  word-wrap: break-word;
+  max-width: 100px !important;
+}
