@@ -31,4 +31,4 @@ document.getElementById("black-blizzard-btn").addEventListener("click", () => sw
 document.getElementById("berserk-btn").addEventListener("click", () => switchTab("berserk-btn", "berserk-content"));
 document.getElementById("hyper-paradox-btn").addEventListener("click", () => switchTab("hyper-paradox-btn", "hyper-paradox-content"));
 document.getElementById("dmg-ctrl-btn").addEventListener("click", () => switchTab("dmg-ctrl-btn", "dmg-ctrl-content"));
-document.getElementById("dmg-ctrl-btn").addEventListener("click", () => switchTab("balengu-vortex-btn", "balengu-vortex-content"));
+document.getElementById("balengu-vortex-btn").addEventListener("click", () => switchTab("balengu-vortex-btn", "balengu-vortex-content"));
