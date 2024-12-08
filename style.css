@@ -323,6 +323,14 @@ a.bold-text:hover {
   margin-top: 315px; /* Space between the level info and victor's list */
 }
 
+/* Increase the size of the Victor's List title */
+.victors-list h2 {
+  font-size: 36px; /* Adjust the size to make the title larger */
+  font-weight: bold; /* Make it bold for emphasis */
+  color: #333; /* Darker color for better readability */
+  margin-bottom: 20px; /* Space below the title */
+}
+
 /* Table styling inside the bubble */
 .victors-table {
   width: 1150px;
