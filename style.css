@@ -325,12 +325,13 @@ a.bold-text:hover {
 /* Table styling inside the bubble */
 .victors-table {
   width: 1150px;
+  text-align: left;
   border-collapse: collapse;
 }
 
 .victors-table th, .victors-table td {
   padding: 10px;
-  text-align: center;
+  text-align: left;
   border: 1px solid #ddd;
 }
 
