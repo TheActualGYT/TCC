@@ -306,7 +306,7 @@ a.bold-text:hover {
 
 .level-video iframe {
   width: 507px; /* Adjust the width to match the image size */
-  height: 281px; /* Adjust the height as needed */
+  height: 285px; /* Adjust the height as needed */
   border-radius: 5px; /* Optional: Add rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
 }
