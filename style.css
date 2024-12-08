@@ -376,5 +376,5 @@ a.bold-text:hover {
 }
 
 .victors-table th:nth-child(3), .victors-table td:nth-child(3) {
-  width: 300px; /* Adjust the width of the third column */
+  width: 125px; /* Adjust the width of the third column */
 }
