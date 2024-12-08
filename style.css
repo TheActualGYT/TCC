@@ -363,3 +363,16 @@ a.bold-text:hover {
 .victors-table td a:hover {
   text-decoration: underline;
 }
+
+/* Column-specific width adjustments */
+.victors-table th:nth-child(1), .victors-table td:nth-child(1) {
+  width: 50px; /* Adjust the width of the first column */
+}
+
+.victors-table th:nth-child(2), .victors-table td:nth-child(2) {
+  width: 50px; /* Adjust the width of the second column */
+}
+
+.victors-table th:nth-child(3), .victors-table td:nth-child(3) {
+  width: 50px; /* Adjust the width of the third column */
+}
