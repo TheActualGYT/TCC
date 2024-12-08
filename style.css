@@ -335,6 +335,7 @@ a.bold-text:hover {
 /* Table styling inside the bubble */
 .victors-table {
   width: 100%; /* Ensure the table fills the width of the container */
+  table-layout: fixed; /* Enforce fixed column width layout */
   text-align: left;
   border-collapse: collapse;
 }
@@ -375,5 +376,5 @@ a.bold-text:hover {
 }
 
 .victors-table th:nth-child(3), .victors-table td:nth-child(3) {
-  width: 125px; /* Adjust the width of the third column */
+  width: 300px; /* Adjust the width of the third column */
 }
