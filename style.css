@@ -357,7 +357,7 @@ a.bold-text:hover {
 
 /* Link styling */
 .victors-table td a {
-  color: #c93030;
+  color: blue;
   text-align: left;
   text-decoration: none;
 }
