@@ -312,31 +312,37 @@ a.bold-text:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
 }
 
+/* Style for the Victor's List Bubble */
 .victors-list {
-  margin-top: 300px; /* Adds space below the level info */
+  background-color: #f5f5f5; /* Light background color similar to the level-info */
+  border-radius: 10px; /* Rounded corners to give the bubble effect */
+  padding: 20px; /* Add some padding for spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
+  margin-top: 300px; /* Space between the level info and victor's list */
 }
 
-.victors-list table {
+/* Table styling inside the bubble */
+.victors-table {
   width: 100%;
-  border-collapse: collapse; /* Ensures no space between table cells */
+  border-collapse: collapse;
 }
 
-.victors-list th, .victors-list td {
+.victors-table th, .victors-table td {
   padding: 10px;
-  text-align: left;
+  text-align: center;
   border: 1px solid #ddd;
 }
 
-.victors-list th {
-  background-color: #f2f2f2;
-  font-weight: bold;
+.victors-table th {
+  background-color: #4CAF50;
+  color: white;
 }
 
-.victors-list td a {
-  color: #007bff;
+.victors-table td a {
+  color: #4CAF50;
   text-decoration: none;
 }
 
-.victors-list td a:hover {
+.victors-table td a:hover {
   text-decoration: underline;
 }
