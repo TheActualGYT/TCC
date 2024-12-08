@@ -311,3 +311,32 @@ a.bold-text:hover {
   border-radius: 5px; /* Optional: Add rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
 }
+
+.victors-list {
+  margin-top: 20px; /* Adds space below the level info */
+}
+
+.victors-list table {
+  width: 100%;
+  border-collapse: collapse; /* Ensures no space between table cells */
+}
+
+.victors-list th, .victors-list td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.victors-list th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.victors-list td a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.victors-list td a:hover {
+  text-decoration: underline;
+}
