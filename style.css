@@ -334,8 +334,8 @@ a.bold-text:hover {
 
 /* Table styling inside the bubble */
 .victors-table {
-  width: 1150px;
-  table-layout: fixed; /* Ensure the table respects column widths */
+  width: 100%; /* Ensure the table fills the width of the container */
+  table-layout: fixed; /* Enforce fixed column width layout */
   text-align: left;
   border-collapse: collapse;
 }
@@ -345,6 +345,7 @@ a.bold-text:hover {
   padding: 8px 10px; /* Reduce padding between the rows and columns */
   text-align: left;
   border: 1px solid #ddd;
+  overflow: hidden; /* Prevent content from overflowing */
 }
 
 /* Header styling */
@@ -367,13 +368,13 @@ a.bold-text:hover {
 
 /* Column-specific width adjustments */
 .victors-table th:nth-child(1), .victors-table td:nth-child(1) {
-  width: 50px; /* Adjust the width of the first column */
+  width: 100px; /* Adjust the width of the first column */
 }
 
 .victors-table th:nth-child(2), .victors-table td:nth-child(2) {
-  width: 50px; /* Adjust the width of the second column */
+  width: 200px; /* Adjust the width of the second column */
 }
 
 .victors-table th:nth-child(3), .victors-table td:nth-child(3) {
-  width: 50px; /* Adjust the width of the third column */
+  width: 300px; /* Adjust the width of the third column */
 }
