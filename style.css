@@ -283,13 +283,13 @@ a.bold-text:hover {
 
 .level-image {
   position: absolute; /* Position it relative to the nearest positioned ancestor */
-  top: 20px; /* Adjust the distance from the top */
-  right: 40%; /* Move the image more to the left by adjusting the percentage */
+  top: 10px; /* Adjust the distance from the top */
+  left: 20px; /* Adjust the distance from the left */
   z-index: 50; /* Ensure it stays above background elements */
 }
 
 .level-image img {
-  width: 200px; /* Set the width of the image (increased size) */
+  width: 200px; /* Set the width of the image (increase size) */
   height: auto; /* Maintain the aspect ratio */
   border-radius: 10px; /* Optional: Add rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for better visibility */
