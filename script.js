@@ -1,6 +1,6 @@
 function switchTab(buttonId, contentId) {
-  const contentIds = ["main-page-content", "leaderboard-content", "changelog-content", "sink-content", "nightshade-content", "timor-content", "the-moon-below-content", "lucid-chaos-content", "butiti-iii-content", "confusion-content", "stalemate-redux-content", "killbot-content", "omicron-content"];
-  const buttonIds = ["main-page-btn", "leaderboard-btn", "changelog-btn", "sink-btn", "nightshade-btn", "timor-btn", "the-moon-below-btn", "lucid-chaos-btn", "butiti-iii-btn", "confusion-btn", "stalemate-redux-btn", "killbot-btn", "omicron-btn"];
+  const contentIds = ["main-page-content", "leaderboard-content", "changelog-content", "sink-content", "nightshade-content", "timor-content", "the-moon-below-content", "lucid-chaos-content", "butiti-iii-content", "confusion-content", "stalemate-redux-content", "killbot-content", "omicron-content", "polygonal-paradox-content"];
+  const buttonIds = ["main-page-btn", "leaderboard-btn", "changelog-btn", "sink-btn", "nightshade-btn", "timor-btn", "the-moon-below-btn", "lucid-chaos-btn", "butiti-iii-btn", "confusion-btn", "stalemate-redux-btn", "killbot-btn", "omicron-btn", "polygonal-paradox-btn"];
 
   // Update content visibility
   contentIds.forEach(id => document.getElementById(id).classList.remove("active"));
@@ -25,3 +25,4 @@ document.getElementById("confusion-btn").addEventListener("click", () => switchT
 document.getElementById("stalemate-redux-btn").addEventListener("click", () => switchTab("stalemate-redux-btn", "stalemate-redux-content"));
 document.getElementById("killbot-btn").addEventListener("click", () => switchTab("killbot-btn", "killbot-content"));
 document.getElementById("omicron-btn").addEventListener("click", () => switchTab("omicron-btn", "omicron-content"));
+document.getElementById("polygonal-paradox-btn").addEventListener("click", () => switchTab("polygonal-paradox-btn", "polygonal-paradox-content"));
