@@ -312,31 +312,33 @@ a.bold-text:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
 }
 
+/* Victor's List Styles */
 .victors-list {
-  margin-top: 20px; /* Adds space below the level info */
+  margin-top: 20px;
 }
 
-.victors-list table {
+.victors-table {
   width: 100%;
-  border-collapse: collapse; /* Ensures no space between table cells */
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
-.victors-list th, .victors-list td {
+.victors-table th, .victors-table td {
   padding: 10px;
-  text-align: left;
+  text-align: center;
   border: 1px solid #ddd;
 }
 
-.victors-list th {
-  background-color: #f2f2f2;
-  font-weight: bold;
+.victors-table th {
+  background-color: #4CAF50;
+  color: white;
 }
 
-.victors-list td a {
-  color: #007bff;
+.victors-table td a {
+  color: #4CAF50;
   text-decoration: none;
 }
 
-.victors-list td a:hover {
+.victors-table td a:hover {
   text-decoration: underline;
 }
