@@ -335,7 +335,6 @@ a.bold-text:hover {
 /* Table styling inside the bubble */
 .victors-table {
   width: 100%; /* Ensure the table fills the width of the container */
-  table-layout: fixed; /* Enforce fixed column width layout */
   text-align: left;
   border-collapse: collapse;
 }
@@ -372,9 +371,9 @@ a.bold-text:hover {
 }
 
 .victors-table th:nth-child(2), .victors-table td:nth-child(2) {
-  width: 200px; /* Adjust the width of the second column */
+  width: 100px; /* Adjust the width of the second column */
 }
 
 .victors-table th:nth-child(3), .victors-table td:nth-child(3) {
-  width: 300px; /* Adjust the width of the third column */
+  width: 100px; /* Adjust the width of the third column */
 }
