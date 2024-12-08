@@ -289,7 +289,7 @@ a.bold-text:hover {
 }
 
 .level-image img {
-  width: 40.75%; /* Set the width of the image (increase size) */
+  width: 40.8%; /* Set the width of the image (increase size) */
   height: auto; /* Maintain the aspect ratio */
   border-radius: 5px; /* Optional: Add rounded corners */
   border: 3px solid white; /* Add a white border with a thickness of 5px */
