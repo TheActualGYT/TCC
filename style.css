@@ -335,6 +335,7 @@ a.bold-text:hover {
 /* Table styling inside the bubble */
 .victors-table {
   width: 1150px;
+  table-layout: fixed; /* Ensure the table respects column widths */
   text-align: left;
   border-collapse: collapse;
 }
