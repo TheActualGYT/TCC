@@ -300,7 +300,7 @@ a.bold-text:hover {
 .level-video {
   position: absolute;
   top: 330px; /* Adjust this to position it right below the image */
-  right: 50px; /* Ensure it stays on the right side of the page */
+  right: 55px; /* Ensure it stays on the right side of the page */
   z-index: 50; /* Keep it above background elements */
 }
 
