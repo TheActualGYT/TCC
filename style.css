@@ -325,7 +325,7 @@ a.bold-text:hover {
 
 /* Increase the size of the Victor's List title */
 .victors-list h2 {
-  font-size: 60px; /* Adjust the size to make the title larger */
+  font-size: 45px; /* Adjust the size to make the title larger */
   font-weight: bold; /* Make it bold for emphasis */
   color: #333; /* Darker color for better readability */
   margin-bottom: 20px; /* Space below the title */
