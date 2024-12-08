@@ -299,7 +299,7 @@ a.bold-text:hover {
 /* For the YouTube video */
 .level-video {
   position: absolute;
-  top: 330px; /* Adjust this to position it right below the image */
+  top: 340px; /* Adjust this to position it right below the image */
   right: 55px; /* Ensure it stays on the right side of the page */
   z-index: 50; /* Keep it above background elements */
 }
