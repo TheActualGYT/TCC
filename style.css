@@ -344,7 +344,7 @@ a.bold-text:hover {
 .victors-table th, .victors-table td {
   padding: 8px 10px; /* Reduce padding between the rows and columns */
   text-align: left;
-  border: 1px solid #ddd;
+  border: 1px solid black;
   overflow: hidden; /* Prevent content from overflowing */
 }
 
