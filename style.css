@@ -284,12 +284,12 @@ a.bold-text:hover {
 .level-image {
   position: absolute; /* Position it relative to the nearest positioned ancestor */
   top: 20px; /* Adjust the distance from the top */
-  right: 53px; /* Move it to the right side of the page */
+  right: 54px; /* Move it to the right side of the page */
   z-index: 50; /* Ensure it stays above background elements */
 }
 
 .level-image img {
-  width: 520px; /* Set the width of the image (increase size) */
+  width: 510px; /* Set the width of the image (increase size) */
   height: auto; /* Maintain the aspect ratio */
   border-radius: 5px; /* Optional: Add rounded corners */
   border: 3px solid white; /* Add a white border with a thickness of 5px */
