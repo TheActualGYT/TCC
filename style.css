@@ -136,9 +136,10 @@ button:hover {
   position: fixed; /* Fixed to the right side */
   right: 0; /* Align to the right edge */
   top: 50px; /* Adjust this value to match the height of your top bar */
-  width: 15%; /* Maintain your desired width */
+  width: 17%; /* Maintain your desired width */
   height: calc(100vh - 50px); /* Subtract top bar height to avoid overflow */
   background-color: #7A7A7A;
+  display: flex;
   color: white;
   padding: 15px;
   border-left: 3px solid #fff;
