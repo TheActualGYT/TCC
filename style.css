@@ -45,6 +45,11 @@ button:hover {
   background-color: #3700b3;
 }
 
+/* Example for a content container */
+.content {
+  min-height: 100%; /* Ensures the content stretches to full viewport height */
+}
+
 /* Top Bar */
 .top-bar {
   background-color: #333;
