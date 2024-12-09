@@ -146,6 +146,7 @@ button:hover {
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   overflow-y: auto; /* Scroll if content overflows */
+  box-sizing: border-box; /* Ensures padding is included in height/width calculations */
 }
 
 .right-sidebar h2 {
