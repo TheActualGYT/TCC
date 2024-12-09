@@ -155,10 +155,11 @@ button:hover {
 
 /* Main Content Area */
 .main-content {
-  position: relative; /* Set as the reference for `.level-info` */
-  margin-right: 15%; /* Leave space for the fixed right sidebar */
+  position: relative; /* Set as the reference for .level-info */
+  margin-left: 15%; /* Leave space for the left sidebar */
+  margin-right: 15%; /* Leave space for the right sidebar */
   padding: 20px;
-  height: 100vh;
+  height: calc(100vh - 40px); /* Adjust to fit the viewport, considering padding */
   width: 70%;
   background-color: #E0E0E0;
   background-image: url('mcbackground.png'); /* Ensure your image displays correctly */
@@ -166,6 +167,7 @@ button:hover {
   background-position: center;
   background-repeat: no-repeat;
   overflow-y: auto; /* Allow vertical scrolling */
+  box-sizing: border-box; /* Include padding and border in the total width/height */
 }
 
 /* Sidebar Tabs */
