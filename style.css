@@ -168,7 +168,8 @@ button:hover {
   margin-left: 16.75%; /* Ensure there's enough space for right sidebar */
   margin-right: 15%; /* Ensure there's enough space for right sidebar */
   padding: 20px;
-  height: calc(100vh - 50px); /* Subtract the height of the top bar if necessary */
+  height: auto;
+  max-height: 100vh; /* Prevent content from overflowing vertically */
   width: 70%; /* Ensure proper width, maybe reduce if too large */
   background-color: #E0E0E0;
   overflow-y: hidden; /* Allow scrolling for content */
