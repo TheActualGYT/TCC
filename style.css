@@ -168,7 +168,7 @@ button:hover {
   height: calc(100vh - 50px); /* Subtract the height of the top bar if necessary */
   width: 70%; /* Ensure proper width, maybe reduce if too large */
   background-color: #E0E0E0;
-  overflow-y: auto; /* Allow scrolling for content */
+  overflow-y: hidden; /* Allow scrolling for content */
 }
 
 /* Sidebar Tabs */
