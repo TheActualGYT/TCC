@@ -108,6 +108,8 @@ button:hover {
 
 /* Left Sidebar */
 .left-sidebar {
+  height: 100vh; /* Ensure full height */
+  max-height: 100vh;
   width: 15%; /* Set width to 15% */
   background-color: #999999;
   color: white;
@@ -120,7 +122,6 @@ button:hover {
   justify-content: flex-start;
   overflow-y: auto; /* Enable vertical scrolling */
   scrollbar-width: thin; /* For Firefox, make the scrollbar thinner */
-  height: 100vh; /* Ensure full height */
   z-index: 10; /* Ensure the sidebar stays above other content */
 }
 
