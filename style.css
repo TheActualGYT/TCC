@@ -111,7 +111,8 @@ button:hover {
   width: 15%; /* Set width to 15% */
   background-color: #999999;
   color: white;
-  padding-top: 50px; /* Add padding to account for the top bar height */
+  padding: 15px;
+  margin-top: 50px;
   border-right: 3px solid #fff;
   display: flex;
   flex-direction: column;
