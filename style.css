@@ -2,13 +2,13 @@
 body {
   font-family: 'Lexend', sans-serif;
   font-weight: 300;
-  height: 100%;
   margin: 0;
   padding: 0;
   background-color: #e0e0e0;
   color: #333;
   text-align: center;
   overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-y: hidden; /* Allow vertical scroll */
 }
 
 h1 {
@@ -94,14 +94,12 @@ button:hover {
   display: flex;
   min-height: 100vh; /* Take full viewport height */
   height: 100%; /* Ensure it takes the full height */
-  padding-top: 50px; /* Add space for the fixed top bar */
+  flex-wrap: nowrap; /* Prevent wrapping */
 }
 
 /* Left Sidebar */
 .left-sidebar {
-  position: fixed;
   width: 15%; /* Set width to 15% */
-  height: 100vh;
   background-color: #999999;
   color: white;
   padding: 15px;
@@ -109,8 +107,9 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  overflow-x: hidden;
   overflow-y: auto; /* Enable vertical scrolling */
+  scrollbar-width: thin; /* For modern browsers, make the scrollbar thinner */
+  height: 100vh; /* Ensure full height */
 }
 
 /* Right Sidebar */
@@ -131,12 +130,13 @@ button:hover {
 }
 
 .right-sidebar h2 {
-  margin-top: 10px;
+  margin-top: 10px; /* Negative value to move the heading up */
   text-decoration: underline;
 }
 
 /* Main Content Area */
 .main-content {
+  position: relative; /* Set as the reference for `.level-info` */
   margin-right: 15%; /* Leave space for the fixed right sidebar */
   padding: 20px;
   height: 100vh;
@@ -158,15 +158,14 @@ button:hover {
   font-family: 'Lexend', sans-serif;
   font-weight: bold;
   border: 1px solid #fff;
-  display: flex;
-  align-items: center;
-  padding: 0 10px;
-  text-align: left;
+  display: flex; /* Enable Flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  padding: 0 10px; /* Adjust horizontal padding */
+  text-align: left; /* Align text to the left */
   font-size: 16px;
   cursor: pointer;
   margin-bottom: 5px;
-  overflow-y: auto;
-  gap: 5px;
+  gap: 5px; /* Add spacing between icon and text */
 }
 
 .tab-button:hover {
@@ -179,19 +178,19 @@ button:hover {
 
 /* Buttons with Images */
 .tab-button.has-image {
-  padding: 0 5px;
+  padding: 0 5px; /* Adjust padding for buttons with images */
 }
 
 .tab-button.has-image .button-icon {
   width: 30px;
   height: 30px;
-  flex-shrink: 0;
+  flex-shrink: 0; /* Prevent the image from shrinking */
 }
 
 .button-icon {
-  width: 30px;
+  width: 30px; /* Adjust icon size */
   height: 30px;
-  flex-shrink: 0;
+  flex-shrink: 0; /* Prevent icon from shrinking */
 }
 
 /* Tab Content */
@@ -235,20 +234,20 @@ button:hover {
 
   .main-content {
     width: 100%;
-    margin-right: 0;
   }
 }
 
 /* Ensure hyperlink does not change color and is not underlined */
 a.bold-text {
-  color: inherit;
-  text-decoration: none;
-  font-weight: bold;
+  color: inherit; /* Inherit the color from the surrounding text */
+  text-decoration: none; /* Remove the underline */
+  font-weight: bold; /* Make the text bold */
 }
 
+/* On hover, show underline without changing the color */
 a.bold-text:hover {
-  text-decoration: underline;
-  color: inherit;
+  text-decoration: underline; /* Add the underline */
+  color: inherit; /* Ensure the color doesn't change */
 }
 
 .level-info {
@@ -256,15 +255,16 @@ a.bold-text:hover {
   top: 20px;
   left: 20px;
   width: 50.4%;
-  background-color: rgba(255, 255, 255, 0.75);
-  padding: 5px 15px 8px 15px;
+  height: auto; /* Let the height adjust to content */
+  background-color: rgba(255, 255, 255, 0.75); /* Slightly opaque for readability */
+  padding: 5px 15px 8px 15px; /* Expands top and left padding */
   border-radius: 5px;
   font-family: 'Lexend', sans-serif;
-  color: #333;
+  color: #333; /* More legible on a light background */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  z-index: 50;
-  max-width: calc(100% - 40px);
-  text-align: left;
+  z-index: 50; /* Higher to avoid being covered */
+  max-width: calc(100% - 40px); /* Prevents it from overflowing on smaller screens */
+  text-align: left; /* Left-aligned text */
 }
 
 .level-info p {
@@ -275,43 +275,43 @@ a.bold-text:hover {
 
 .level-info h1 {
   font-size: 60px;
-  margin-top: 0;
-  margin-bottom: 5px;
+  margin-top: 0; /* Remove top margin from h1 */
+  margin-bottom: 5px; /* Adjust space below the title */
 }
 
 .level-info strong {
-  font-weight: 1100;
+  font-weight: 1100; /* Makes the bold text much thicker */
 }
 
 .level-image {
-  position: absolute;
-  top: 20px;
-  right: 55px;
-  z-index: 50;
+  position: absolute; /* Position it relative to the nearest positioned ancestor */
+  top: 20px; /* Adjust the distance from the top */
+  right: 55px; /* Move it to the right side of the page */
+  z-index: 50; /* Ensure it stays above background elements */
 }
 
 .level-image img {
-  width: 507px;
-  height: auto;
-  border-radius: 5px;
-  border: 3px solid white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 507px; /* Set the width of the image (increase size) */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  border: 3px solid white; /* Add a white border with a thickness of 3px */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for better visibility */
 }
 
 /* For the YouTube video */
 .level-video {
   position: absolute;
-  top: 335px;
-  right: 55px;
-  z-index: 50;
+  top: 335px; /* Adjust this to position it right below the image */
+  right: 55px; /* Ensure it stays on the right side of the page */
+  z-index: 50; /* Keep it above background elements */
 }
 
 .level-video iframe {
-  width: 507px;
-  height: 285px;
-  border: 3px solid white;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 507px; /* Adjust the width to match the image size */
+  height: 285px; /* Adjust the height as needed */
+  border: 3px solid white; /* Add a white border with a thickness of 3px */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
 }
 
 /* Style for the Victor's List Bubble */
