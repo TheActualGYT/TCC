@@ -113,8 +113,22 @@ button:hover {
   flex-direction: column;
   justify-content: flex-start;
   overflow-y: auto; /* Enable vertical scrolling */
-  scrollbar-width: thin; /* For modern browsers, make the scrollbar thinner */
+  scrollbar-width: thin; /* For Firefox, make the scrollbar thinner */
   height: 100vh; /* Ensure full height */
+}
+
+/* Custom Scrollbar for Webkit Browsers (Chrome, Safari) */
+.left-sidebar::-webkit-scrollbar {
+  width: 8px; /* Set width of the scrollbar */
+}
+
+.left-sidebar::-webkit-scrollbar-thumb {
+  background-color: darkgray; /* Set color of the thumb */
+  border-radius: 10px; /* Optional: rounded scrollbar thumb */
+}
+
+.left-sidebar::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Set the background color of the scrollbar track */
 }
 
 /* Right Sidebar */
