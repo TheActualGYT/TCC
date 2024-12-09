@@ -9,7 +9,7 @@ body {
   color: #333;
   text-align: center;
   overflow-x: hidden; /* Prevent horizontal scroll */
-  overflow-y: hidden; /* Allow vertical scroll */
+  overflow-y: auto; /* Allow vertical scroll */
 }
 
 h1 {
@@ -100,7 +100,7 @@ button:hover {
 /* Left Sidebar */
 .left-sidebar {
   width: 15%; /* Set width to 15% */
-  height: calc(100% - 50px);
+  height: 100%;
   background-color: #999999;
   color: white;
   padding: 15px;
