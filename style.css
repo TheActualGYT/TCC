@@ -307,8 +307,8 @@ a.bold-text:hover {
 
 .level-image {
   position: absolute; /* Position it relative to the nearest positioned ancestor */
-  top: 4.45%; /* Adjust the distance from the top */
-  right: 4.45%; /* Move it to the right side of the page */
+  top: 20px; /* Adjust the distance from the top */
+  right: 4.4%; /* Move it to the right side of the page */
   z-index: 50; /* Ensure it stays above background elements */
 }
 
@@ -323,8 +323,8 @@ a.bold-text:hover {
 /* For the YouTube video */
 .level-video {
   position: absolute;
-  top: 4.45%; /* Adjust this to position it right below the image */
-  right: 4.45%; /* Ensure it stays on the right side of the page */
+  top: 335px; /* Adjust this to position it right below the image */
+  right: 4.4%; /* Ensure it stays on the right side of the page */
   z-index: 50; /* Keep it above background elements */
 }
 
