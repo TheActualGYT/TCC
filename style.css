@@ -33,12 +33,14 @@ main {
 
 /* Buttons */
 button {
-  padding: 10px 20px;
+  padding: 1rem 2rem; /* Use rem units to scale with font size */
   background-color: #6b6b6b;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 1rem; /* Make the font size relative to the root font size */
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
