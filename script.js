@@ -1,6 +1,6 @@
 function switchTab(buttonId, contentId) {
-  const contentIds = ["main-page-content", "leaderboard-content", "changelog-content", "sink-content", "nightshade-content", "timor-content", "the-moon-below-content", "lucid-chaos-content", "butiti-iii-content", "confusion-content", "stalemate-redux-content", "killbot-content", "omicron-content", "polygonal-paradox-content", "neurostasis-content", "black-blizzard-content", "berserk-content", "hyper-paradox-content", "dmg-ctrl-content", "balengu-vortex-content", "the-cellar-path-content", "ruber-cash-22-content"];
-  const buttonIds = ["main-page-btn", "leaderboard-btn", "changelog-btn", "sink-btn", "nightshade-btn", "timor-btn", "the-moon-below-btn", "lucid-chaos-btn", "butiti-iii-btn", "confusion-btn", "stalemate-redux-btn", "killbot-btn", "omicron-btn", "polygonal-paradox-btn", "neurostasis-btn", "black-blizzard-btn", "berserk-btn", "hyper-paradox-btn", "dmg-ctrl-btn", "balengu-vortex-btn", "the-cellar-path-btn", "ruber-cash-22-btn"];
+  const contentIds = ["main-page-content", "leaderboard-content", "changelog-content", "sink-content", "nightshade-content", "timor-content", "the-moon-below-content", "lucid-chaos-content", "butiti-iii-content", "confusion-content", "stalemate-redux-content", "killbot-content", "omicron-content", "polygonal-paradox-content", "neurostasis-content", "black-blizzard-content", "berserk-content", "hyper-paradox-content", "dmg-ctrl-content", "balengu-vortex-content", "the-cellar-path-content", "ruber-cash-22-content", "worse-trip-content"];
+  const buttonIds = ["main-page-btn", "leaderboard-btn", "changelog-btn", "sink-btn", "nightshade-btn", "timor-btn", "the-moon-below-btn", "lucid-chaos-btn", "butiti-iii-btn", "confusion-btn", "stalemate-redux-btn", "killbot-btn", "omicron-btn", "polygonal-paradox-btn", "neurostasis-btn", "black-blizzard-btn", "berserk-btn", "hyper-paradox-btn", "dmg-ctrl-btn", "balengu-vortex-btn", "the-cellar-path-btn", "ruber-cash-22-btn", "worse-trip-btn"];
 
   // Update content visibility
   contentIds.forEach(id => document.getElementById(id).classList.remove("active"));
@@ -34,3 +34,4 @@ document.getElementById("dmg-ctrl-btn").addEventListener("click", () => switchTa
 document.getElementById("balengu-vortex-btn").addEventListener("click", () => switchTab("balengu-vortex-btn", "balengu-vortex-content"));
 document.getElementById("the-cellar-path-btn").addEventListener("click", () => switchTab("the-cellar-path-btn", "the-cellar-path-content"));
 document.getElementById("ruber-cash-22-btn").addEventListener("click", () => switchTab("ruber-cash-22-btn", "ruber-cash-22-content"));
+document.getElementById("worse-trip-btn").addEventListener("click", () => switchTab("worse-trip-btn", "worse-trip-content"));
