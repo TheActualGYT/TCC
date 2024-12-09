@@ -165,6 +165,7 @@ button:hover {
 .main-content {
   position: relative; /* Keep as reference for other elements */
   margin-top: 52px; /* Ensure there's enough space for right sidebar */
+  margin-left: 15%; /* Ensure there's enough space for right sidebar */
   margin-right: 15%; /* Ensure there's enough space for right sidebar */
   padding: 20px;
   height: calc(100vh - 50px); /* Subtract the height of the top bar if necessary */
