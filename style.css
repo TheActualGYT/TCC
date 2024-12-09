@@ -110,7 +110,7 @@ button:hover {
   justify-content: flex-start;
   overflow-y: auto; /* Enable vertical scrolling */
   scrollbar-width: thin; /* For modern browsers, make the scrollbar thinner */
-  height: 100vh; /* Ensure full height */
+  height: 100%; /* Ensure full height */
 }
 
 /* Right Sidebar */
