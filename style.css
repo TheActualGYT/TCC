@@ -33,7 +33,8 @@ main {
 
 /* Buttons */
 button {
-  height: 8%; /* Set height as a percentage of the parent container */
+  flex-shrink: 0; /* Prevent shrinking */
+  flex-grow: 0; /* Prevent growing */
   padding: 10px 20px;
   background-color: #6b6b6b;
   color: white;
@@ -109,8 +110,8 @@ button:hover {
 
 /* Left Sidebar */
 .left-sidebar {
-  height: calc(100vh - 52px); /* Adjust height to account for the top bar */
-  width: 15%; /* Set width to 15% */
+  height: 100vh; /* Full height of the viewport */
+  width: 15%;
   background-color: #999999;
   color: white;
   padding: 15px;
@@ -121,9 +122,8 @@ button:hover {
   flex-direction: column;
   justify-content: flex-start;
   overflow-y: auto; /* Enable vertical scrolling */
-  scrollbar-width: thin; /* For Firefox, make the scrollbar thinner */
-  z-index: 10; /* Ensure the sidebar stays above other content */
-  box-sizing: border-box; /* Include padding in the total width/height */
+  scrollbar-width: thin;
+  z-index: 10;
 }
 
 /* Custom Scrollbar for Webkit Browsers (Chrome, Safari) */
