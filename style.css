@@ -101,6 +101,7 @@ button:hover {
 /* Left Sidebar */
 .left-sidebar {
   width: 15%; /* Set width to 15% */
+  height: calc(100%-50px);
   background-color: #999999;
   color: white;
   padding: 15px;
@@ -109,8 +110,6 @@ button:hover {
   flex-direction: column;
   justify-content: flex-start;
   overflow-y: auto; /* Enable vertical scrolling */
-  scrollbar-width: thin; /* For modern browsers, make the scrollbar thinner */
-  height: 100%; /* Ensure full height */
 }
 
 /* Right Sidebar */
