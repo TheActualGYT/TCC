@@ -33,6 +33,7 @@ main {
 
 /* Buttons */
 button {
+  height: 35px
   padding: 10px 20px;
   background-color: #6b6b6b;
   color: white;
