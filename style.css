@@ -95,13 +95,12 @@ button:hover {
   display: flex;
   min-height: 100vh; /* Take full viewport height */
   height: 100%; /* Ensure it takes the full height */
-  flex-wrap: nowrap; /* Prevent wrapping */
 }
 
 /* Left Sidebar */
 .left-sidebar {
   width: 15%; /* Set width to 15% */
-  height: calc(100%-50px);
+  height: calc(100% - 50px);
   background-color: #999999;
   color: white;
   padding: 15px;
