@@ -162,10 +162,6 @@ button:hover {
   height: calc(100vh - 50px); /* Subtract the height of the top bar if necessary */
   width: 70%; /* Ensure proper width, maybe reduce if too large */
   background-color: #E0E0E0;
-  background-image: url('mcbackground.png');
-  background-size: cover;
-  background-position: center center; /* Adjust background to cover area properly */
-  background-repeat: repeat;
   overflow-y: auto; /* Allow scrolling for content */
 }
 
