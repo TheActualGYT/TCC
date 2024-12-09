@@ -165,7 +165,7 @@ button:hover {
   background-image: url('mcbackground.png');
   background-size: cover;
   background-position: center center; /* Adjust background to cover area properly */
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   overflow-y: auto; /* Allow scrolling for content */
 }
 
