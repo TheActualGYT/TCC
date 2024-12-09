@@ -122,22 +122,7 @@ button:hover {
   flex-direction: column;
   justify-content: flex-start;
   overflow-y: auto; /* Enable vertical scrolling */
-  scrollbar-width: thin;
   z-index: 10;
-}
-
-/* Custom Scrollbar for Webkit Browsers (Chrome, Safari) */
-.left-sidebar::-webkit-scrollbar {
-  width: 8px; /* Set width of the scrollbar */
-}
-
-.left-sidebar::-webkit-scrollbar-thumb {
-  background-color: darkgray; /* Set color of the thumb */
-  border-radius: 10px; /* Optional: rounded scrollbar thumb */
-}
-
-.left-sidebar::-webkit-scrollbar-track {
-  background-color: #f1f1f1; /* Set the background color of the scrollbar track */
 }
 
 /* Right Sidebar */
@@ -421,4 +406,19 @@ a.bold-text:hover {
 
 .victors-table th:nth-child(4), .victors-table td:nth-child(4) {
   width: 50px; /* Adjust the width of the third column */
+}
+
+/* Hide Scrollbars for Chrome, Safari, and Edge */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide Scrollbars for Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* Hide Scrollbars for Internet Explorer */
+body {
+  overflow: hidden;
 }
