@@ -9,6 +9,7 @@ body {
   color: #333;
   text-align: center;
   overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-y: hidden; /* Prevent horizontal scroll */
 }
 
 h1 {
