@@ -108,8 +108,7 @@ button:hover {
 
 /* Left Sidebar */
 .left-sidebar {
-  height: 100vh; /* Ensure full height */
-  max-height: 100vh;
+  height: calc(100vh - 52px); /* Adjust height to account for the top bar */
   width: 15%; /* Set width to 15% */
   background-color: #999999;
   color: white;
@@ -123,6 +122,7 @@ button:hover {
   overflow-y: auto; /* Enable vertical scrolling */
   scrollbar-width: thin; /* For Firefox, make the scrollbar thinner */
   z-index: 10; /* Ensure the sidebar stays above other content */
+  box-sizing: border-box; /* Include padding in the total width/height */
 }
 
 /* Custom Scrollbar for Webkit Browsers (Chrome, Safari) */
