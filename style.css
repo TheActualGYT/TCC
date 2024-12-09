@@ -112,6 +112,7 @@ button:hover {
   background-color: #999999;
   color: white;
   padding: 15px;
+  position: fixed;
   margin-top: 52px;
   border-right: 3px solid #fff;
   display: flex;
