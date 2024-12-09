@@ -121,6 +121,7 @@ button:hover {
   overflow-y: auto; /* Enable vertical scrolling */
   scrollbar-width: thin; /* For Firefox, make the scrollbar thinner */
   height: 100vh; /* Ensure full height */
+  z-index: 10; /* Ensure the sidebar stays above other content */
 }
 
 /* Custom Scrollbar for Webkit Browsers (Chrome, Safari) */
