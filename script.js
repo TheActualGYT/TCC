@@ -12,8 +12,16 @@ function switchTab(buttonId, contentId) {
     "coolie-mazie-paloozi-content", "falcon16-content", "miss-you-content", "blade-of-justice-content", 
     "biohazard-content", "artifice-content", "protoflicker-content", "anahita-content", 
     "bloodbath-content", "ecstasy-content", "oopz-content", "cytokinesis-content", 
-    "motorbreath-content", "gewerbix-content", "molten-mercury-content", "opsm1-content", 
-    "sigma-interface-content"
+    "motorbreath-content", "gewerbix-content", "molten-mercury-content", "apex-content", "opsm1-content", 
+    "sigma-interface-content", "prismatic-haze-content", "carcano-content",
+    "moment-content", "disentombed-content", "innards-content",
+    "overtime-content", "goldcrest-palace-content", "n0-content",
+    "remember-content", "cave-of-heart-content", "cluttered-confusion-content",
+    "triple-six-content", "digital-disarray-content", "aftermath-content",
+    "malevolent-maelstrom-content", "chopstep-content", "frozen-content",
+    "shatter-content", "redemption-arc-content", "want-me-content",
+    "eternal-content", "sorryforpartyrocking-content", "niflheim-content",
+    "idols-content"
   ];
   const buttonIds = [
     "main-page-btn", "leaderboard-btn", "changelog-btn", "sink-btn", 
@@ -28,8 +36,15 @@ function switchTab(buttonId, contentId) {
     "coolie-mazie-paloozi-btn", "falcon16-btn", "miss-you-btn", "blade-of-justice-btn", 
     "biohazard-btn", "artifice-btn", "protoflicker-btn", "anahita-btn", 
     "bloodbath-btn", "ecstasy-btn", "oopz-btn", "cytokinesis-btn", 
-    "motorbreath-btn", "gewerbix-btn", "molten-mercury-btn", "opsm1-btn", 
-    "sigma-interface-btn"
+    "motorbreath-btn", "gewerbix-btn", "molten-mercury-btn", "opsm1-btn", "apex-btn",
+    "sigma-interface-btn", "prismatic-haze-btn", "carcano-btn",
+    "moment-btn", "disentombed-btn", "innards-btn",
+    "overtime-btn", "goldcrest-palace-btn", "n0-btn",
+    "remember-btn", "cave-of-heart-btn", "cluttered-confusion-btn",
+    "triple-six-btn", "digital-disarray-btn", "aftermath-btn",
+    "malevolent-maelstrom-btn", "chopstep-btn", "frozen-btn",
+    "shatter-btn", "redemption-arc-btn", "want-me-btn",
+    "eternal-btn", "sorryforpartyrocking-btn", "niflheim-btn", "idols-btn"
   ];
 
   // Update content visibility
@@ -94,5 +109,30 @@ document.getElementById("cytokinesis-btn").addEventListener("click", () => switc
 document.getElementById("motorbreath-btn").addEventListener("click", () => switchTab("motorbreath-btn", "motorbreath-content")); // #46
 document.getElementById("gewerbix-btn").addEventListener("click", () => switchTab("gewerbix-btn", "gewerbix-content")); // #47
 document.getElementById("molten-mercury-btn").addEventListener("click", () => switchTab("molten-mercury-btn", "molten-mercury-content")); // #48
-document.getElementById("opsm1-btn").addEventListener("click", () => switchTab("opsm1-btn", "opsm1-content")); // #49
-document.getElementById("sigma-interface-btn").addEventListener("click", () => switchTab("sigma-interface-btn", "sigma-interface-content")); // #50
+document.getElementById("apex-btn").addEventListener("click", () => switchTab("apex-btn", "apex-content")); //#49
+document.getElementById("opsm1-btn").addEventListener("click", () => switchTab("opsm1-btn", "opsm1-content")); // #50
+document.getElementById("sigma-interface-btn").addEventListener("click", () => switchTab("sigma-interface-btn", "sigma-interface-content")); // #51
+document.getElementById("prismatic-haze-btn").addEventListener("click", () => switchTab("prismatic-haze-btn", "prismatic-haze-content")); // #52
+document.getElementById("carcano-btn").addEventListener("click", () => switchTab("carcano-btn", "carcano-content")); // #53
+document.getElementById("moment-btn").addEventListener("click", () => switchTab("moment-btn", "moment-content")); // #54
+document.getElementById("disentombed-btn").addEventListener("click", () => switchTab("disentombed-btn", "disentombed-content")); // #55
+document.getElementById("innards-btn").addEventListener("click", () => switchTab("innards-btn", "innards-content")); // #56
+document.getElementById("overtime-btn").addEventListener("click", () => switchTab("overtime-btn", "overtime-content")); // #57
+document.getElementById("goldcrest-palace-btn").addEventListener("click", () => switchTab("goldcrest-palace-btn", "goldcrest-palace-content")); // #58
+document.getElementById("n0-btn").addEventListener("click", () => switchTab("n0-btn", "n0-content")); // #59
+document.getElementById("remember-btn").addEventListener("click", () => switchTab("remember-btn", "remember-content")); // #60
+document.getElementById("cave-of-heart-btn").addEventListener("click", () => switchTab("cave-of-heart-btn", "cave-of-heart-content")); // #61
+document.getElementById("cluttered-confusion-btn").addEventListener("click", () => switchTab("cluttered-confusion-btn", "cluttered-confusion-content")); // #62
+document.getElementById("triple-six-btn").addEventListener("click", () => switchTab("triple-six-btn", "triple-six-content")); // #63
+document.getElementById("digital-disarray-btn").addEventListener("click", () => switchTab("digital-disarray-btn", "digital-disarray-content")); // #64
+document.getElementById("aftermath-btn").addEventListener("click", () => switchTab("aftermath-btn", "aftermath-content")); // #65
+document.getElementById("malevolent-maelstrom-btn").addEventListener("click", () => switchTab("malevolent-maelstrom-btn", "malevolent-maelstrom-content")); // #66
+document.getElementById("chopstep-btn").addEventListener("click", () => switchTab("chopstep-btn", "chopstep-content")); // #67
+document.getElementById("frozen-btn").addEventListener("click", () => switchTab("frozen-btn", "frozen-content")); // #68
+document.getElementById("shatter-btn").addEventListener("click", () => switchTab("shatter-btn", "shatter-content")); // #69
+document.getElementById("redemption-arc-btn").addEventListener("click", () => switchTab("redemption-arc-btn", "redemption-arc-content")); // #70
+document.getElementById("want-me-btn").addEventListener("click", () => switchTab("want-me-btn", "want-me-content")); // #71
+document.getElementById("eternal-btn").addEventListener("click", () => switchTab("eternal-btn", "eternal-content")); // #72
+document.getElementById("sorryforpartyrocking-btn").addEventListener("click", () => switchTab("sorryforpartyrocking-btn", "sorryforpartyrocking-content")); // #73
+document.getElementById("niflheim-btn").addEventListener("click", () => switchTab("niflheim-btn", "niflheim-content")); // #74
+document.getElementById("idols-btn").addEventListener("click", () => switchTab("idols-btn", "idols-content")); // #75
