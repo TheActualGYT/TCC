@@ -41,11 +41,6 @@ function switchTab(buttonId, contentId) {
   document.getElementById(buttonId).classList.add("active");
 }
 
-function playVideo() {
-  document.querySelector('.video-thumbnail').style.display = 'none';
-  document.getElementById('video-frame').style.display = 'block';
-}
-
 // Add event listeners
 document.getElementById("main-page-btn").addEventListener("click", () => switchTab("main-page-btn", "main-page-content"));
 document.getElementById("leaderboard-btn").addEventListener("click", () => switchTab("leaderboard-btn", "leaderboard-content"));
