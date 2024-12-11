@@ -21,6 +21,13 @@ const buttonIds = [
   "malevolent-maelstrom-btn", "chopstep-btn", "frozen-btn",
   "shatter-btn", "redemption-arc-btn", "want-me-btn",
   "eternal-btn", "sorryforpartyrocking-btn", "niflheim-btn", "idols-btn"
+  "agen-wida-btn", "deflective-btn", "elliptic-curve-btn", "dance-til-dawn-btn",
+  "sarthix-btn", "welcome-to-gd-news-btn", "smartish-mode-btn", "brainrot-btn",
+  "totem-btn", "cat-planet-btn", "u235-btn", "minimum-btn",
+  "myocardia-btn", "aux-cord-btn", "manic-machine-btn", "novalis-btn",
+  "karma-btn", "twisted-tranquility-btn", "concaved-memories-btn", "wind-storm-btn",
+  "red-world-rebirth-btn", "brownoix-btn", "daydream-btn", "empyrean-btn", 
+  "mirage-btn"
 ];
 
 const contentIds = [
@@ -45,6 +52,13 @@ const contentIds = [
   "malevolent-maelstrom-content", "chopstep-content", "frozen-content",
   "shatter-content", "redemption-arc-content", "want-me-content",
   "eternal-content", "sorryforpartyrocking-content", "niflheim-content", "idols-content"
+  "agen-wida-content", "deflective-content", "elliptic-curve-content", "dance-til-dawn-content",
+  "sarthix-content", "welcome-to-gd-news-content", "smartish-mode-content", "brainrot-content",
+  "totem-content", "cat-planet-content", "u235-content", "minimum-content",
+  "myocardia-content", "aux-cord-content", "manic-machine-content", "novalis-content",
+  "karma-content", "twisted-tranquility-content", "concaved-memories-content", "wind-storm-content",
+  "red-world-rebirth-content", "brownoix-content", "daydream-content", "empyrean-content", 
+  "mirage-content"
 ];
 
 // Function to switch tabs
