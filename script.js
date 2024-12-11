@@ -54,8 +54,27 @@ function switchTab(buttonId, contentId) {
   document.getElementById(buttonId).classList.add("active");
 }
 
-// Add event listeners
+// Add event listeners for switching tabs
 document.querySelectorAll("[id$='-btn']").forEach(button => {
   const id = button.id.replace("-btn", "-content");
   button.addEventListener("click", () => switchTab(button.id, id));
+});
+
+// Add event listeners for the .button class to load content
+document.querySelectorAll('.button').forEach(button => {
+  button.addEventListener('click', () => {
+    try {
+      // Replace this with your actual logic to load content
+      const contentId = button.dataset.contentId; // Example
+      if (!contentId) throw new Error('Invalid content ID');
+      
+      const content = document.getElementById(contentId);
+      if (!content) throw new Error(`Content not found for ID: ${contentId}`);
+      
+      document.getElementById('mainContent').innerHTML = content.innerHTML;
+    } catch (error) {
+      console.error(error.message); // Log the error for debugging
+      document.getElementById('mainContent').innerHTML = `<p>Oops! Unable to load the selected content.</p>`;
+    }
+  });
 });
