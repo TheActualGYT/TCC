@@ -104,3 +104,7 @@ buttonIds.forEach((buttonId, index) => {
     console.error(`Button with ID "${buttonId}" not found.`);
   }
 });
+
+if (!contentId) {
+  console.error(`No content ID found for button ID "${buttonId}" at index ${index}.`);
+}
