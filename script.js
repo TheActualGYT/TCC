@@ -1,3 +1,4 @@
+// List of button and content IDs
 const buttonIds = [
   "main-page-btn", "leaderboard-btn", "changelog-btn", "sink-btn", 
   "nightshade-btn", "timor-btn", "the-moon-below-btn", "lucid-chaos-btn", 
@@ -19,7 +20,7 @@ const buttonIds = [
   "triple-six-btn", "digital-disarray-btn", "aftermath-btn",
   "malevolent-maelstrom-btn", "chopstep-btn", "frozen-btn",
   "shatter-btn", "redemption-arc-btn", "want-me-btn",
-  "eternal-btn", "sorryforpartyrocking-btn", "niflheim-btn", "idols-btn", // <-- Added missing comma here
+  "eternal-btn", "sorryforpartyrocking-btn", "niflheim-btn", "idols-btn",
   "agen-wida-btn", "deflective-btn", "elliptic-curve-btn", "dance-til-dawn-btn",
   "sarthix-btn", "welcome-to-gd-news-btn", "smartish-mode-btn", "brainrot-btn",
   "totem-btn", "cat-planet-btn", "u235-btn", "minimum-btn",
@@ -50,7 +51,7 @@ const contentIds = [
   "triple-six-content", "digital-disarray-content", "aftermath-content",
   "malevolent-maelstrom-content", "chopstep-content", "frozen-content",
   "shatter-content", "redemption-arc-content", "want-me-content",
-  "eternal-content", "sorryforpartyrocking-content", "niflheim-content", "idols-content", // <-- Added missing comma here
+  "eternal-content", "sorryforpartyrocking-content", "niflheim-content", "idols-content",
   "agen-wida-content", "deflective-content", "elliptic-curve-content", "dance-til-dawn-content",
   "sarthix-content", "welcome-to-gd-news-content", "smartish-mode-content", "brainrot-content",
   "totem-content", "cat-planet-content", "u235-content", "minimum-content",
@@ -62,7 +63,7 @@ const contentIds = [
 
 // Function to switch tabs
 function switchTab(buttonId, contentId) {
-  // First, hide all content
+  // Hide all content
   contentIds.forEach(id => {
     const contentElement = document.getElementById(id);
     if (contentElement) {
@@ -74,6 +75,7 @@ function switchTab(buttonId, contentId) {
   const contentElement = document.getElementById(contentId);
   if (contentElement) {
     contentElement.classList.add("active");
+    loadTabContent(contentId); // Lazy load the content for this tab
   }
 
   // Remove active class from all buttons
@@ -91,6 +93,18 @@ function switchTab(buttonId, contentId) {
   }
 }
 
+// Function to lazy load content for a tab
+function loadTabContent(contentId) {
+  const contentElement = document.getElementById(contentId);
+  if (!contentElement || contentElement.dataset.loaded === "true") {
+    return; // Skip if content is already loaded
+  }
+
+  // Simulate loading content (e.g., fetching from server or generating dynamically)
+  contentElement.innerHTML = `<p>Content for ${contentId} loaded.</p>`; // Replace with real content loading logic
+  contentElement.dataset.loaded = "true";
+}
+
 // Add event listeners to each button
 buttonIds.forEach((buttonId, index) => {
   const button = document.getElementById(buttonId);
@@ -104,14 +118,3 @@ buttonIds.forEach((buttonId, index) => {
     console.error(`Button with ID "${buttonId}" not found.`);
   }
 });
-
-if (!contentId) {
-  console.error(`No content ID found for button ID "${buttonId}" at index ${index}.`);
-}
-
-if (!contentElement) {
-  console.error(`Content element with ID "${contentId}" not found.`);
-}
-if (!buttonElement) {
-  console.error(`Button element with ID "${buttonId}" not found.`);
-}
