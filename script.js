@@ -1,4 +1,3 @@
-// List of button and content IDs
 const buttonIds = [
   "main-page-btn", "leaderboard-btn", "changelog-btn", "sink-btn", 
   "nightshade-btn", "timor-btn", "the-moon-below-btn", "lucid-chaos-btn", 
@@ -20,7 +19,7 @@ const buttonIds = [
   "triple-six-btn", "digital-disarray-btn", "aftermath-btn",
   "malevolent-maelstrom-btn", "chopstep-btn", "frozen-btn",
   "shatter-btn", "redemption-arc-btn", "want-me-btn",
-  "eternal-btn", "sorryforpartyrocking-btn", "niflheim-btn", "idols-btn"
+  "eternal-btn", "sorryforpartyrocking-btn", "niflheim-btn", "idols-btn", // <-- Added missing comma here
   "agen-wida-btn", "deflective-btn", "elliptic-curve-btn", "dance-til-dawn-btn",
   "sarthix-btn", "welcome-to-gd-news-btn", "smartish-mode-btn", "brainrot-btn",
   "totem-btn", "cat-planet-btn", "u235-btn", "minimum-btn",
@@ -51,7 +50,7 @@ const contentIds = [
   "triple-six-content", "digital-disarray-content", "aftermath-content",
   "malevolent-maelstrom-content", "chopstep-content", "frozen-content",
   "shatter-content", "redemption-arc-content", "want-me-content",
-  "eternal-content", "sorryforpartyrocking-content", "niflheim-content", "idols-content"
+  "eternal-content", "sorryforpartyrocking-content", "niflheim-content", "idols-content", // <-- Added missing comma here
   "agen-wida-content", "deflective-content", "elliptic-curve-content", "dance-til-dawn-content",
   "sarthix-content", "welcome-to-gd-news-content", "smartish-mode-content", "brainrot-content",
   "totem-content", "cat-planet-content", "u235-content", "minimum-content",
