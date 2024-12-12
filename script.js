@@ -37,7 +37,7 @@ const buttonIds = [
   "retention-btn", "meltdown-btn", "broken-signal-btn", "hopping-over-puddles-btn", 
   "unearthed-btn", "party-rock-anthem-btn", "sky-tech-btn", "the-ultimate-phase-btn", 
   "awakening-horus-btn", "acropolix-btn", "deception-dive-btn", "ultrasans-btn", 
-  "phantasmagoria-btn", "lights-out-btn", "voided-btn", "incipient-btn"
+  "phantasmagoria-btn", "lights-out-btn", "voided-btn", "incipient-btn", "lost-love-btn"
 ];
 
 const contentIds = [
@@ -79,7 +79,7 @@ const contentIds = [
   "retention-content", "meltdown-content", "broken-signal-content", "hopping-over-puddles-content", 
   "unearthed-content", "party-rock-anthem-content", "sky-tech-content", "the-ultimate-phase-content", 
   "awakening-horus-content", "acropolix-content", "deception-dive-content", "ultrasans-content", 
-  "phantasmagoria-content", "lights-out-content", "voided-content", "incipient-content"
+  "phantasmagoria-content", "lights-out-content", "voided-content", "incipient-content", "lost-love-content"
 ];
 
 // Function to switch tabs
