@@ -182,8 +182,8 @@ button:hover {
 }
 
 .tab-icon {
-  width: 20px; /* Adjust size of the icon */
-  height: 20px;
+  width: 25px; /* Adjust size of the icon */
+  height: 25px;
   flex-shrink: 0; /* Prevent the icon from shrinking */
 }
 
