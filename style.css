@@ -170,7 +170,7 @@ button:hover {
   color: white;
   font-family: 'Lexend', sans-serif;
   font-weight: bold;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   display: flex; /* Enable Flexbox for alignment */
   align-items: center; /* Center items vertically */
   padding: 0 10px; /* Adjust horizontal padding */
