@@ -31,7 +31,13 @@ const buttonIds = [
   "doop-btn", "tornado-btn", "reflective-btn", "crowd-control-btn", 
   "lotus-btn", "ferrum-frenzy-btn", "reverence-btn", "dismay-btn", 
   "i-never-dream-btn", "niflhel-btn", "any-percent-btn", "cerebral-torment-btn", 
-  "ballistic-funk-btn", "sunburn-btn", "zettabyte-btn"
+  "ballistic-funk-btn", "sunburn-btn", "zettabyte-btn",
+  "napalm-btn", "draco-meteor-btn", "artificial-dream-btn", "impasse-btn", 
+  "necropolix-btn", "hurricane-btn", "dismal-duststorm-btn", "snowdrift-btn", 
+  "retention-btn", "meltdown-btn", "broken-signal-btn", "hopping-over-puddles-btn", 
+  "unearthed-btn", "party-rock-anthem-btn", "sky-tech-btn", "the-ultimate-phase-btn", 
+  "awakening-horus-btn", "acropolix-btn", "deception-dive-btn", "ultrasans-btn", 
+  "phantasmagoria-btn", "lights-out-btn", "voided-btn", "incipient-btn"
 ];
 
 const contentIds = [
@@ -67,7 +73,13 @@ const contentIds = [
   "doop-content", "tornado-content", "reflective-content", "crowd-control-content", 
   "lotus-content", "ferrum-frenzy-content", "reverence-content", "dismay-content", 
   "i-never-dream-content", "niflhel-content", "any-percent-content", "cerebral-torment-content", 
-  "ballistic-funk-content", "sunburn-content", "zettabyte-content"
+  "ballistic-funk-content", "sunburn-content", "zettabyte-content",
+  "napalm-content", "draco-meteor-content", "artificial-dream-content", "impasse-content", 
+  "necropolix-content", "hurricane-content", "dismal-duststorm-content", "snowdrift-content", 
+  "retention-content", "meltdown-content", "broken-signal-content", "hopping-over-puddles-content", 
+  "unearthed-content", "party-rock-anthem-content", "sky-tech-content", "the-ultimate-phase-content", 
+  "awakening-horus-content", "acropolix-content", "deception-dive-content", "ultrasans-content", 
+  "phantasmagoria-content", "lights-out-content", "voided-content", "incipient-content"
 ];
 
 // Function to switch tabs
