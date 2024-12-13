@@ -236,19 +236,22 @@ button:hover {
 /* First Place Tab */
 .first-place-tab {
   background-color: #9607b5;
-  color: white; /* Text color for contrast */
+  padding-right: 1px;
+  color: white;
 }
 
 /* Second Place Tab */
 .second-place-tab {
   background-color: #1d8fa3;
-  color: white; /* Text color for contrast */
+  padding-right: 1px;
+  color: white;
 }
 
 /* Third Place Tab */
 .third-place-tab {
   background-color: #1d8525;
-  color: white; /* Text color for contrast */
+  padding-right: 1px;
+  color: white;
 }
 
 /* Divider Line */
