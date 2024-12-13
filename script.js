@@ -70,30 +70,9 @@ const contentIds = [
   "ultrasans-content", "phantasmagoria-content", "lights-out-content", "voided-content", "hypersonic-content"
 ];
 
-// Function to load content dynamically (lazy loading)
-function loadContent(contentId) {
-  const contentElement = document.getElementById(contentId);
-  
-  if (!contentElement) {
-    console.error(`Content element with ID "${contentId}" not found.`);
-    return;
-  }
-
-  // Here you can use AJAX, fetch API, or any other method to load the content
-  // For demonstration, I'll just add a loading message
-  contentElement.innerHTML = "Loading..."; // Placeholder text
-
-  // Simulate loading with a delay (example: use actual data fetching here)
-  setTimeout(() => {
-    // This should be replaced with actual content. 
-    // For now, I'm setting content to the ID of the tab to verify it's loading correctly
-    contentElement.innerHTML = `This is the content for ${contentId}`; // Replace this with actual content for the tab
-  }, 1000); // Simulating a delay of 1 second
-}
-
 // Function to switch tabs
 function switchTab(buttonId, contentId) {
-  // First, hide all content
+  // Hide all tab content elements
   contentIds.forEach(id => {
     const contentElement = document.getElementById(id);
     if (contentElement) {
@@ -101,11 +80,10 @@ function switchTab(buttonId, contentId) {
     }
   });
 
-  // Show the specific content associated with the clicked button
+  // Show the content for the active tab
   const contentElement = document.getElementById(contentId);
   if (contentElement) {
     contentElement.classList.add("active");
-    loadContent(contentId); // Load content lazily
   }
 
   // Remove active class from all buttons
@@ -116,7 +94,7 @@ function switchTab(buttonId, contentId) {
     }
   });
 
-  // Add active class to the clicked button
+  // Add active class to the clicked tab button
   const buttonElement = document.getElementById(buttonId);
   if (buttonElement) {
     buttonElement.classList.add("active");
@@ -136,3 +114,6 @@ buttonIds.forEach((buttonId, index) => {
     console.error(`Button with ID "${buttonId}" not found.`);
   }
 });
+
+// Initially activate the first tab
+switchTab(buttonIds[0], contentIds[0]);
