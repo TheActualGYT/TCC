@@ -112,14 +112,14 @@ button:hover {
 .left-sidebar {
   height: 100vh; /* Full height of the viewport */
   width: 15%;
-  background-image: url('left-sidebar-image.png'); /* Replace with the path to your image */
+  background-image: url('path-to-your-image.jpg'); /* Replace with the path to your image */
   background-size: auto; /* Keeps the original size of the image */
   background-repeat: repeat; /* Ensures the image repeats */
   background-position: top left; /* Aligns the image at the top-left corner */
-  background-attachment: scroll; /* Makes the background image scroll with the content */
+  background-attachment: scroll; /* Ensures the background scrolls with the content */
   color: white;
   padding: 15px;
-  position: fixed;
+  position: relative; /* Changes from fixed to relative */
   margin-top: 52px;
   border-right: 3px solid #fff;
   display: flex;
@@ -128,7 +128,6 @@ button:hover {
   overflow-y: auto; /* Enable vertical scrolling */
   z-index: 10;
 }
-
 
 /* Right Sidebar */
 .right-sidebar {
