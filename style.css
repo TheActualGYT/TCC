@@ -112,7 +112,7 @@ button:hover {
 .left-sidebar {
   height: 100vh; /* Full height of the viewport */
   width: 15%;
-  background-image: url('path-to-your-image.jpg'); /* Replace with the path to your image */
+  background-image: url('left-sidebar-image.png'); /* Replace with the path to your image */
   background-size: auto; /* Keeps the original size of the image */
   background-repeat: repeat; /* Ensures the image repeats */
   background-position: top left; /* Aligns the image at the top-left corner */
