@@ -135,7 +135,10 @@ button:hover {
   top: 50px; /* Adjust this value to match the height of your top bar */
   width: 17%; /* Maintain your desired width */
   height: calc(100vh - 50px); /* Subtract top bar height to avoid overflow */
-  background-color: #7A7A7A;
+  background-image: url('right-sidebar-image.png'); /* Replace with the path to your image */
+  background-size: auto; /* Keeps the original size of the image */
+  background-repeat: repeat; /* Ensures the image repeats */
+  background-position: top left; /* Aligns the image at the top-left corner */
   color: white;
   padding: 15px;
   border-left: 3px solid #fff;
