@@ -160,6 +160,10 @@ button:hover {
   padding-top: 5px; /* Remove any padding */
 }
 
+.right-sidebar p {
+  font-size: 15px;
+}
+
 /* Main Content Area */
 .main-content {
   position: relative; /* Keep as reference for other elements */
