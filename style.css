@@ -154,7 +154,7 @@ button:hover {
 }
 
 .right-sidebar p {
-  margin-top: 0px; /* Reduce this margin to bring the paragraph closer to the h2 */
+  padding-top: -5px; /* Apply negative padding to reduce space */
   font-weight: bold; /* Makes the text bold */
 }
 
