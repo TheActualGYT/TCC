@@ -363,3 +363,29 @@ if (!contentElement) {
 if (!buttonElement) {
   console.error(`Button element with ID "${buttonId}" not found.`);
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  const lazyVideos = document.querySelectorAll('.lazy-video');
+
+  const loadVideo = (video) => {
+    const src = video.getAttribute('data-src');
+    video.src = src; // Set the actual src for the iframe
+  };
+
+  const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.25 // Load when 25% of the video is in view
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        loadVideo(entry.target); // Load video when it's in view
+        observer.unobserve(entry.target); // Stop observing after loading
+      }
+    });
+  }, options);
+
+  lazyVideos.forEach(video => observer.observe(video)); // Start observing each lazy video
+});
