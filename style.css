@@ -140,7 +140,6 @@ button:hover {
   background-repeat: repeat; /* Ensures the image repeats */
   background-position: top left; /* Aligns the image at the top-left corner */
   color: black;
-  text-decoration: bold;
   padding: 15px;
   border-left: 3px solid #fff;
   border-top: 3px solid #fff;
@@ -153,6 +152,10 @@ button:hover {
 .right-sidebar h2 {
   margin-top: 10px; /* Negative value to move the heading up */
   text-decoration: underline;
+}
+
+.right-sidebar p {
+  font-weight: bold; /* Makes the text bold */
 }
 
 /* Main Content Area */
