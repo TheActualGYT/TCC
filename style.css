@@ -139,7 +139,7 @@ button:hover {
   background-size: auto; /* Keeps the original size of the image */
   background-repeat: repeat; /* Ensures the image repeats */
   background-position: top left; /* Aligns the image at the top-left corner */
-  color: white;
+  color: #6b6b6b;
   padding: 15px;
   border-left: 3px solid #fff;
   border-top: 3px solid #fff;
@@ -247,8 +247,9 @@ button:hover {
 
 /* Divider Line */
 .divider-line {
+  color: #6b6b6b;
   width: 100%;
-  border-top: 3px solid #fff;
+  border-top: 3px solid #6b6b6b;;
   margin: 15px 0;
   align-self: center;
   padding: 3px 0;
@@ -256,8 +257,9 @@ button:hover {
 
 /* Divider Line */
 .divider-line2 {
+  color: #6b6b6b;
   width: 100%;
-  border-top: 3px solid #fff;
+  border-top: 3px solid #6b6b6b;;
   margin: 25px 0;
   align-self: center;
   padding: -1px 0;
