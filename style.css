@@ -156,7 +156,7 @@ button:hover {
 
 .right-sidebar p {
   font-weight: bold;
-  margin-top: 0; /* Remove any margin to reduce space to h2 */
+  margin-top: 5px; /* Remove any margin to reduce space to h2 */
   padding-top: 0; /* Remove any padding */
 }
 
