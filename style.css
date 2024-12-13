@@ -154,7 +154,7 @@ button:hover {
 }
 
 .right-sidebar p {
-  padding-top: -5px; /* Apply negative padding to reduce space */
+  padding-top: -10px; /* Apply negative padding to reduce space */
   font-weight: bold; /* Makes the text bold */
 }
 
