@@ -308,84 +308,90 @@ const contentIds = [
   "hypersonic-content",
 ];
 
-// Function to switch tabs
-function switchTab(buttonId, contentId) {
-  // First, hide all content
-  contentIds.forEach(id => {
-    const contentElement = document.getElementById(id);
-    if (contentElement) {
-      contentElement.classList.remove("active");
-    }
-  });
-
-  // Show the specific content associated with the clicked button
-  const contentElement = document.getElementById(contentId);
-  if (contentElement) {
-    contentElement.classList.add("active");
-  }
-
-  // Remove active class from all buttons
-  buttonIds.forEach(id => {
-    const buttonElement = document.getElementById(id);
-    if (buttonElement) {
-      buttonElement.classList.remove("active");
-    }
-  });
-
-  // Add active class to the clicked button
-  const buttonElement = document.getElementById(buttonId);
-  if (buttonElement) {
-    buttonElement.classList.add("active");
-  }
-}
-
-// Add event listeners to each button
-buttonIds.forEach((buttonId, index) => {
-  const button = document.getElementById(buttonId);
-  const contentId = contentIds[index];
-
-  if (button) {
-    button.addEventListener("click", () => {
-      switchTab(buttonId, contentId);
-    });
-  } else {
-    console.error(`Button with ID "${buttonId}" not found.`);
-  }
-});
-
-if (!contentId) {
-  console.error(`No content ID found for button ID "${buttonId}" at index ${index}.`);
-}
-
-if (!contentElement) {
-  console.error(`Content element with ID "${contentId}" not found.`);
-}
-if (!buttonElement) {
-  console.error(`Button element with ID "${buttonId}" not found.`);
-}
-
 document.addEventListener("DOMContentLoaded", function() {
-  const lazyVideos = document.querySelectorAll('.lazy-video');
+  // Button and content IDs for tab switching
+  const buttonIds = ['button1', 'button2']; // Example button IDs
+  const contentIds = ['content1', 'content2']; // Example content IDs
 
-  const loadVideo = (video) => {
-    const src = video.getAttribute('data-src');
-    video.src = src; // Set the actual src for the iframe
-  };
-
-  const options = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.25 // Load when 25% of the video is in view
-  };
-
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        loadVideo(entry.target); // Load video when it's in view
-        observer.unobserve(entry.target); // Stop observing after loading
+  // Function to switch tabs
+  function switchTab(buttonId, contentId) {
+    // Hide all content
+    contentIds.forEach(id => {
+      const contentElement = document.getElementById(id);
+      if (contentElement) {
+        contentElement.classList.remove("active");
       }
     });
-  }, options);
 
-  lazyVideos.forEach(video => observer.observe(video)); // Start observing each lazy video
+    // Show the specific content associated with the clicked button
+    const contentElement = document.getElementById(contentId);
+    if (contentElement) {
+      contentElement.classList.add("active");
+    }
+
+    // Remove active class from all buttons
+    buttonIds.forEach(id => {
+      const buttonElement = document.getElementById(id);
+      if (buttonElement) {
+        buttonElement.classList.remove("active");
+      }
+    });
+
+    // Add active class to the clicked button
+    const buttonElement = document.getElementById(buttonId);
+    if (buttonElement) {
+      buttonElement.classList.add("active");
+    }
+  }
+
+  // Add event listeners to each button
+  buttonIds.forEach((buttonId, index) => {
+    const button = document.getElementById(buttonId);
+    const contentId = contentIds[index];
+
+    if (button) {
+      button.addEventListener("click", () => {
+        switchTab(buttonId, contentId);
+      });
+    } else {
+      console.error(`Button with ID "${buttonId}" not found.`);
+    }
+
+    if (!contentId) {
+      console.error(`No content ID found for button ID "${buttonId}" at index ${index}.`);
+    }
+  });
+
+  // Select all iframe elements and prepare for lazy loading
+  const iframes = document.querySelectorAll('iframe');
+  iframes.forEach((iframe) => {
+    if (iframe.hasAttribute('src')) {
+      iframe.setAttribute('data-src', iframe.getAttribute('src'));
+      iframe.removeAttribute('src');
+      iframe.classList.add('lazy-video');
+    }
+  });
+
+  // Lazy Video Loading
+  const lazyVideos = document.querySelectorAll('.lazy-video');
+  if ('IntersectionObserver' in window) {
+    const videoObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const video = entry.target;
+          video.setAttribute('src', video.getAttribute('data-src'));
+          observer.unobserve(video);
+        }
+      });
+    });
+
+    lazyVideos.forEach(video => {
+      videoObserver.observe(video);
+    });
+  } else {
+    // Fallback: Load videos without IntersectionObserver
+    lazyVideos.forEach(video => {
+      video.setAttribute('src', video.getAttribute('data-src'));
+    });
+  }
 });
