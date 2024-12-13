@@ -116,6 +116,7 @@ button:hover {
   background-size: auto; /* Keeps the original size of the image */
   background-repeat: repeat; /* Ensures the image repeats */
   background-position: top left; /* Aligns the image at the top-left corner */
+  background-attachment: scroll; /* Makes the background image scroll with the content */
   color: white;
   padding: 15px;
   position: fixed;
