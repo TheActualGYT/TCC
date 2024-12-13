@@ -79,13 +79,15 @@ function loadContent(contentId) {
     return;
   }
 
-  // Placeholder text while loading
-  contentElement.innerHTML = "Loading...";
+  // Here you can use AJAX, fetch API, or any other method to load the content
+  // For demonstration, I'll just add a loading message
+  contentElement.innerHTML = "Loading..."; // Placeholder text
 
-  // Simulate loading with a delay (for demonstration purposes)
+  // Simulate loading with a delay (example: use actual data fetching here)
   setTimeout(() => {
-    // You can replace the below line with actual content fetching
-    contentElement.innerHTML = `This is the content for ${contentId}`; // This can be changed to fetch or AJAX content
+    // This should be replaced with actual content. 
+    // For now, I'm setting content to the ID of the tab to verify it's loading correctly
+    contentElement.innerHTML = `This is the content for ${contentId}`; // Replace this with actual content for the tab
   }, 1000); // Simulating a delay of 1 second
 }
 
