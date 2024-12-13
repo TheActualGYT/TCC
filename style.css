@@ -136,7 +136,7 @@ button:hover {
   width: 17%; /* Maintain your desired width */
   height: calc(100vh - 50px); /* Subtract top bar height to avoid overflow */
   background-color: #8A8A8A;
-  color: black;
+  color: white;
   padding: 15px;
   border-left: 3px solid #fff;
   border-top: 3px solid #fff;
@@ -260,9 +260,9 @@ button:hover {
 
 /* Divider Line */
 .divider-line2 {
-  color: black;
+  color: white;
   width: 100%;
-  border-top: 3px solid black;
+  border-top: 3px solid white;
   margin: 25px 0;
   align-self: center;
   padding: -1px 0;
