@@ -363,23 +363,3 @@ if (!contentElement) {
 if (!buttonElement) {
   console.error(`Button element with ID "${buttonId}" not found.`);
 }
-
-document.addEventListener("DOMContentLoaded", function() {
-    const videos = document.querySelectorAll('.lazy-video');
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const video = entry.target;
-                const source = video.querySelector('source');
-                source.src = source.dataset.src;
-                video.load();
-                video.play();
-                observer.unobserve(video);
-            }
-        });
-    });
-
-    videos.forEach(video => {
-        observer.observe(video);
-    });
-});
