@@ -253,9 +253,9 @@ button:hover {
 
 /* Divider Line */
 .divider-line {
-  color: #6b6b6b;
+  color: white;
   width: 100%;
-  border-top: 3px solid #6b6b6b;;
+  border-top: 3px solid wite;;
   margin: 15px 0;
   align-self: center;
   padding: 3px 0;
@@ -263,9 +263,9 @@ button:hover {
 
 /* Divider Line */
 .divider-line2 {
-  color: #6b6b6b;
+  color: black;
   width: 100%;
-  border-top: 3px solid #6b6b6b;;
+  border-top: 3px solid black;;
   margin: 25px 0;
   align-self: center;
   padding: -1px 0;
