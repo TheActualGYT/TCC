@@ -147,15 +147,17 @@ button:hover {
 }
 
 .right-sidebar h2 {
-  margin-top: 10px; /* Negative value to move the heading up */
-  font-size: 30px; /* Adjust this value to make the font bigger */
+  margin-top: 0; /* Remove margin to reduce gap with the top */
+  margin-bottom: 5px; /* Adjust margin-bottom to reduce space to p */
+  font-size: 30px;
   text-decoration: underline;
   font-weight: 900;
 }
 
 .right-sidebar p {
-  padding-top: -10px; /* Apply negative padding to reduce space */
-  font-weight: bold; /* Makes the text bold */
+  font-weight: bold;
+  margin-top: 0; /* Remove any margin to reduce space to h2 */
+  padding-top: 0; /* Remove any padding */
 }
 
 /* Main Content Area */
