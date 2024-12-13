@@ -154,7 +154,7 @@ button:hover {
 }
 
 .right-sidebar p {
-  margin-top: 5px; /* Reduce this margin to bring the paragraph closer to the h2 */
+  margin-top: 0px; /* Reduce this margin to bring the paragraph closer to the h2 */
   font-weight: bold; /* Makes the text bold */
 }
 
