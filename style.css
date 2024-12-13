@@ -147,7 +147,7 @@ button:hover {
 }
 
 .right-sidebar h2 {
-  margin-top: 10px; /* Negative value to move the heading up */
+  margin-top: 5px; /* Negative value to move the heading up */
   font-size: 30px; /* Adjust this value to make the font bigger */
   text-decoration: underline;
   font-weight: 900;
