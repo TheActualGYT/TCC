@@ -308,11 +308,12 @@ const contentIds = [
   "hypersonic-content",
 ];
 
-document.addEventListener("DOMContentLoaded", function() {
-  // Button and content IDs for tab switching
-  const buttonIds = ['button1', 'button2']; // Example button IDs
-  const contentIds = ['content1', 'content2']; // Example content IDs
+// Check if buttonIds and contentIds are the same length
+if (buttonIds.length !== contentIds.length) {
+  console.error("Button IDs and Content IDs must have the same length.");
+}
 
+document.addEventListener("DOMContentLoaded", function () {
   // Function to switch tabs
   function switchTab(buttonId, contentId) {
     // Hide all content
