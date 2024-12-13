@@ -148,7 +148,7 @@ button:hover {
 .right-sidebar h2 {
   margin-top: 0; /* Remove margin to reduce gap with the top */
   margin-bottom: 5px; /* Adjust margin-bottom to reduce space to p */
-  color: c93030;
+  color: #c93030;
   font-size: 30px;
   text-decoration: underline;
   font-weight: 900;
