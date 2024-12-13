@@ -135,10 +135,7 @@ button:hover {
   top: 50px; /* Adjust this value to match the height of your top bar */
   width: 17%; /* Maintain your desired width */
   height: calc(100vh - 50px); /* Subtract top bar height to avoid overflow */
-  background-image: url('right-sidebar-image.png'); /* Replace with the path to your image */
-  background-size: auto; /* Keeps the original size of the image */
-  background-repeat: repeat; /* Ensures the image repeats */
-  background-position: top left; /* Aligns the image at the top-left corner */
+  background-color: #9399A0;
   color: black;
   padding: 15px;
   border-left: 3px solid #fff;
@@ -255,7 +252,7 @@ button:hover {
 .divider-line {
   color: white;
   width: 100%;
-  border-top: 3px solid wite;;
+  border-top: 3px solid white;
   margin: 15px 0;
   align-self: center;
   padding: 3px 0;
@@ -265,7 +262,7 @@ button:hover {
 .divider-line2 {
   color: black;
   width: 100%;
-  border-top: 3px solid black;;
+  border-top: 3px solid black;
   margin: 25px 0;
   align-self: center;
   padding: -1px 0;
