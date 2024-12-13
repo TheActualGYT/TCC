@@ -150,8 +150,7 @@ const buttonIds = [
   "phantasmagoria-btn",
   "lights-out-btn",
   "voided-btn",
-  "incipient-btn",
-  "lost-love-btn"
+  "hypersonic-btn",
 ];
 
 const contentIds = [
@@ -306,8 +305,7 @@ const contentIds = [
   "phantasmagoria-content",
   "lights-out-content",
   "voided-content",
-  "incipient-content",
-  "lost-love-content"
+  "hypersonic-content",
 ];
 
 // Function to switch tabs
