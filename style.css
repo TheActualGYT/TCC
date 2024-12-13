@@ -139,7 +139,7 @@ button:hover {
   background-size: auto; /* Keeps the original size of the image */
   background-repeat: repeat; /* Ensures the image repeats */
   background-position: top left; /* Aligns the image at the top-left corner */
-  color: #6b6b6b;
+  color: black;
   padding: 15px;
   border-left: 3px solid #fff;
   border-top: 3px solid #fff;
