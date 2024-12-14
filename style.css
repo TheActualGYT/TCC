@@ -104,6 +104,7 @@ button:hover {
 .main-container {
   display: flex;
   flex-wrap: nowrap; /* Prevent wrapping */
+  justify-content: space-between; /* Ensures proper spacing */
   min-height: 100vh; /* Take full viewport height */
   margin-top: 52px; /* Adjust to account for the top bar */
 }
@@ -163,8 +164,9 @@ button:hover {
 
 /* Main Content Area */
 .main-content {
-  width: 64%;
   flex-grow: 1; /* Let the main content area grow */
+  margin: 0 auto; /* Center the content horizontally */
+  max-width: 64%; /* Adjust as per the available space between sidebars */
   padding: 20px;
   background-color: #E0E0E0;
   overflow-y: auto; /* Allow scrolling for content */
