@@ -110,7 +110,7 @@ button:hover {
 
 /* Left Sidebar */
 .left-sidebar {
-  width: 25%; /* Sidebar width */
+  width: 20%; /* Sidebar width */
   background-image: url('left-sidebar-image.png'); /* Replace with the path to your image */
   background-size: auto; /* Keeps the original size of the image */
   background-repeat: repeat; /* Ensures the image repeats */
@@ -127,7 +127,7 @@ button:hover {
 
 /* Right Sidebar */
 .right-sidebar {
-  width: 25%; /* Sidebar width */
+  width: 20%; /* Sidebar width */
   background-color: #8A8A8A;
   padding: 15px;
   border-left: 3px solid #fff;
