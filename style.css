@@ -110,7 +110,7 @@ button:hover {
 
 /* Left Sidebar */
 .left-sidebar {
-  width: 20%; /* Sidebar width */
+  width: 18%; /* Sidebar width */
   background-image: url('left-sidebar-image.png'); /* Replace with the path to your image */
   background-size: 100% auto; /* Stretches the image vertically if necessary */
   background-repeat: repeat-y; /* Ensures the image only repeats vertically */
@@ -128,16 +128,22 @@ button:hover {
 
 /* Right Sidebar */
 .right-sidebar {
-  width: 20%; /* Sidebar width */
-  background-color: #8A8A8A;
+  width: 18%; /* Sidebar width, same as the left sidebar */
+  color: white;
   padding: 15px;
-  border-left: 3px solid #fff;
-  border-top: 3px solid #fff;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  overflow-y: auto; /* Scroll if content overflows */
+  border-left: 3px solid #fff; /* Optional, if you want a border between content */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: auto; /* Enable vertical scrolling */
   box-sizing: border-box;
+  position: fixed; /* Fixes the sidebar to the right edge of the screen */
+  top: 0;
+  right: 0; /* Align to the right side */
+  height: 100vh; /* Ensure it takes full height */
+  background-color: #333; /* Set a background color if needed */
 }
+
 
 .right-sidebar h2 {
   margin-top: 0; /* Remove margin to reduce gap with the top */
