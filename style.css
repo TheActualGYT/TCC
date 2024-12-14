@@ -112,8 +112,8 @@ button:hover {
 .left-sidebar {
   width: 20%; /* Sidebar width */
   background-image: url('left-sidebar-image.png'); /* Replace with the path to your image */
-  background-size: auto; /* Keeps the original size of the image */
-  background-repeat: repeat; /* Ensures the image repeats */
+  background-size: 100% auto; /* Stretches the image vertically if necessary */
+  background-repeat: repeat-y; /* Ensures the image only repeats vertically */
   background-position: top left; /* Aligns the image at the top-left corner */
   color: white;
   padding: 15px;
