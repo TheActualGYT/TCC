@@ -311,7 +311,6 @@ a.bold-text:hover {
   width: 48%; /* Maintain proportional width */
   height: 36%; /* Maintain proportional height */
   max-width: calc(100% - 20px); /* Prevent overflow with padding */
-  height: auto; /* Adjust height to content */
   background-color: rgba(255, 255, 255, 0.9); /* Increase opacity for better readability */
   padding: 10px 15px; /* More balanced padding */
   border-radius: 8px; /* Slightly more rounded corners */
