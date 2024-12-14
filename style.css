@@ -161,12 +161,11 @@ button:hover {
 }
 
 .main-content {
-  flex-grow: 1; /* Let the main content area grow */
-  padding: 20px;
+  width: calc(100% - 36%); /* Total width minus the combined sidebar widths */
+  margin-left: 18%; /* Push to the right by the left sidebar width */
   background-color: #E0E0E0;
+  padding: 20px;
   overflow-y: auto; /* Allow scrolling for content */
-  margin-left: 18%; /* Push the main content to the right by the width of the left sidebar */
-  margin-right: 18%; /* Push the main content inward from the right by the width of the right sidebar */
 }
 
 /* Sidebar Tabs */
