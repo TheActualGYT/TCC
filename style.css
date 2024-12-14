@@ -161,6 +161,7 @@ button:hover {
 }
 
 .main-content {
+  position: relative; /* Set positioning context for child elements */
   width: calc(100% - 36%); /* Total width minus the combined sidebar widths */
   background-color: #E0E0E0;
   padding: 20px;
@@ -305,19 +306,19 @@ a.bold-text:hover {
 
 .level-info {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 50.4%;
-  height: auto; /* Let the height adjust to content */
-  background-color: rgba(255, 255, 255, 0.75); /* Slightly opaque for readability */
-  padding: 5px 15px 8px 15px; /* Expands top and left padding */
-  border-radius: 5px;
+  top: 10px; /* Slightly closer to the top for tighter spacing */
+  left: 10px; /* Adjust to avoid being too far from the left */
+  width: 48%; /* Maintain proportional width */
+  max-width: calc(100% - 20px); /* Prevent overflow with padding */
+  height: auto; /* Adjust height to content */
+  background-color: rgba(255, 255, 255, 0.9); /* Increase opacity for better readability */
+  padding: 10px 15px; /* More balanced padding */
+  border-radius: 8px; /* Slightly more rounded corners */
   font-family: 'Lexend', sans-serif;
-  color: #333; /* More legible on a light background */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  z-index: 50; /* Higher to avoid being covered */
-  max-width: calc(100% - 40px); /* Prevents it from overflowing on smaller screens */
-  text-align: left; /* Left-aligned text */
+  color: #333; /* Legible text color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  z-index: 50; /* Ensure visibility */
+  text-align: left;
 }
 
 .level-info p {
