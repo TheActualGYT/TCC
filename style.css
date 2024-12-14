@@ -112,30 +112,26 @@ button:hover {
 /* Left Sidebar */
 .left-sidebar {
   height: 100vh; /* Full height of the viewport */
-  width: 15%;
+  width: 15%; /* Sidebar width */
   background-image: url('left-sidebar-image.png'); /* Replace with the path to your image */
   background-size: auto; /* Keeps the original size of the image */
   background-repeat: repeat; /* Ensures the image repeats */
   background-position: top left; /* Aligns the image at the top-left corner */
   color: white;
   padding: 15px;
-  position: fixed;
-  margin-top: 52px;
   border-right: 3px solid #fff;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   overflow-y: auto; /* Enable vertical scrolling */
-  z-index: 10;
+  margin-top: 52px; /* Adjust to match the top bar height */
+  box-sizing: border-box;
 }
 
 /* Right Sidebar */
 .right-sidebar {
-  position: fixed; /* Keep the sidebar fixed on the screen */
-  right: 0; /* Align to the right edge */
-  top: 50px; /* Adjust this value to match the height of your top bar */
   width: 17%; /* Sidebar width */
-  height: calc(100vh - 50px); /* Subtract top bar height to avoid overflow */
+  height: auto; /* Adjust height automatically based on content */
   background-color: #8A8A8A;
   padding: 15px;
   border-left: 3px solid #fff;
@@ -143,7 +139,8 @@ button:hover {
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   overflow-y: auto; /* Scroll if content overflows */
-  box-sizing: border-box; /* Ensures padding is included in height/width calculations */
+  margin-top: 52px; /* Adjust to match the top bar height */
+  box-sizing: border-box;
 }
 
 .right-sidebar h2 {
@@ -164,13 +161,12 @@ button:hover {
 /* Main Content Area */
 .main-content {
   position: relative; /* Keep as reference for other elements */
-  margin-top: 52px; /* Ensure there's enough space for right sidebar */
-  margin-left: 16.75%; /* Ensure there's enough space for right sidebar */
-  margin-right: 15%; /* Ensure there's enough space for right sidebar */
+  margin-top: 52px; /* Ensure there's enough space for top bar */
+  margin-left: 16.75%; /* Make space for the left sidebar */
+  margin-right: 17%; /* Make space for the right sidebar */
   padding: 20px;
   height: auto;
   max-height: 100vh; /* Prevent content from overflowing vertically */
-  width: 70%; /* Ensure proper width, maybe reduce if too large */
   background-color: #E0E0E0;
   overflow-y: hidden; /* Allow scrolling for content */
 }
