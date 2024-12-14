@@ -350,6 +350,7 @@ a.bold-text:hover {
   top: 20px; /* Distance from the top of the viewport */
   right: calc(17% + 3%); /* 17% for sidebar width + 3% gap */
   z-index: 50; /* Ensure it stays above other elements */
+  transform: translateY(0); /* Correct any vertical shifting */
 }
 
 .level-image img {
