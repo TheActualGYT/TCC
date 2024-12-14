@@ -118,6 +118,7 @@ button:hover {
   color: white;
   padding: 15px;
   border-right: 3px solid #fff;
+  margin-top: 52px; /* Adjust to account for the top bar */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -165,6 +166,7 @@ button:hover {
   width: calc(100% - 36%); /* Total width minus the combined sidebar widths */
   background-color: #E0E0E0;
   padding: 20px;
+  margin-top: 52px; /* Adjust to account for the top bar */
   overflow-y: auto; /* Allow scrolling for content */
 }
 
