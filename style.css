@@ -138,6 +138,7 @@ button:hover {
   overflow-y: auto; /* Enable vertical scrolling */
   box-sizing: border-box;
   position: fixed; /* Fixes the sidebar to the right edge of the screen */
+  margin-top: 52px; /* Adjust to account for the top bar */
   top: 0;
   right: 0; /* Align to the right side */
   height: 100vh; /* Ensure it takes full height */
