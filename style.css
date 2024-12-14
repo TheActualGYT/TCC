@@ -131,7 +131,7 @@ button:hover {
 
 /* Right Sidebar */
 .right-sidebar {
-  position: absolute; /* Position it within the main container */
+  position: fixed; /* Position it within the main container */
   right: 0; /* Align to the right edge */
   top: 50px; /* Adjust this value to match the height of your top bar */
   width: 17%; /* Sidebar width */
