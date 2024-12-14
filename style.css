@@ -118,7 +118,7 @@ button:hover {
   color: white;
   padding: 15px;
   border-right: 3px solid #fff;
-  margin-top: 52px; /* Adjust to account for the top bar */
+  margin-top: 104px; /* Adjust to account for the top bar */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
