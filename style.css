@@ -373,15 +373,36 @@ a.bold-text:hover {
 /* Style for the Victor's List Bubble */
 .victors-list {
   position: absolute;
-  width: 48%; /* Same width as the level info */
-  max-width: calc(100% - 20px); /* Prevent overflow with padding */
-  background-color: rgba(255, 255, 255, 0.75); /* Slightly opaque for readability */
-  border-radius: 5px; /* Rounded corners to give the bubble effect */
-  text-align: left;
-  padding: 5px 15px 15px 15px; /* Set top padding to 0 to remove the gap */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
-  margin-top: 10px; /* Exact 10px gap below the Level Info */
+  top: 10px; /* Slightly closer to the top for tighter spacing */
   left: 10px; /* Adjust to avoid being too far from the left */
+  width: 48%; /* Maintain proportional width */
+  height: 29%;
+  max-width: calc(100% - 20px); /* Prevent overflow with padding */
+  background-color: rgba(255, 255, 255, 0.9); /* Increase opacity for better readability */
+  padding: 5px 15px 15px 5px; /* More balanced padding */
+  border-radius: 8px; /* Slightly more rounded corners */
+  font-family: 'Lexend', sans-serif;
+  color: #333; /* Legible text color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  z-index: 50; /* Ensure visibility */
+  text-align: left;
+}
+
+.level-info {
+  position: absolute;
+  top: 10px; /* Slightly closer to the top for tighter spacing */
+  left: 10px; /* Adjust to avoid being too far from the left */
+  width: 48%; /* Maintain proportional width */
+  height: 29%;
+  max-width: calc(100% - 20px); /* Prevent overflow with padding */
+  background-color: rgba(255, 255, 255, 0.9); /* Increase opacity for better readability */
+  padding: 10px 15px; /* More balanced padding */
+  border-radius: 8px; /* Slightly more rounded corners */
+  font-family: 'Lexend', sans-serif;
+  color: #333; /* Legible text color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  z-index: 50; /* Ensure visibility */
+  text-align: left;
 }
 
 /* Increase the size of the Victor's List title */
