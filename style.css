@@ -381,7 +381,7 @@ a.bold-text:hover {
   padding: 5px 15px 15px 15px; /* Set top padding to 0 to remove the gap */
   text-align: left;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
-  margin-top: calc(29% + 10px); /* Combine percentage and fixed pixel space */
+  margin-top: 10px; /* Exact 10px gap below the Level Info */
   position: relative; /* Adjust positioning context */
 }
 
