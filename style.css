@@ -123,6 +123,7 @@ button:hover {
   justify-content: flex-start;
   overflow-y: auto; /* Enable vertical scrolling */
   box-sizing: border-box;
+  height: 100vh; /* Ensure the sidebar has full height of the viewport */
 }
 
 /* Right Sidebar */
