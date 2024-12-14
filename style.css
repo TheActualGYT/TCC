@@ -346,12 +346,12 @@ a.bold-text:hover {
 .level-image {
   position: absolute; /* Position it relative to the nearest positioned ancestor */
   top: 20px; /* Adjust the distance from the top */
-  right: 4.4%; /* Move it to the right side of the page */
+  right: 0px; /* Move it to the right side of the page */
   z-index: 50; /* Ensure it stays above background elements */
 }
 
 .level-image img {
-  width: 40%; /* Use a percentage to make it responsive */
+  width: 42%; /* Use a percentage to make it responsive */
   height: auto; /* Maintain the aspect ratio */
   border-radius: 5px; /* Optional: Add rounded corners */
   border: 3px solid white; /* Add a white border with a thickness of 3px */
