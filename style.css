@@ -309,7 +309,7 @@ a.bold-text:hover {
   top: 10px; /* Slightly closer to the top for tighter spacing */
   left: 10px; /* Adjust to avoid being too far from the left */
   width: 48%; /* Maintain proportional width */
-  height: 30%; /* Maintain proportional height */
+  height: 29%; /* Maintain proportional height */
   max-width: calc(100% - 20px); /* Prevent overflow with padding */
   background-color: rgba(255, 255, 255, 0.9); /* Increase opacity for better readability */
   padding: 10px 15px; /* More balanced padding */
