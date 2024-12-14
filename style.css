@@ -103,10 +103,10 @@ button:hover {
 /* Layout */
 .main-container {
   display: flex;
-  flex-wrap: nowrap; /* Prevent wrapping */
-  justify-content: space-between; /* Ensures proper spacing */
-  min-height: 100vh; /* Take full viewport height */
-  margin-top: 52px; /* Adjust to account for the top bar */
+  flex-wrap: nowrap;
+  position: relative; /* Allows absolute positioning inside */
+  min-height: 100vh;
+  margin-top: 52px;
 }
 
 /* Left Sidebar */
@@ -164,12 +164,12 @@ button:hover {
 
 /* Main Content Area */
 .main-content {
-  flex-grow: 1; /* Let the main content area grow */
-  margin: 0 auto; /* Center the content horizontally */
-  max-width: 64%; /* Adjust as per the available space between sidebars */
+  margin-left: 18%; /* Matches .left-sidebar width */
+  margin-right: 18%; /* Matches .right-sidebar width */
+  width: calc(100% - 36%); /* Total width minus sidebars */
   padding: 20px;
   background-color: #E0E0E0;
-  overflow-y: auto; /* Allow scrolling for content */
+  overflow-y: auto;
 }
 
 /* Sidebar Tabs */
