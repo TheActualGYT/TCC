@@ -112,7 +112,7 @@ button:hover {
 /* Left Sidebar */
 .left-sidebar {
   height: 100vh; /* Full height of the viewport */
-  width: 15%; /* Sidebar width */
+  width: 20%; /* Sidebar width */
   background-image: url('left-sidebar-image.png'); /* Replace with the path to your image */
   background-size: auto; /* Keeps the original size of the image */
   background-repeat: repeat; /* Ensures the image repeats */
@@ -130,7 +130,7 @@ button:hover {
 
 /* Right Sidebar */
 .right-sidebar {
-  width: 17%; /* Sidebar width */
+  width: 20%; /* Sidebar width */
   height: auto; /* Adjust height automatically based on content */
   background-color: #8A8A8A;
   padding: 15px;
@@ -140,6 +140,7 @@ button:hover {
   text-align: center;
   overflow-y: auto; /* Scroll if content overflows */
   margin-top: 52px; /* Adjust to match the top bar height */
+  margin-right: 100px;
   box-sizing: border-box;
 }
 
