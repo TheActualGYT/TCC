@@ -145,7 +145,6 @@ button:hover {
   background-color: #8A8A8A; /* Set a background color if needed */
 }
 
-
 .right-sidebar h2 {
   margin-top: 0; /* Remove margin to reduce gap with the top */
   margin-bottom: 5px; /* Adjust margin-bottom to reduce space to p */
@@ -161,13 +160,13 @@ button:hover {
   padding-top: 5px; /* Remove any padding */
 }
 
-/* Main Content Area */
 .main-content {
-  width: 64%;
   flex-grow: 1; /* Let the main content area grow */
   padding: 20px;
   background-color: #E0E0E0;
   overflow-y: auto; /* Allow scrolling for content */
+  margin-left: 18%; /* Push the main content to the right by the width of the left sidebar */
+  margin-right: 18%; /* Push the main content inward from the right by the width of the right sidebar */
 }
 
 /* Sidebar Tabs */
