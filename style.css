@@ -103,10 +103,9 @@ button:hover {
 /* Layout */
 .main-container {
   display: flex;
-  flex-wrap: nowrap;
-  position: relative; /* Allows absolute positioning inside */
-  min-height: 100vh;
-  margin-top: 52px;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  min-height: 100vh; /* Take full viewport height */
+  margin-top: 52px; /* Adjust to account for the top bar */
 }
 
 /* Left Sidebar */
@@ -164,12 +163,11 @@ button:hover {
 
 /* Main Content Area */
 .main-content {
-  margin-left: 18%; /* Matches .left-sidebar width */
-  margin-right: 18%; /* Matches .right-sidebar width */
-  width: calc(100% - 36%); /* Total width minus sidebars */
+  width: 64%;
+  flex-grow: 1; /* Let the main content area grow */
   padding: 20px;
   background-color: #E0E0E0;
-  overflow-y: auto;
+  overflow-y: auto; /* Allow scrolling for content */
 }
 
 /* Sidebar Tabs */
