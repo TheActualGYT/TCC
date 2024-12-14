@@ -372,6 +372,7 @@ a.bold-text:hover {
 
 /* Style for the Victor's List Bubble */
 .victors-list {
+  position: absolute;
   width: 49%; /* Same width as the level info */
   max-width: calc(100% - 20px); /* Prevent overflow with padding */
   background-color: rgba(255, 255, 255, 0.75); /* Slightly opaque for readability */
@@ -380,8 +381,7 @@ a.bold-text:hover {
   padding: 5px 15px 15px 15px; /* Set top padding to 0 to remove the gap */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
   margin-top: 10px; /* Exact 10px gap below the Level Info */
-  left: -10px; /* Adjust to avoid being too far from the left */
-  position: absolute;
+  left: 10px; /* Adjust to avoid being too far from the left */
 }
 
 /* Increase the size of the Victor's List title */
