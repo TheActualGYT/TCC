@@ -375,6 +375,7 @@ a.bold-text:hover {
 /* Style for the Victor's List Bubble */
 .victors-list {
   width: 48%; /* Same width as the level info */
+  max-width: calc(100% - 20px); /* Prevent overflow with padding */
   background-color: rgba(255, 255, 255, 0.75); /* Slightly opaque for readability */
   border-radius: 5px; /* Rounded corners to give the bubble effect */
   padding: 5px 15px 15px 15px; /* Set top padding to 0 to remove the gap */
@@ -390,7 +391,7 @@ a.bold-text:hover {
   font-weight: bold; /* Make it bold for emphasis */
   color: #333; /* Darker color for better readability */
   margin-top: 0; /* Remove the default margin at the top of the h2 */
-  margin-bottom: 15px; /* Decrease the space below the title */
+  margin-bottom: 10px; /* Decrease the space below the title */
 }
 
 /* Table styling inside the bubble */
