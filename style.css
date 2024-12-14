@@ -103,15 +103,13 @@ button:hover {
 /* Layout */
 .main-container {
   display: flex;
-  position: relative; /* Establish a positioning context for child elements */
-  min-height: 100vh; /* Take full viewport height */
-  height: 100%; /* Ensure it takes the full height */
   flex-wrap: nowrap; /* Prevent wrapping */
+  min-height: 100vh; /* Take full viewport height */
+  margin-top: 52px; /* Adjust to account for the top bar */
 }
 
 /* Left Sidebar */
 .left-sidebar {
-  height: 100vh; /* Full height of the viewport */
   width: 25%; /* Sidebar width */
   background-image: url('left-sidebar-image.png'); /* Replace with the path to your image */
   background-size: auto; /* Keeps the original size of the image */
@@ -124,13 +122,11 @@ button:hover {
   flex-direction: column;
   justify-content: flex-start;
   overflow-y: auto; /* Enable vertical scrolling */
-  margin-top: 52px; /* Adjust to match the top bar height */
   box-sizing: border-box;
 }
 
 /* Right Sidebar */
 .right-sidebar {
-  height: 100vh; /* Full height of the viewport */
   width: 25%; /* Sidebar width */
   background-color: #8A8A8A;
   padding: 15px;
@@ -139,8 +135,6 @@ button:hover {
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
   text-align: center;
   overflow-y: auto; /* Scroll if content overflows */
-  margin-top: 52px; /* Adjust to match the top bar height */
-  margin-right: 100px;
   box-sizing: border-box;
 }
 
@@ -161,15 +155,10 @@ button:hover {
 
 /* Main Content Area */
 .main-content {
-  position: relative; /* Keep as reference for other elements */
-  margin-top: 52px; /* Ensure there's enough space for top bar */
-  margin-left: 25%; /* Make space for the left sidebar */
-  margin-right: 25%; /* Make space for the right sidebar */
+  flex-grow: 1; /* Let the main content area grow */
   padding: 20px;
-  height: auto;
-  max-height: 100vh; /* Prevent content from overflowing vertically */
   background-color: #E0E0E0;
-  overflow-y: hidden; /* Allow scrolling for content */
+  overflow-y: auto; /* Allow scrolling for content */
 }
 
 /* Sidebar Tabs */
