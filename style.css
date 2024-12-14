@@ -60,7 +60,7 @@ button:hover {
   background-color: #333;
   color: #fff;
   width: 100%; /* Ensure it covers the full width */
-  height: 50px; /* Fixed height */
+  height: 50px;
   display: flex;
   align-items: center;
   padding: 0 10px;
@@ -104,9 +104,8 @@ button:hover {
 .main-container {
   display: flex;
   flex-wrap: nowrap; /* Prevent wrapping */
-  min-height: calc(100vh - 52px); /* Adjust to account for the top bar */
-  margin-top: 0; /* Remove top margin */
-  padding-top: 0; /* Remove padding-top to avoid overlap with top bar */
+  min-height: 100vh; /* Take full viewport height */
+  margin-top: 52px; /* Adjust to account for the top bar */
 }
 
 /* Left Sidebar */
@@ -119,13 +118,13 @@ button:hover {
   color: white;
   padding: 15px;
   border-right: 3px solid #fff;
+  margin-top: 52px; /* Adjust to account for the top bar */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   overflow-y: auto; /* Enable vertical scrolling */
   box-sizing: border-box;
   height: 100vh; /* Ensure the sidebar has full height of the viewport */
-  position: relative; /* Allows better positioning */
 }
 
 /* Right Sidebar */
@@ -383,7 +382,7 @@ a.bold-text:hover {
   padding: 5px 15px 15px 15px; /* Set top padding to 0 to remove the gap */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
   margin-top: 10px; /* Exact 10px gap below the Level Info */
-  left: -10px; /* Adjust to avoid being too far from the left */
+  left: -5px; /* Adjust to avoid being too far from the left */
   position: relative; /* Adjust positioning context */
 }
 
