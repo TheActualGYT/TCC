@@ -163,6 +163,7 @@ button:hover {
 
 /* Main Content Area */
 .main-content {
+  width: 64%;
   flex-grow: 1; /* Let the main content area grow */
   padding: 20px;
   background-color: #E0E0E0;
