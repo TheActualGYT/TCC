@@ -349,11 +349,11 @@ a.bold-text:hover {
 /* Level Image */
 .level-image {
   position: absolute; /* Align the image with respect to its nearest positioned ancestor */
-  top: 67px; /* Distance from the top of the container */
+  top: 15px; /* Distance from the top of the container */
   right: 10px; /* Position the image 10px from the right side of the container */
   z-index: 50; /* Ensure it stays above other elements */
-  width: 250px; /* Set a fixed width for all images */
-  height: 140px; /* Set a fixed height for all images */
+  width: auto; /* Set a fixed width for all images */
+  height: 31%; /* Set a fixed height for all images */
   overflow: hidden; /* Prevent overflow if the image doesn't fill the container */
 }
 
