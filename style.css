@@ -353,7 +353,7 @@ a.bold-text:hover {
   right: 15px; /* Position the image 10px from the right side of the container */
   z-index: 50; /* Ensure it stays above other elements */
   width: auto; /* Set a fixed width for all images */
-  height: 32%; /* Set a fixed height for all images */
+  height: 31.5%; /* Set a fixed height for all images */
   border-radius: 8px; /* Optional: Add rounded corners */
   border: 3px solid white; /* Add a white border with a thickness of 3px */
   overflow: hidden; /* Prevent overflow if the image doesn't fill the container */
