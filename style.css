@@ -352,12 +352,16 @@ a.bold-text:hover {
   top: 67px; /* Distance from the top of the container */
   right: 10px; /* Position the image 10px from the right side of the container */
   z-index: 50; /* Ensure it stays above other elements */
+  width: 250px; /* Set a fixed width for all images */
+  height: 140px; /* Set a fixed height for all images */
+  overflow: hidden; /* Prevent overflow if the image doesn't fill the container */
 }
 
 /* Image styling */
 .level-image img {
-  width: auto; /* Use a percentage to make it responsive */
-  height: 31%; /* Maintain the aspect ratio */
+  width: 100%; /* Make the image fill the container's width */
+  height: 100%; /* Make the image fill the container's height */
+  object-fit: cover; /* Scale and crop the image to cover the container */
   border-radius: 5px; /* Optional: Add rounded corners */
   border: 3px solid white; /* Add a white border with a thickness of 3px */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for better visibility */
