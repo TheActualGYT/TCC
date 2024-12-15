@@ -388,11 +388,12 @@ a.bold-text:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
   margin-top: 10px; /* Exact 10px gap below the Level Info */
   left: 10px; /* Adjust to avoid being too far from the left */
+  font-size: 2vw; /* Makes the font size scale with the viewport width */
 }
 
 /* Increase the size of the Victor's List title */
 .victors-list h2 {
-  font-size: 45px; /* Adjust the size to make the title larger */
+  font-size: 3.5vw; /* Adjust to scale with the container or viewport */
   font-weight: bold; /* Make it bold for emphasis */
   color: #333; /* Darker color for better readability */
   margin-top: 0; /* Remove the default margin at the top of the h2 */
@@ -405,11 +406,12 @@ a.bold-text:hover {
   table-layout: fixed; /* Enforce fixed column width layout */
   text-align: left;
   border-collapse: collapse;
+  font-size: 1.5vw; /* Make table font size responsive */
 }
 
 /* Adjust padding to diminish the gap between title and table */
 .victors-table th, .victors-table td {
-  padding: 8px 10px; /* Reduce padding between the rows and columns */
+  padding: 2vw 3vw; /* Responsive padding for the table */
   text-align: left;
   border: 1px solid black;
   overflow: hidden; /* Prevent content from overflowing */
@@ -436,19 +438,19 @@ a.bold-text:hover {
 
 /* Column-specific width adjustments */
 .victors-table th:nth-child(1), .victors-table td:nth-child(1) {
-  width: 50px; /* Adjust the width of the first column */
+  width: 10%; /* Adjust width to be relative */
 }
 
 .victors-table th:nth-child(2), .victors-table td:nth-child(2) {
-  width: 150px; /* Adjust the width of the second column */
+  width: 30%; /* Adjust width to be relative */
 }
 
 .victors-table th:nth-child(3), .victors-table td:nth-child(3) {
-  width: 150px; /* Adjust the width of the third column */
+  width: 30%; /* Adjust width to be relative */
 }
 
 .victors-table th:nth-child(4), .victors-table td:nth-child(4) {
-  width: 50px; /* Adjust the width of the third column */
+  width: 10%; /* Adjust width to be relative */
 }
 
 /* Hide Scrollbars for Chrome, Safari, and Edge */
