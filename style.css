@@ -415,7 +415,7 @@ a.bold-text:hover {
 
 /* Adjust padding to diminish the gap between title and table */
 .victors-table th, .victors-table td {
-  padding: 0.5rem 1rem; /* Adjust padding to be more reasonable */
+  padding: 0.5rem 0.5rem; /* Adjust padding to be more reasonable */
   text-align: left;
   border: 1px solid black;
   overflow: hidden; /* Prevent content from overflowing */
