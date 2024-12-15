@@ -354,6 +354,8 @@ a.bold-text:hover {
   z-index: 50; /* Ensure it stays above other elements */
   width: auto; /* Set a fixed width for all images */
   height: 32%; /* Set a fixed height for all images */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  border: 3px solid white; /* Add a white border with a thickness of 3px */
   overflow: hidden; /* Prevent overflow if the image doesn't fill the container */
 }
 
@@ -362,8 +364,6 @@ a.bold-text:hover {
   width: 100%; /* Make the image fill the container's width */
   height: 100%; /* Make the image fill the container's height */
   object-fit: cover; /* Scale and crop the image to cover the container */
-  border-radius: 5px; /* Optional: Add rounded corners */
-  border: 3px solid white; /* Add a white border with a thickness of 3px */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for better visibility */
 }
 
