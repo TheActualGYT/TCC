@@ -165,7 +165,8 @@ button:hover {
 
 .main-content {
   position: relative; /* Set positioning context for child elements */
-  width: calc(100% - 36%); /* Total width minus the combined sidebar widths */
+  margin-left: 18%;
+  margin-right: 18%;
   background-color: #E0E0E0;
   padding: 20px;
   overflow-y: auto; /* Allow scrolling for content */
