@@ -306,31 +306,34 @@ a.bold-text:hover {
 
 .level-info {
   position: absolute;
-  top: 10px; /* Slightly closer to the top for tighter spacing */
-  left: 10px; /* Adjust to avoid being too far from the left */
+  top: 10px;
+  left: 10px;
   width: 48%; /* Maintain proportional width */
   height: 29%;
-  max-width: calc(100% - 20px); /* Prevent overflow with padding */
-  background-color: rgba(255, 255, 255, 0.9); /* Increase opacity for better readability */
-  padding: 10px 15px; /* More balanced padding */
-  border-radius: 8px; /* Slightly more rounded corners */
+  max-width: calc(100% - 20px); /* Prevent overflow */
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px 15px;
+  border-radius: 8px;
   font-family: 'Lexend', sans-serif;
-  color: #333; /* Legible text color */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Softer shadow */
-  z-index: 50; /* Ensure visibility */
+  color: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 50;
   text-align: left;
+
+  /* Use relative font size for scaling */
+  font-size: calc(1vw + 0.5em); /* Adjust based on viewport width */
 }
 
 .level-info p {
   margin: 5px 0;
-  font-size: 20px;
+  font-size: 1em; /* Relative to .level-info's font size */
   line-height: 1.4;
 }
 
 .level-info h1 {
-  font-size: 60px;
-  margin-top: 0; /* Remove top margin from h1 */
-  margin-bottom: 5px; /* Adjust space below the title */
+  font-size: 3em; /* Relative to .level-info's font size */
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 
 .level-info strong {
