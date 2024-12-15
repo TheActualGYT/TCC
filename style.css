@@ -315,7 +315,7 @@ a.bold-text:hover {
   top: 15px;
   left: 15px;
   width: 50%; /* Maintain proportional width */
-  height: 31%; /* Maintain proportional height */
+  height: 30%; /* Maintain proportional height */
   max-width: calc(100% - 20px); /* Prevent overflow */
   background-color: rgba(255, 255, 255, 0.9);
   padding: 10px 15px;
@@ -350,10 +350,10 @@ a.bold-text:hover {
 .level-image {
   position: absolute; /* Align the image with respect to its nearest positioned ancestor */
   top: 15px; /* Distance from the top of the container */
-  right: 10px; /* Position the image 10px from the right side of the container */
+  right: 15px; /* Position the image 10px from the right side of the container */
   z-index: 50; /* Ensure it stays above other elements */
   width: auto; /* Set a fixed width for all images */
-  height: 31%; /* Set a fixed height for all images */
+  height: 32%; /* Set a fixed height for all images */
   overflow: hidden; /* Prevent overflow if the image doesn't fill the container */
 }
 
@@ -394,7 +394,7 @@ a.bold-text:hover {
   text-align: left;
   padding: 5px 15px 15px 15px; /* Set top padding to 0 to remove the gap */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
-  margin-top: 26.25%; /* Exact 10px gap below the Level Info */
+  margin-top: 25.25%; /* Exact 10px gap below the Level Info */
   left: 15px; /* Adjust to avoid being too far from the left */
   font-size: 1rem; /* Set a base font size using rem */
 }
