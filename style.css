@@ -106,7 +106,7 @@ button:hover {
   display: flex;
   flex-wrap: nowrap; /* Prevent wrapping */
   min-height: calc(100vh - 52px); /* Adjust for the height of the top bar */
-  padding-top: 52px; /* Matches the height of the .top-bar */
+  margin-top: 0; /* Reset margin, handled by padding-top on body */
 }
 
 /* Left Sidebar */
@@ -124,11 +124,8 @@ button:hover {
   justify-content: flex-start;
   overflow-y: auto; /* Enable vertical scrolling */
   box-sizing: border-box;
-  position: fixed; /* Make it fixed to the viewport */
-  top: 52px; /* Aligns the top of the sidebar below the .top-bar */
-  left: 0; /* Pin it to the left edge */
-  height: calc(100vh - 52px); /* Subtract the height of the top-bar */
-  z-index: 500; /* Keep it below the .top-bar if necessary */
+  height: 100vh; /* Ensure the sidebar has full height of the viewport */
+  z-index: 500;
 }
 
 /* Right Sidebar */
