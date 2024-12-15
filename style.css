@@ -312,7 +312,7 @@ a.bold-text:hover {
   top: 10px;
   left: 10px;
   width: 48%; /* Maintain proportional width */
-  height: 29%;
+  height: 29%; /* Maintain proportional height */
   max-width: calc(100% - 20px); /* Prevent overflow */
   background-color: rgba(255, 255, 255, 0.9);
   padding: 10px 15px;
@@ -323,18 +323,18 @@ a.bold-text:hover {
   z-index: 50;
   text-align: left;
 
-  /* Use relative font size for scaling */
-  font-size: calc(1vw + 0.5em); /* Adjust based on viewport width */
+  /* Adjust base font size */
+  font-size: 2.2vh; /* Slightly larger than before, still scaling with viewport height */
 }
 
 .level-info p {
   margin: 5px 0;
-  font-size: 1em; /* Relative to .level-info's font size */
+  font-size: 1em; /* Keep relative to parent font size */
   line-height: 1.4;
 }
 
 .level-info h1 {
-  font-size: 3em; /* Relative to .level-info's font size */
+  font-size: 3em; /* Relative to parent font size */
   margin-top: 0;
   margin-bottom: 5px;
 }
