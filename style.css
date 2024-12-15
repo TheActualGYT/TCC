@@ -124,6 +124,7 @@ button:hover {
   overflow-y: auto; /* Enable vertical scrolling */
   box-sizing: border-box;
   height: 100vh; /* Ensure the sidebar has full height of the viewport */
+  z-index: 500;
 }
 
 /* Right Sidebar */
@@ -166,6 +167,7 @@ button:hover {
   background-color: #E0E0E0;
   padding: 20px;
   overflow-y: auto; /* Allow scrolling for content */
+  z-index: 500;
 }
 
 /* Sidebar Tabs */
