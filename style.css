@@ -348,11 +348,9 @@ a.bold-text:hover {
 
 /* Level Image */
 .level-image {
-  position: fixed; /* Align directly to the viewport */
-  top: 20px; /* Distance from the top of the viewport */
-  right: calc(17% + 3%); /* 17% for sidebar width + 3% gap */
+  position: absolute; /* Align directly to the viewport */
+  top: 67px; /* Distance from the top of the viewport */
   z-index: 50; /* Ensure it stays above other elements */
-  transform: translateY(0); /* Correct any vertical shifting */
 }
 
 .level-image img {
