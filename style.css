@@ -314,7 +314,7 @@ a.bold-text:hover {
   position: absolute;
   top: 15px;
   left: 15px;
-  width: 48%; /* Maintain proportional width */
+  width: 50%; /* Maintain proportional width */
   height: 31%; /* Maintain proportional height */
   max-width: calc(100% - 20px); /* Prevent overflow */
   background-color: rgba(255, 255, 255, 0.9);
@@ -383,7 +383,7 @@ a.bold-text:hover {
 .victors-list {
   position: absolute;
   height: auto;
-  width: 48%; /* Same width as the level info */
+  width: 50%; /* Same width as the level info */
   max-width: calc(100% - 20px); /* Prevent overflow with padding */
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 8px; /* Rounded corners to give the bubble effect */
