@@ -315,7 +315,7 @@ a.bold-text:hover {
   top: 15px;
   left: 15px;
   width: 48%; /* Maintain proportional width */
-  height: 29%; /* Maintain proportional height */
+  height: 30%; /* Maintain proportional height */
   max-width: calc(100% - 20px); /* Prevent overflow */
   background-color: rgba(255, 255, 255, 0.9);
   padding: 10px 15px;
@@ -338,7 +338,7 @@ a.bold-text:hover {
 
 .level-info h1 {
   font-size: 3em; /* Relative to parent font size */
-  margin-top: 0;
+  margin-top: -3px;
   margin-bottom: 5px;
 }
 
