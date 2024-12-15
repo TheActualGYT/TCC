@@ -324,7 +324,7 @@ a.bold-text:hover {
   text-align: left;
 
   /* Adjust base font size */
-  font-size: 2.2vh; /* Slightly larger than before, still scaling with viewport height */
+  font-size: 2.1vh; /* Slightly larger than before, still scaling with viewport height */
 }
 
 .level-info p {
