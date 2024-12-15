@@ -309,8 +309,8 @@ a.bold-text:hover {
 
 .level-info {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 15px;
+  left: 15px;
   width: 48%; /* Maintain proportional width */
   height: 29%; /* Maintain proportional height */
   max-width: calc(100% - 20px); /* Prevent overflow */
@@ -388,7 +388,7 @@ a.bold-text:hover {
   padding: 5px 15px 15px 15px; /* Set top padding to 0 to remove the gap */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
   margin-top: 26%; /* Exact 10px gap below the Level Info */
-  left: 10px; /* Adjust to avoid being too far from the left */
+  left: 15px; /* Adjust to avoid being too far from the left */
   font-size: 1rem; /* Set a base font size using rem */
 }
 
