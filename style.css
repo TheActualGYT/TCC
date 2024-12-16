@@ -352,7 +352,7 @@ a.bold-text:hover {
   right: 15px; /* Distance from the right of the container */
   z-index: 50; /* Ensures the image is on top of other elements */
   width: auto; /* Set a fixed width to better control the size */
-  height: 32%; /* Set a fixed height for the image */
+  height: 31.5%; /* Set a fixed height for the image */
   aspect-ratio: 16 / 9;
   border-radius: 12px; /* More pronounced rounded corners */
   border: 4px solid white; /* Slightly thicker white border */
