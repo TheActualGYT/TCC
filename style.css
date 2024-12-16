@@ -371,7 +371,7 @@ a.bold-text:hover {
 /* Level Video Container */
 .level-video {
   position: absolute;
-  top: calc(15px + 31.5% + 20px); /* 15px from the top, 31.5% height of the image, and 15px margin below */
+  top: calc(15px + 31.5% + 23px); /* 15px from the top, 31.5% height of the image, and 15px margin below */
   right: 15px; /* Same right positioning as the image */
   z-index: 50;
   width: auto; /* Keep width consistent */
