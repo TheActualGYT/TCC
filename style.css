@@ -314,8 +314,8 @@ a.bold-text:hover {
   position: absolute;
   top: 15px;
   left: 15px;
-  width: 50%; /* Maintain proportional width */
-  height: 30%; /* Maintain proportional height */
+  width: 50%; /* Adjust width as needed */
+  height: 30%; /* Adjust height based on container or viewport */
   max-width: calc(100% - 20px); /* Prevent overflow */
   background-color: rgba(255, 255, 255, 0.9);
   padding: 10px 15px;
@@ -326,8 +326,7 @@ a.bold-text:hover {
   z-index: 50;
   text-align: left;
 
-  /* Adjust base font size */
-  font-size: 2.1vh; /* Slightly larger than before, still scaling with viewport height */
+  font-size: 2.1vh; /* Adjusted font size */
 }
 
 .level-info p {
@@ -347,21 +346,19 @@ a.bold-text:hover {
 }
 
 .level-image {
-  position: absolute; /* Place image relative to parent */
+  position: absolute;
   top: 15px; /* Align vertically with .level-info */
-  left: calc(50% + 20px); /* Position it slightly to the right of .level-info */
+  left: calc(50% + 20px); /* Position to the right of .level-info */
   
-  /* Match the height of .level-info dynamically */
-  height: 100%; /* Match height of .level-info */
+  /* Match height dynamically */
+  height: 100%; /* Matches height of .level-info */
   width: auto; /* Maintain aspect ratio based on height */
   
-  /* Enforce 16:9 aspect ratio */
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 9; /* Enforce 16:9 ratio */
 
-  /* Optional: Aesthetic adjustments */
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: black; /* Adds padding if needed */
+  background-color: black;
   z-index: 45;
 }
 
