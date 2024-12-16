@@ -169,7 +169,7 @@ button:hover {
 .founder-admins-container {
   display: flex; /* Creates a flex container */
   align-items: center; /* Vertically aligns items in the center */
-  margin-bottom: 5px; /* Optional, to add space between sections */
+  margin-bottom: 0px; /* Optional, to add space between sections */
 }
 
 /* Image styling */
