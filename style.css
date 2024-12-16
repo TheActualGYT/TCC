@@ -310,13 +310,12 @@ a.bold-text:hover {
   color: inherit; /* Ensure the color doesn't change */
 }
 
-/* Container for both level-info and level-image */
 .level-info {
   position: absolute;
   top: 15px;
   left: 15px;
   width: 50%; /* Maintain proportional width */
-  height: 30%; /* Allow height to adjust based on content */
+  height: 30%; /* Maintain proportional height */
   max-width: calc(100% - 20px); /* Prevent overflow */
   background-color: rgba(255, 255, 255, 0.9);
   padding: 10px 15px;
@@ -328,14 +327,9 @@ a.bold-text:hover {
   text-align: left;
 
   /* Adjust base font size */
-  font-size: 2.1vh; /* Scaling with viewport height */
-  display: flex; /* Use flexbox to align content */
-  flex-direction: row; /* Align items horizontally */
-  gap: 10px; /* Add space between image and text */
-  align-items: center; /* Vertically center-align content */
+  font-size: 2.1vh; /* Slightly larger than before, still scaling with viewport height */
 }
 
-/* Styling for the text inside the info box */
 .level-info p {
   margin: 5px 0;
   font-size: 1em; /* Keep relative to parent font size */
@@ -352,16 +346,17 @@ a.bold-text:hover {
   font-weight: 1100; /* Makes the bold text much thicker */
 }
 
-/* Styling for the image inside level-info */
+/* Level Image */
 .level-image {
-  flex-shrink: 0; /* Prevent the image from shrinking */
-  margin-left: calc(100%-18%);
-  width: 30%; /* Set the width of the image relative to the container */
-  height: auto; /* Maintain aspect ratio */
+  position: absolute; /* Align the image with respect to its nearest positioned ancestor */
+  top: 15px; /* Distance from the top of the container */
+  right: 15px; /* Position the image 10px from the right side of the container */
+  z-index: 50; /* Ensure it stays above other elements */
+  width: auto; /* Set a fixed width for all images */
+  height: 31.5%; /* Set a fixed height for all images */
   border-radius: 8px; /* Optional: Add rounded corners */
-  border: 3px solid white; /* Add a white border */
-  overflow: hidden; /* Prevent overflow */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+  border: 3px solid white; /* Add a white border with a thickness of 3px */
+  overflow: hidden; /* Prevent overflow if the image doesn't fill the container */
 }
 
 /* Image styling */
@@ -369,6 +364,7 @@ a.bold-text:hover {
   width: 100%; /* Make the image fill the container's width */
   height: 100%; /* Make the image fill the container's height */
   object-fit: cover; /* Scale and crop the image to cover the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for better visibility */
 }
 
 /* For the YouTube video */
