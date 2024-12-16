@@ -347,22 +347,24 @@ a.bold-text:hover {
 }
 
 .level-image {
-  position: absolute; /* Places image relative to a container */
+  position: absolute; /* Place image relative to parent */
+  height: 30%;
+  weight: auto;
   top: 15px; /* Align vertically with .level-info */
   left: calc(50% + 20px); /* Position it slightly to the right of .level-info */
   
-  /* Resolution lock */
+  /* Force the resolution */
   width: 1280px;
   height: 720px;
+
+  /* Scale images to fill the frame */
+  object-fit: fill; /* Stretches the image to match exactly 1280x720 */
   
-  /* Ensures aspect ratio remains intact */
-  object-fit: cover; /* Can also use contain if you prefer black padding */
-  background-color: black; /* Adds padding for empty spaces */
-  
-  /* Optional styling */
+  /* Optional: Aesthetic adjustments */
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 45; /* Controls layer stacking */
+  background-color: black; /* Adds padding if needed */
+  z-index: 45;
 }
 
 /* For the YouTube video */
