@@ -358,6 +358,13 @@ a.bold-text:hover {
   z-index: 45; /* Ensure it is slightly below .level-info */
 }
 
+.level-img {
+    width: 1280px;
+    height: 720px;
+    object-fit: contain; /* Ensures image fits within the box */
+    background-color: black; /* Adds padding where necessary */
+}
+
 /* For the YouTube video */
 .level-video {
   position: absolute;
