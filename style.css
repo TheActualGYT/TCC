@@ -345,21 +345,27 @@ a.bold-text:hover {
   font-weight: 1100; /* Makes the bold text much thicker */
 }
 
+/* Level Image Container */
 .level-image {
-  position: absolute;
-  top: 15px; /* Align vertically with .level-info */
-  left: calc(50% + 20px); /* Position to the right of .level-info */
-  
-  /* Match height dynamically */
-  height: 30%; /* Matches height of .level-info */
-  width: auto; /* Maintain aspect ratio based on height */
-  
-  aspect-ratio: 16 / 9; /* Enforce 16:9 ratio */
+  position: absolute; /* Ensures the image is positioned relative to its nearest positioned ancestor */
+  top: 15px; /* Distance from the top of the container */
+  right: 15px; /* Distance from the right of the container */
+  z-index: 50; /* Ensures the image is on top of other elements */
+  width: 200px; /* Set a fixed width to better control the size */
+  height: 200px; /* Set a fixed height for the image */
+  border-radius: 12px; /* More pronounced rounded corners */
+  border: 4px solid white; /* Slightly thicker white border */
+  overflow: hidden; /* Prevents image overflow */
+  background-color: #000; /* Optional: background color in case the image is missing or has transparency */
+}
 
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: black;
-  z-index: 45;
+/* Image Styling */
+.level-image img {
+  width: 100%; /* Image fills the container's width */
+  height: 100%; /* Image fills the container's height */
+  object-fit: cover; /* Ensures the image maintains aspect ratio and covers the area */
+  object-position: center; /* Ensures the image is centered */
+  transition: transform 0.3s ease; /* Optional: Smooth transition for hover effect */
 }
 
 /* For the YouTube video */
