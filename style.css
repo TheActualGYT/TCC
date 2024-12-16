@@ -169,12 +169,12 @@ button:hover {
 .founder-admins-container {
   display: flex; /* Creates a flex container */
   align-items: center; /* Vertically aligns items in the center */
-  margin-bottom: 10px; /* Optional, to add space between sections */
+  margin-bottom: 5px; /* Optional, to add space between sections */
 }
 
 /* Image styling */
 .founders-admins-image {
-  margin-right: 10px; /* Space between the image and text */
+  margin-right: 5px; /* Space between the image and text */
   margin-bottom: 5px;
   width: 40px; /* Adjust the width of the image */
   height: auto; /* Maintain aspect ratio */
