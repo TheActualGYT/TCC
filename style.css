@@ -347,20 +347,22 @@ a.bold-text:hover {
 }
 
 .level-image {
-  position: absolute; /* Place it relative to the main content area */
+  position: absolute; /* Places image relative to a container */
   top: 15px; /* Align vertically with .level-info */
   left: calc(50% + 20px); /* Position it slightly to the right of .level-info */
-  height: 30%; /* Match the height of .level-info */
-  max-height: 30%; /* Prevent overflow beyond .level-info's proportional height */
-  width: auto; /* Scale proportionally based on height */
-  border-radius: 8px; /* Optional: match .level-info's style */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add shadow for aesthetic */
-  z-index: 45; /* Ensure it is slightly below .level-info */
   
+  /* Resolution lock */
   width: 1280px;
   height: 720px;
-  object-fit: contain; /* Ensures image fits within the box */
-  background-color: black; /* Adds padding where necessary */
+  
+  /* Ensures aspect ratio remains intact */
+  object-fit: cover; /* Can also use contain if you prefer black padding */
+  background-color: black; /* Adds padding for empty spaces */
+  
+  /* Optional styling */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 45; /* Controls layer stacking */
 }
 
 /* For the YouTube video */
