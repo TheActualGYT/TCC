@@ -163,11 +163,17 @@ button:hover {
   padding-top: 5px; /* Remove any padding */
 }
 
+/* Container to ensure the image is positioned with the header */
+.founder-admins-container {
+  display: flex; /* Creates a flex container */
+  align-items: center; /* Vertically aligns items in the center */
+  margin-bottom: 20px; /* Optional, to add space between sections */
+}
+
 /* Image styling */
 .founders-admins-image {
-  float: left; /* Positions the image to the left */
-  margin-right: 15px; /* Adds space between the image and the header/text */
-  width: 50px; /* Adjust the image width */
+  margin-right: 15px; /* Space between the image and text */
+  width: 50px; /* Adjust the width of the image */
   height: auto; /* Maintain aspect ratio */
 }
 
