@@ -355,6 +355,7 @@ a.bold-text:hover {
 /* Styling for the image inside level-info */
 .level-image {
   flex-shrink: 0; /* Prevent the image from shrinking */
+  margin-left: calc(100%-18%);
   width: 30%; /* Set the width of the image relative to the container */
   height: auto; /* Maintain aspect ratio */
   border-radius: 8px; /* Optional: Add rounded corners */
