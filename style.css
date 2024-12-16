@@ -154,6 +154,7 @@ button:hover {
   color: white;
   font-size: 30px;
   font-weight: 900;
+  text-align: left;
 }
 
 .right-sidebar p {
@@ -161,6 +162,7 @@ button:hover {
   color: white;
   margin-top: 0; /* Remove any margin to reduce space to h2 */
   padding-top: 5px; /* Remove any padding */
+  text-align: left;
 }
 
 /* Container to ensure the image is positioned with the header */
