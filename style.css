@@ -163,6 +163,14 @@ button:hover {
   padding-top: 5px; /* Remove any padding */
 }
 
+/* Image styling */
+.founders-admins-image {
+  float: left; /* Positions the image to the left */
+  margin-right: 15px; /* Adds space between the image and the header/text */
+  width: 50px; /* Adjust the image width */
+  height: auto; /* Maintain aspect ratio */
+}
+
 .main-content {
   position: relative; /* Set positioning context for child elements */
   width: 64%;
