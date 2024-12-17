@@ -495,27 +495,45 @@ a.bold-text:hover {
   width: 10%; /* Adjust width to be relative */
 }
 
+/* Changelog Table Styling */
 .changelog-table {
-  width: 100%; /* Ensure the table fills the width of the container */
+  width: 100%; /* Table takes up full width of its container */
+  border-collapse: collapse; /* Remove gaps between table cells */
+  font-size: 1rem; /* Set a base font size for consistency */
+  margin-top: 10px; /* Add some spacing above the table */
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 8px; /* Rounded corners to give the bubble effect */
-  table-layout: fixed; /* Enforce fixed column width layout */
-  text-align: left;
-  border-collapse: collapse;
-  font-size: 0.8rem; /* Set table font size using rem for consistent scaling */
 }
 
+/* Table Cell Styling */
 .changelog-table td {
-  padding: 8px;
-  border: 1px solid #ddd;
+  padding: 0.5rem; /* Adjust padding for better spacing */
+  border: 1px solid #ddd; /* Add a light border around each cell */
+  overflow: hidden; /* Prevent content from overflowing */
+  text-align: left; /* Align text to the left */
 }
 
+/* Specific Column Widths */
 .changelog-table td:first-child {
-  width: 30%;
+  width: 30%; /* Left column is 30% of the table width */
 }
 
 .changelog-table td:last-child {
-  width: 70%;
+  width: 70%; /* Right column takes the remaining 70% */
+}
+
+/* Header Styling (if headers are needed later) */
+.changelog-table th {
+  background-color: #333; /* Dark background for headers */
+  color: white; /* White text for contrast */
+  padding: 0.5rem; /* Adjust padding for spacing */
+  text-align: left; /* Align text to the left */
+  border: 1px solid #ddd; /* Match border style */
+}
+
+/* Optional Hover Effects */
+.changelog-table td:hover {
+  background-color: #f9f9f9; /* Light gray background on hover */
 }
 
 /* Hide Scrollbars for Chrome, Safari, and Edge */
