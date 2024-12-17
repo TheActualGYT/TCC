@@ -297,6 +297,15 @@ button:hover {
   padding: -1px 0;
 }
 
+/* Divider Line (invisible) */
+.divider-line4 {
+  width: 100%;
+  border-top: 3px solid transparent; /* Set the border color to transparent */
+  margin: 25px 0;
+  align-self: center;
+  padding: -1px;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .main-container {
