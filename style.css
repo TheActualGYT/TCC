@@ -496,8 +496,11 @@ a.bold-text:hover {
 }
 
 .changelog-table {
-  width: 100%;
+  width: 100%; /* Ensure the table fills the width of the container */
+  table-layout: fixed; /* Enforce fixed column width layout */
+  text-align: left;
   border-collapse: collapse;
+  font-size: 0.8rem; /* Set table font size using rem for consistent scaling */
 }
 
 .changelog-table td {
