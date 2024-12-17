@@ -495,6 +495,76 @@ a.bold-text:hover {
   width: 10%; /* Adjust width to be relative */
 }
 
+/* Style for the Victor's List Bubble */
+.changelog-list {
+  position: absolute;
+  height: auto;
+  width: 50%; /* Same width as the level info */
+  max-width: calc(100% - 20px); /* Prevent overflow with padding */
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px; /* Rounded corners to give the bubble effect */
+  text-align: left;
+  padding: 5px 15px 15px 15px; /* Set top padding to 0 to remove the gap */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
+  margin-top: 25.25%; /* Exact 10px gap below the Level Info */
+  left: 15px; /* Adjust to avoid being too far from the left */
+  font-size: 1rem; /* Set a base font size using rem */
+}
+
+/* Increase the size of the Victor's List title */
+.changelog-list h2 {
+  font-size: 1.8rem; /* Adjusted for more reasonable scaling */
+  font-weight: bold; /* Make it bold for emphasis */
+  color: #333; /* Darker color for better readability */
+  margin-top: 6px; /* Remove the default margin at the top of the h2 */
+  margin-bottom: 10px; /* Decrease the space below the title */
+}
+
+/* Table styling inside the bubble */
+.changelog-table {
+  width: 100%; /* Ensure the table fills the width of the container */
+  table-layout: fixed; /* Enforce fixed column width layout */
+  text-align: left;
+  border-collapse: collapse;
+  font-size: 0.8rem; /* Set table font size using rem for consistent scaling */
+}
+
+/* Adjust padding to diminish the gap between title and table */
+.changelog-table th, .changelog-table td {
+  padding: 0.5rem 0.5rem; /* Adjust padding to be more reasonable */
+  text-align: left;
+  border: 1px solid black;
+  overflow: hidden; /* Prevent content from overflowing */
+}
+
+/* Header styling */
+.changelog-table th {
+  background-color: #c93030;
+  text-align: left;
+  color: white;
+}
+
+/* Link styling */
+.changelog-table td a {
+  color: #c93030;
+  text-align: left;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.changelog-table td a:hover {
+  text-decoration: underline;
+}
+
+/* Column-specific width adjustments */
+.changelog-table th:nth-child(1), .changelog-table td:nth-child(1) {
+  width: 10%; /* Adjust width to be relative */
+}
+
+.changelog-table th:nth-child(2), .changelog-table td:nth-child(2) {
+  width: 30%; /* Adjust width to be relative */
+}
+
 /* Hide Scrollbars for Chrome, Safari, and Edge */
 ::-webkit-scrollbar {
   display: none;
