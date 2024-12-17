@@ -495,44 +495,65 @@ a.bold-text:hover {
   width: 10%; /* Adjust width to be relative */
 }
 
-/* Changelog Table Styling */
-.changelog-table {  position: absolute;
+/* Style for the Changelog Bubble */
+.changelog-content {
+  position: absolute;
   height: auto;
-  width: 100%;
+  width: 50%; /* Same width as the content area */
+  max-width: calc(100% - 20px); /* Prevent overflow with padding */
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 8px; /* Rounded corners to give the bubble effect */
   text-align: left;
   padding: 5px 15px 15px 15px; /* Set top padding to 0 to remove the gap */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
-  margin-top: 25.25%; /* Exact 10px gap below the Level Info */
+  margin-top: 25.25%; /* Adjust as needed */
   left: 15px; /* Adjust to avoid being too far from the left */
   font-size: 1rem; /* Set a base font size using rem */
 }
 
-/* Table Cell Styling */
-.changelog-table td {
-  padding: 0.5rem; /* Adjust padding for better spacing */
-  border: 1px solid black; /* Add a light border around each cell */
+/* Increase the size of the Changelog title */
+.changelog-content h2 {
+  font-size: 1.8rem; /* Adjusted for more reasonable scaling */
+  font-weight: bold; /* Make it bold for emphasis */
+  color: #333; /* Darker color for better readability */
+  margin-top: 6px; /* Remove the default margin at the top of the h2 */
+  margin-bottom: 10px; /* Decrease the space below the title */
+}
+
+/* Table styling inside the bubble */
+.changelog-table {
+  width: 100%; /* Ensure the table fills the width of the container */
+  table-layout: fixed; /* Enforce fixed column width layout */
+  text-align: left;
+  border-collapse: collapse;
+  font-size: 0.8rem; /* Set table font size using rem for consistent scaling */
+}
+
+/* Adjust padding to diminish the gap between title and table */
+.changelog-table th, .changelog-table td {
+  padding: 0.5rem 0.5rem; /* Adjust padding to be more reasonable */
+  text-align: left;
+  border: 1px solid black;
   overflow: hidden; /* Prevent content from overflowing */
-  text-align: left; /* Align text to the left */
 }
 
-/* Specific Column Widths */
-.changelog-table td:first-child {
-  width: 30%; /* Left column is 30% of the table width */
-}
-
-.changelog-table td:last-child {
-  width: 70%; /* Right column takes the remaining 70% */
-}
-
-/* Header Styling (if headers are needed later) */
+/* Header styling */
 .changelog-table th {
-  background-color: #333; /* Dark background for headers */
-  color: white; /* White text for contrast */
-  padding: 0.5rem; /* Adjust padding for spacing */
-  text-align: left; /* Align text to the left */
-  border: 1px solid #ddd; /* Match border style */
+  background-color: #c93030;
+  text-align: left;
+  color: white;
+}
+
+/* Link styling */
+.changelog-table td a {
+  color: #c93030;
+  text-align: left;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.changelog-table td a:hover {
+  text-decoration: underline;
 }
 
 /* Optional Hover Effects */
