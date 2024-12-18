@@ -512,7 +512,7 @@ a.bold-text:hover {
 }
 
 /* Increase the size of the Victor's List title */
-.changelog-list h2 {
+.changelog-list h3 {
   font-size: 1.8rem; /* Adjusted for more reasonable scaling */
   font-weight: bold; /* Make it bold for emphasis */
   color: #333; /* Darker color for better readability */
