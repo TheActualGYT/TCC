@@ -585,3 +585,35 @@ html {
 body {
   overflow: hidden;
 }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  color: blue; /* You can adjust the color */
+  margin-left: 5px;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 8px;
+  position: absolute;
+  z-index: 10;
+  bottom: 125%; /* Position above the tooltip */
+  left: 50%;
+  margin-left: -125px; /* Adjust based on tooltip width */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 0.9em; /* Optional: Adjust text size */
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
