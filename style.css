@@ -593,6 +593,7 @@ body {
   font-weight: bold;
   color: #333;
   margin-left: 5px;
+  z-index: auto; /* Allows the parent to maintain normal stacking context */
 }
 
 .tooltip .tooltip-text {
@@ -604,7 +605,7 @@ body {
   border-radius: 5px;
   padding: 8px;
   position: absolute;
-  z-index: 10;
+  z-index: 9999; /* Ensure it’s above all other elements */
   bottom: 125%; /* Position above the tooltip */
   left: 50%;
   margin-left: -125px; /* Adjust based on tooltip width */
