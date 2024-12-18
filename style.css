@@ -506,7 +506,6 @@ a.bold-text:hover {
   text-align: left;
   padding: 5px 15px 15px 15px; /* Set top padding to 0 to remove the gap */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
-  margin-top: 15px;
 }
 
 .changelog-list h3 {
