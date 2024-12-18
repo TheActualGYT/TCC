@@ -520,7 +520,7 @@ a.bold-text:hover {
   width: 30px; /* or any other size you prefer */
   height: auto; /* maintains the aspect ratio */
   vertical-align: middle; /* Align image with text */
-  padding-right: 5px;
+  margin-bottom: 5px;
   margin-right: 10px; /* Add space between the image and the text */
   border-radius: 4px; /* Rounded corners to give the bubble effect */
   border: 2px solid black;
