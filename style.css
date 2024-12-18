@@ -516,6 +516,13 @@ a.bold-text:hover {
   margin-bottom: 10px; /* Decrease the space below the title */
 }
 
+.changelog-list h3 img {
+  vertical-align: middle; /* Align image with text */
+  margin-right: 10px; /* Add space between the image and the text */
+  border-radius: 8px; /* Rounded corners to give the bubble effect */
+  border: 2px solid white;
+}
+
 /* Table styling inside the bubble */
 .changelog-table {
   width: 100%; /* Ensure the table fills the width of the container */
