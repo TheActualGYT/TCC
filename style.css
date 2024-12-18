@@ -534,9 +534,9 @@ a.bold-text:hover {
   text-align: left;
   border-collapse: collapse;
   font-size: 0.8rem;
-  overflow: visible; /* Ensure tooltips can escape table boundaries */
-  position: relative; /* Ensure the tooltip uses its own stacking context */
-  z-index: 1; /* Place the table above other elements but below tooltips */
+  position: relative; /* Maintain stacking context for tooltips */
+  z-index: 1; /* Ensure table doesn't obscure tooltips */
+  overflow: visible; /* Allow tooltips to overflow */
 }
 
 /* Adjust padding to diminish the gap between title and table */
@@ -591,13 +591,10 @@ body {
 }
 
 .tooltip {
-  position: relative;
+  position: relative; /* Ensure tooltip stays inline with text */
   display: inline-block;
   cursor: pointer;
-  font-weight: bold;
-  color: #333;
-  margin-left: 5px;
-  z-index: auto; /* Allows the parent to maintain normal stacking context */
+  z-index: auto; /* Let the tooltip-text handle stacking */
 }
 
 .tooltip .tooltip-text {
@@ -609,13 +606,14 @@ body {
   border-radius: 5px;
   padding: 8px;
   position: absolute;
-  z-index: 9999; /* Ensure tooltip appears on top */
-  bottom: 125%;
+  z-index: 9999; /* Ensure it appears above all other elements */
+  bottom: 125%; /* Place above the tooltip trigger */
   left: 50%;
-  margin-left: -125px;
+  transform: translateX(-50%); /* Center horizontally */
   opacity: 0;
   transition: opacity 0.3s ease;
   font-size: 0.9em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add depth */
 }
 
 .tooltip:hover .tooltip-text {
