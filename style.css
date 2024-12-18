@@ -496,16 +496,17 @@ a.bold-text:hover {
 }
 
 .changelog-list {
-  position: absolute;
+  position: relative; /* Use relative to maintain the stacking context */
+  overflow: visible; /* Ensure children like tooltips can overflow */
   height: auto;
   width: 100%;
   max-width: calc(82%);
   background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 8px; /* Rounded corners to give the bubble effect */
-  font-size: 1rem; /* Set a base font size using rem */
+  border-radius: 8px;
+  font-size: 1rem;
   text-align: left;
-  padding: 5px 15px 15px 15px; /* Set top padding to 0 to remove the gap */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
+  padding: 5px 15px 15px 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .changelog-list h3 {
@@ -526,13 +527,15 @@ a.bold-text:hover {
   border: 1px solid black;
 }
 
-/* Table styling inside the bubble */
 .changelog-table {
-  width: 100%; /* Ensure the table fills the width of the container */
-  table-layout: fixed; /* Enforce fixed column width layout */
+  width: 100%;
+  table-layout: fixed;
   text-align: left;
   border-collapse: collapse;
-  font-size: 0.8rem; /* Set table font size using rem for consistent scaling */
+  font-size: 0.8rem;
+  overflow: visible; /* Ensure tooltips can escape table boundaries */
+  position: relative; /* Ensure the tooltip uses its own stacking context */
+  z-index: 1; /* Place the table above other elements but below tooltips */
 }
 
 /* Adjust padding to diminish the gap between title and table */
@@ -605,13 +608,13 @@ body {
   border-radius: 5px;
   padding: 8px;
   position: absolute;
-  z-index: 9999; /* Ensure it’s above all other elements */
-  bottom: 125%; /* Position above the tooltip */
+  z-index: 9999; /* Ensure tooltip appears on top */
+  bottom: 125%;
   left: 50%;
-  margin-left: -125px; /* Adjust based on tooltip width */
+  margin-left: -125px;
   opacity: 0;
   transition: opacity 0.3s ease;
-  font-size: 0.9em; /* Optional: Adjust text size */
+  font-size: 0.9em;
 }
 
 .tooltip:hover .tooltip-text {
