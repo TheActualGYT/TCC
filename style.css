@@ -507,6 +507,7 @@ a.bold-text:hover {
   text-align: left;
   padding: 5px 15px 15px 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1; /* Place the table above other elements but below tooltips */
 }
 
 .changelog-list h3 {
