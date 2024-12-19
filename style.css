@@ -519,7 +519,7 @@ a.bold-text:hover {
 }
 
 .changelog-list h3 img {
-  width: 30px; /* or any other size you prefer */
+  width: 50px; /* or any other size you prefer */
   height: auto; /* maintains the aspect ratio */
   vertical-align: middle; /* Align image with text */
   margin-bottom: 5px;
