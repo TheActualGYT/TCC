@@ -589,34 +589,3 @@ html {
 body {
   overflow: hidden;
 }
-
-.tooltip {
-  position: relative; /* Ensure tooltip stays inline with text */
-  display: inline-block;
-  cursor: pointer;
-  z-index: auto; /* Let the tooltip-text handle stacking */
-}
-
-.tooltip .tooltip-text {
-  visibility: hidden;
-  width: 250px;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  border-radius: 5px;
-  padding: 8px;
-  position: absolute;
-  z-index: 9999; /* Ensure it appears above all other elements */
-  bottom: 125%; /* Place above the tooltip trigger */
-  left: 50%;
-  transform: translateX(-50%); /* Center horizontally */
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  font-size: 0.9em;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add depth */
-}
-
-.tooltip:hover .tooltip-text {
-  visibility: visible;
-  opacity: 1;
-}
