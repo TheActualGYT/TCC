@@ -534,6 +534,7 @@ a.bold-text:hover {
   text-align: left;
   border-collapse: collapse;
   font-size: 0.8rem;
+  font-weight: bold; /* Make it bold for emphasis */
   position: relative; /* Maintain stacking context for tooltips */
   z-index: 1; /* Ensure table doesn't obscure tooltips */
   overflow: visible; /* Allow tooltips to overflow */
@@ -614,6 +615,7 @@ a.bold-text:hover {
   text-align: left;
   border-collapse: collapse;
   font-size: 0.8rem;
+  font-weight: bold; /* Make it bold for emphasis */
   position: relative; /* Maintain stacking context for tooltips */
   z-index: 1; /* Ensure table doesn't obscure tooltips */
   overflow: visible; /* Allow tooltips to overflow */
