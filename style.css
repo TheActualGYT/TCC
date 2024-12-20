@@ -575,6 +575,86 @@ a.bold-text:hover {
   width: 34%; /* Adjust width to be relative */
 }
 
+.leaderboard-list {
+  position: relative; /* Use relative to maintain the stacking context */
+  overflow: visible; /* Ensure children like tooltips can overflow */
+  height: auto;
+  width: 100%;
+  max-width: calc(82%);
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  font-size: 1rem;
+  text-align: left;
+  padding: 5px 15px 15px 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1; /* Place the table above other elements but below tooltips */
+}
+
+.leaderboard-list h3 {
+  font-size: 2.5rem; /* Adjusted for more reasonable scaling */
+  font-weight: bold; /* Make it bold for emphasis */
+  color: #333; /* Darker color for better readability */
+  margin-top: 6px; /* Remove the default margin at the top of the h2 */
+  margin-bottom: 10px; /* Decrease the space below the title */
+}
+
+.leaderboard-list h3 img {
+  width: 40px; /* or any other size you prefer */
+  height: auto; /* maintains the aspect ratio */
+  vertical-align: middle; /* Align image with text */
+  margin-bottom: 5px;
+  margin-right: 10px; /* Add space between the image and the text */
+  border-radius: 4px; /* Rounded corners to give the bubble effect */
+  border: 1px solid black;
+}
+
+.leaderboard-table {
+  width: 100%;
+  table-layout: fixed;
+  text-align: left;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  position: relative; /* Maintain stacking context for tooltips */
+  z-index: 1; /* Ensure table doesn't obscure tooltips */
+  overflow: visible; /* Allow tooltips to overflow */
+}
+
+/* Adjust padding to diminish the gap between title and table */
+.leaderboard-table th, .leaderboard-table td {
+  padding: 0.5rem 0.5rem; /* Adjust padding to be more reasonable */
+  text-align: left;
+  border: 1px solid black;
+  overflow: hidden; /* Prevent content from overflowing */
+}
+
+/* Header styling */
+.leaderboard-table th {
+  background-color: #c93030;
+  text-align: left;
+  color: white;
+}
+
+/* Link styling */
+.leaderboard-table td a {
+  color: #c93030;
+  text-align: left;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.leaderboard-table td a:hover {
+  text-decoration: underline;
+}
+
+/* Column-specific width adjustments */
+.leaderboard-table th:nth-child(1), .leaderboard-table td:nth-child(1) {
+  width: 6%; /* Adjust width to be relative */
+}
+
+.leaderboard-table th:nth-child(2), .leaderboard-table td:nth-child(2) {
+  width: 34%; /* Adjust width to be relative */
+}
+
 /* Hide Scrollbars for Chrome, Safari, and Edge */
 ::-webkit-scrollbar {
   display: none;
