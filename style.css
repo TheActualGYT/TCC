@@ -667,7 +667,7 @@ a.bold-text:hover {
   width: 8%; /* Adjust width to be relative */
 }
 
-.leaderboard-table th:nth-child(5), .leaderboard-table td:nth-child(5) {
+.leaderboard-table th:nth-child(6), .leaderboard-table td:nth-child(6) {
   width: 8%; /* Adjust width to be relative */
 }
 
