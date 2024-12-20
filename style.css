@@ -652,11 +652,11 @@ a.bold-text:hover {
 }
 
 .leaderboard-table th:nth-child(2), .leaderboard-table td:nth-child(2) {
-  width: 8%; /* Adjust width to be relative */
+  width: 10%; /* Adjust width to be relative */
 }
 
 .leaderboard-table th:nth-child(3), .leaderboard-table td:nth-child(3) {
-  width: 3%; /* Adjust width to be relative */
+  width: 2%; /* Adjust width to be relative */
 }
 
 .leaderboard-table th:nth-child(4), .leaderboard-table td:nth-child(4) {
@@ -668,7 +668,7 @@ a.bold-text:hover {
 }
 
 .leaderboard-table th:nth-child(6), .leaderboard-table td:nth-child(6) {
-  width: 9%; /* Adjust width to be relative */
+  width: 8%; /* Adjust width to be relative */
 }
 
 /* Hide Scrollbars for Chrome, Safari, and Edge */
